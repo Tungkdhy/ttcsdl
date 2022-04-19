@@ -256,5 +256,12 @@ namespace QuanLyDeTai.User.New
                 no.Show();
             }
         }
+
+        private void add_Click_1(object sender, EventArgs e)
+        {
+            Form create = new CreateNew.CreateNew();
+            create.ShowDialog();
+            Console.WriteLine("tung");
+        }
     }
 }

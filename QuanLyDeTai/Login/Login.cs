@@ -44,6 +44,13 @@ namespace QuanLyDeTai.Login
                         Gv.Show();
                         this.Hide();
                     }
+                    if (MaKhoa != "")
+                    {
+                        Form MK = new Admin.Admin();
+                        MessageBox.Show("Đăng nhập thành công");
+                        MK.Show();
+                        this.Hide();
+                    }
                 }
                 else
                 {

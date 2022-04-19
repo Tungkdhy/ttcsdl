@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Dangky = new System.Windows.Forms.Button();
             this.SubMenu = new System.Windows.Forms.Panel();
             this.LogOut = new System.Windows.Forms.Button();
             this.ChangePassword = new System.Windows.Forms.Button();
@@ -42,7 +43,6 @@
             this.header = new System.Windows.Forms.Label();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.Dangky = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SubMenu.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -69,6 +69,20 @@
             this.panel1.Size = new System.Drawing.Size(208, 788);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // Dangky
+            // 
+            this.Dangky.FlatAppearance.BorderSize = 0;
+            this.Dangky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Dangky.ForeColor = System.Drawing.SystemColors.Control;
+            this.Dangky.Location = new System.Drawing.Point(2, 276);
+            this.Dangky.Name = "Dangky";
+            this.Dangky.Size = new System.Drawing.Size(200, 48);
+            this.Dangky.TabIndex = 5;
+            this.Dangky.Text = "Đăng ký đề tài";
+            this.Dangky.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Dangky.UseVisualStyleBackColor = true;
+            this.Dangky.Click += new System.EventHandler(this.Dangky_Click);
             // 
             // SubMenu
             // 
@@ -235,19 +249,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1151, 73);
             this.panel3.TabIndex = 0;
-            // 
-            // Dangky
-            // 
-            this.Dangky.FlatAppearance.BorderSize = 0;
-            this.Dangky.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.Dangky.ForeColor = System.Drawing.SystemColors.Control;
-            this.Dangky.Location = new System.Drawing.Point(2, 276);
-            this.Dangky.Name = "Dangky";
-            this.Dangky.Size = new System.Drawing.Size(200, 48);
-            this.Dangky.TabIndex = 5;
-            this.Dangky.Text = "Đăng ký đề tài";
-            this.Dangky.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.Dangky.UseVisualStyleBackColor = true;
             // 
             // User
             // 
