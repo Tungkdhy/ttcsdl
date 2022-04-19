@@ -77,12 +77,6 @@ namespace QuanLyDeTai.User
             openChilForm(new Infor.Infor(MaGV));
             header.Text = "Thông tin giáo viên";
         }
-
-        private void add_Click(object sender, EventArgs e)
-        {
-            openChilForm(new AddResearch.AddResearch());
-        }
-
         private void ChangePassword_Click(object sender, EventArgs e)
         {
             openChilForm(new Setting.ChangePassword(MaGV));
@@ -110,6 +104,12 @@ namespace QuanLyDeTai.User
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Dangky_Click(object sender, EventArgs e)
+        {
+            openChilForm(new AddResearch.AddReseach(MaGV));
+            header.Text = "Đăng ký đề tài";
         }
     }
 }

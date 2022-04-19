@@ -109,7 +109,7 @@
             this.textbox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
             this.textbox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.textbox1.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
-            this.textbox1.DefaultText = "Them";
+            this.textbox1.DefaultText = "";
             this.textbox1.FillColor = System.Drawing.Color.White;
             this.textbox1.HideSelection = true;
             this.textbox1.IconLeft = null;
@@ -117,9 +117,8 @@
             this.textbox1.IconPadding = 10;
             this.textbox1.IconRight = null;
             this.textbox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.textbox1.Lines = new string[] {
-        "Them"};
-            this.textbox1.Location = new System.Drawing.Point(421, 40);
+            this.textbox1.Lines = new string[0];
+            this.textbox1.Location = new System.Drawing.Point(392, 44);
             this.textbox1.MaxLength = 32767;
             this.textbox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.textbox1.Modified = false;
@@ -153,7 +152,7 @@
             this.textbox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
             this.textbox1.SelectedText = "";
             this.textbox1.SelectionLength = 0;
-            this.textbox1.SelectionStart = 4;
+            this.textbox1.SelectionStart = 0;
             this.textbox1.ShortcutsEnabled = true;
             this.textbox1.Size = new System.Drawing.Size(260, 37);
             this.textbox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
@@ -189,7 +188,7 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuDataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.bunifuDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.bunifuDataGridView1.ColumnHeadersHeight = 40;
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
             this.bunifuDataGridView1.CurrentTheme.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
@@ -234,9 +233,10 @@
             // 
             this.bunifuLabel1.AllowParentOverrides = false;
             this.bunifuLabel1.AutoEllipsis = false;
+            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(387, 257);
+            this.bunifuLabel1.Location = new System.Drawing.Point(392, 268);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.bunifuLabel1.Size = new System.Drawing.Size(52, 15);
@@ -247,7 +247,7 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(245, 368);
+            this.progressBar1.Location = new System.Drawing.Point(262, 370);
             this.progressBar1.Name = "progressBar1";
             this.progressBar1.Size = new System.Drawing.Size(334, 10);
             this.progressBar1.TabIndex = 14;
@@ -314,7 +314,7 @@
             this.add.IdleIconLeftImage = null;
             this.add.IdleIconRightImage = null;
             this.add.IndicateFocus = false;
-            this.add.Location = new System.Drawing.Point(736, 40);
+            this.add.Location = new System.Drawing.Point(711, 44);
             this.add.Name = "add";
             this.add.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.add.OnDisabledState.BorderRadius = 8;
@@ -355,6 +355,7 @@
             this.add.TextMarginLeft = 0;
             this.add.TextPadding = new System.Windows.Forms.Padding(0);
             this.add.UseDefaultRadiusAndThickness = true;
+            this.add.Click += new System.EventHandler(this.add_Click_1);
             // 
             // New
             // 
