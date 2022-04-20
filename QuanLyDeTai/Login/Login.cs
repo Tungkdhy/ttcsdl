@@ -20,7 +20,7 @@ namespace QuanLyDeTai.Login
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            /*SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
             string userName = UserName.Text;
             string password = Password.Text;
             conn.Open();
@@ -62,13 +62,21 @@ namespace QuanLyDeTai.Login
             catch
             {
                 MessageBox.Show("dang nhap that bai");
-            }
+            }*/
          
         }
 
-        private void UserName_TextChanged(object sender, EventArgs e)
+
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void bunifuLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }
