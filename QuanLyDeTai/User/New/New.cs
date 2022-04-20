@@ -25,7 +25,7 @@ namespace QuanLyDeTai.User.New
         {
             SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
             conn.Open();
-            string query = "select * from BaiBaoKH where MABB in(select MABB from GVVietBB v where v.MGV = '" + maGV + "' )";
+            string query = "exec getAllBBByMGV '"+maGV+"'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             try
             {

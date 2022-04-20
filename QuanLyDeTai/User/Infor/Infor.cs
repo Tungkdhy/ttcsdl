@@ -84,7 +84,7 @@ namespace QuanLyDeTai.User.Infor
             SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
             conn.Open();
             
-            string query = "update GV set Capbac =N'" + Capbac.Text + "', Chucvu=N'"+chucvu.Text+"', MABM = '"+MaBM.Text+"' ";
+            string query = "update GV set Capbac =N'" + Capbac.Text + "', Chucvu=N'"+chucvu.Text+"', MABM = '"+MaBM.Text+"' where MaGv='"+maGV+"'";
             SqlCommand cmd = new SqlCommand(query, conn);
             try
             {
