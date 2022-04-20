@@ -30,7 +30,7 @@ namespace QuanLyDeTai.User.ListResearch
            
             SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
             conn.Open();
-            string query = "select * from DeTaiNCKH where MADT in(select MADT from GVTGDT TGDT where TGDT.MAGV = '"+maGV+"' )";
+            string query = "exec getAllDTByMGV '"+maGV+"'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             try
             {
