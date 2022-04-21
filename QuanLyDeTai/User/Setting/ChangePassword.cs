@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
@@ -14,6 +15,7 @@ namespace QuanLyDeTai.User.Setting
     public partial class ChangePassword : Form
     {
         private static string maGV;
+        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public ChangePassword(string MaGV)
         {
             maGV = MaGV;
@@ -61,7 +63,7 @@ namespace QuanLyDeTai.User.Setting
         }
         private bool CheckPassword()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
             string query = "select Passwords from NGUOIDUNG where MGV ='"+maGV+"'";
@@ -91,7 +93,7 @@ namespace QuanLyDeTai.User.Setting
             {
                 if (ConfirmPassword(mkm.Text.Trim(), nmkm.Text.Trim()))
                 {
-                    SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+                    SqlConnection conn = new SqlConnection(connectionString);
                     conn.Open();
 
                     string query = "update NGUOIDUNG set Passwords ='" + mkm.Text.Trim() + "'";
@@ -109,6 +111,11 @@ namespace QuanLyDeTai.User.Setting
             {
                 MessageBox.Show("Nhap lai mk cu");
             }
+        }
+
+        private void mkc_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

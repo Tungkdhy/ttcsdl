@@ -297,6 +297,7 @@
             this.MaBM.TextPlaceholder = "Enter text";
             this.MaBM.UseSystemPasswordChar = false;
             this.MaBM.WordWrap = true;
+
             // 
             // gioitinh
             // 
@@ -445,7 +446,7 @@
             this.MaKhoa.TextPlaceholder = "Enter text";
             this.MaKhoa.UseSystemPasswordChar = false;
             this.MaKhoa.WordWrap = true;
-            // 
+
             // chucvu
             // 
             this.chucvu.AcceptsReturn = false;
@@ -519,6 +520,7 @@
             this.chucvu.TextPlaceholder = "Enter text";
             this.chucvu.UseSystemPasswordChar = false;
             this.chucvu.WordWrap = true;
+
             // 
             // Capbac
             // 
@@ -593,6 +595,7 @@
             this.Capbac.TextPlaceholder = "Enter text";
             this.Capbac.UseSystemPasswordChar = false;
             this.Capbac.WordWrap = true;
+
             // 
             // ngaysinh
             // 
@@ -667,6 +670,7 @@
             this.ngaysinh.TextPlaceholder = "Enter text";
             this.ngaysinh.UseSystemPasswordChar = false;
             this.ngaysinh.WordWrap = true;
+
             // 
             // Save
             // 
@@ -708,7 +712,7 @@
             this.Save.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.Save.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.Save.IconSize = 25;
-            this.Save.IdleBorderColor = System.Drawing.Color.Lime;
+            this.Save.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.Save.IdleBorderRadius = 1;
             this.Save.IdleBorderThickness = 1;
             this.Save.IdleFillColor = System.Drawing.Color.Lime;
@@ -725,15 +729,15 @@
             this.Save.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.Save.OnDisabledState.IconLeftImage = null;
             this.Save.OnDisabledState.IconRightImage = null;
-            this.Save.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Save.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Save.onHoverState.BorderRadius = 1;
             this.Save.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Save.onHoverState.BorderThickness = 1;
-            this.Save.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.Save.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Save.onHoverState.ForeColor = System.Drawing.Color.White;
             this.Save.onHoverState.IconLeftImage = null;
             this.Save.onHoverState.IconRightImage = null;
-            this.Save.OnIdleState.BorderColor = System.Drawing.Color.Lime;
+            this.Save.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
             this.Save.OnIdleState.BorderRadius = 1;
             this.Save.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Save.OnIdleState.BorderThickness = 1;
@@ -798,7 +802,7 @@
             this.Edit.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.Edit.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.Edit.IconSize = 25;
-            this.Edit.IdleBorderColor = System.Drawing.Color.Orange;
+            this.Edit.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.Edit.IdleBorderRadius = 1;
             this.Edit.IdleBorderThickness = 1;
             this.Edit.IdleFillColor = System.Drawing.Color.Orange;
@@ -815,15 +819,15 @@
             this.Edit.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.Edit.OnDisabledState.IconLeftImage = null;
             this.Edit.OnDisabledState.IconRightImage = null;
-            this.Edit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Edit.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Edit.onHoverState.BorderRadius = 1;
             this.Edit.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Edit.onHoverState.BorderThickness = 1;
-            this.Edit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.Edit.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.Edit.onHoverState.ForeColor = System.Drawing.Color.White;
             this.Edit.onHoverState.IconLeftImage = null;
             this.Edit.onHoverState.IconRightImage = null;
-            this.Edit.OnIdleState.BorderColor = System.Drawing.Color.Orange;
+            this.Edit.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
             this.Edit.OnIdleState.BorderRadius = 1;
             this.Edit.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Edit.OnIdleState.BorderThickness = 1;
@@ -888,7 +892,7 @@
             this.huy.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.huy.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.huy.IconSize = 25;
-            this.huy.IdleBorderColor = System.Drawing.Color.Red;
+            this.huy.IdleBorderColor = System.Drawing.Color.DodgerBlue;
             this.huy.IdleBorderRadius = 1;
             this.huy.IdleBorderThickness = 1;
             this.huy.IdleFillColor = System.Drawing.Color.Red;
@@ -905,15 +909,15 @@
             this.huy.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
             this.huy.OnDisabledState.IconLeftImage = null;
             this.huy.OnDisabledState.IconRightImage = null;
-            this.huy.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.huy.onHoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.huy.onHoverState.BorderRadius = 1;
             this.huy.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.huy.onHoverState.BorderThickness = 1;
-            this.huy.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.huy.onHoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
             this.huy.onHoverState.ForeColor = System.Drawing.Color.White;
             this.huy.onHoverState.IconLeftImage = null;
             this.huy.onHoverState.IconRightImage = null;
-            this.huy.OnIdleState.BorderColor = System.Drawing.Color.Red;
+            this.huy.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
             this.huy.OnIdleState.BorderRadius = 1;
             this.huy.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.huy.OnIdleState.BorderThickness = 1;
