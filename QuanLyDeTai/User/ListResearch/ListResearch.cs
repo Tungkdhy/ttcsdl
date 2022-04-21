@@ -44,43 +44,6 @@ namespace QuanLyDeTai.User.ListResearch
                 MessageBox.Show("Ket noi that bai");
             }
         } 
-
-      
-      
-        private void Add_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
-
-            string query = "update NhanVien set Ten ='" + txtName.Text + "' , MaNV ='" + txtID.Text + " ',Luong='" + txt.Text + "', Tuoi='18'";
-           
-            try
-            {
-                conn.Open();
-                SqlCommand command = new SqlCommand(query, conn);
-                command.ExecuteNonQuery();
-                MessageBox.Show("Update done");
-            }
-            catch
-            {
-                MessageBox.Show("Update faild");
-            }
-        }
-
-        private void txtName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtID_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void txtName_TextChanged_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void Loading_Tick(object sender, EventArgs e)
         {
             progressBar1.Hide();
@@ -91,6 +54,11 @@ namespace QuanLyDeTai.User.ListResearch
                 label1.Hide();
                 getList();
             }
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

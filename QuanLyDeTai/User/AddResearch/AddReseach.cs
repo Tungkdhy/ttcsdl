@@ -23,7 +23,7 @@ namespace QuanLyDeTai.User.AddResearch
         private void DK_Click(object sender, EventArgs e)
         {
             SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
-            string query = "exec addDTNCGV '"+MDT.Text+"', '"+Ten.Text+"', '"+CN.Text+"', '"+cap.Text+"', '"+SQTL.Text+"', '"+NBD.Text+"','"+NGT.Text+"','"+TT.Text+"','"+SP.Text+ "','" +MP.Text+ "','" +BM.Text+"' ";
+            string query = "exec addDTNCGV '"+MDT.Text+"', '"+Ten.Text+"', '"+CN.Text+"', '"+cap.Text+"', '"+SQTL.Text+"', '"+NBD.Text+"','"+NGT.Text+"','"+SP.Text+ "','" +MP.Text+ "','" +BM.Text+"' ";
             conn.Open();
             Console.WriteLine(query);
             SqlCommand cmd = new SqlCommand(query, conn);
