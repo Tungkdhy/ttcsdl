@@ -20,6 +20,7 @@ namespace QuanLyDeTai.User.New
             InitializeComponent();
             timer1.Start();
             no.Hide();
+            comboBoxDetail.Enabled = false;
         }
         private void getListNew()
         {
@@ -79,6 +80,7 @@ namespace QuanLyDeTai.User.New
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             comboBoxDetail.Text = "";
+            comboBoxDetail.Enabled = true;
 
             comboBoxDetail.Items.Clear();
             //var categorySearch = "ChuyenNganh";

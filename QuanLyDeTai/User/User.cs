@@ -65,18 +65,9 @@ namespace QuanLyDeTai.User
             childForm.BringToFront();
             childForm.Show();
         }
-        private void List_Click(object sender, EventArgs e)
-        {
+      
 
-            openChilForm(new ListResearch.ListResearch(MaGV));
-            header.Text = "Danh sách đề tài tham gia";
-        }
-
-        private void Infor_Click(object sender, EventArgs e)
-        {
-            openChilForm(new Infor.Infor(MaGV));
-            header.Text = "Thông tin giáo viên";
-        }
+     
         private void ChangePassword_Click(object sender, EventArgs e)
         {
             openChilForm(new Setting.ChangePassword(MaGV));
@@ -95,21 +86,38 @@ namespace QuanLyDeTai.User
             login.Show();
         }
 
-        private void New_Click(object sender, EventArgs e)
+      
+
+      
+
+        
+        private void Info_Click(object sender, EventArgs e)
         {
-            openChilForm(new New.New(MaGV));
-            header.Text = "Danh sách các bài báo";
+            openChilForm(new Infor.Infor(MaGV));
+            header.Text = "Thông tin giáo viên";
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void list_Click_1(object sender, EventArgs e)
         {
-
+            openChilForm(new ListResearch.ListResearch(MaGV));
+            header.Text = "Danh sách đề tài tham gia";
         }
 
-        private void Dangky_Click(object sender, EventArgs e)
+        private void caidat_Click(object sender, EventArgs e)
+        {
+            showSubMenu(SubMenu);
+        }
+
+        private void dk_Click(object sender, EventArgs e)
         {
             openChilForm(new AddResearch.AddReseach(MaGV));
             header.Text = "Đăng ký đề tài";
+        }
+
+        private void bb_Click(object sender, EventArgs e)
+        {
+            openChilForm(new New.New(MaGV));
+            header.Text = "Danh sách các bài báo";
         }
     }
 }

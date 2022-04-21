@@ -72,3 +72,6 @@ C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.exe
 C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.pdb
 C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
 C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\bin\Debug\Bunifu.UI.WinForms.1.5.3.dll
+C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\bin\Debug\Bunifu.UI.WinForms.BunifuPanel.dll
+C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\bin\Debug\FontAwesome.Sharp.dll
