@@ -147,6 +147,7 @@
             this.bunifuDataGridView1.Size = new System.Drawing.Size(1168, 331);
             this.bunifuDataGridView1.TabIndex = 0;
             this.bunifuDataGridView1.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
+            this.bunifuDataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.bunifuDataGridView1_CellContentClick);
             // 
             // Loading
             // 
@@ -225,6 +226,7 @@
             this.update.TextPlaceholder = "Cập nhập tiến độ";
             this.update.UseSystemPasswordChar = false;
             this.update.WordWrap = true;
+            this.update.TextChanged += new System.EventHandler(this.update_TextChanged);
             // 
             // btnUpdate
             // 

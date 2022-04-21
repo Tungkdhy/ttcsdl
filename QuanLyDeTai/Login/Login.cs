@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
@@ -12,7 +13,9 @@ using System.Windows.Forms;
 namespace QuanLyDeTai.Login
 {
     public partial class Login : Form
+
     {
+        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public Login()
         {
             InitializeComponent();
@@ -80,7 +83,7 @@ namespace QuanLyDeTai.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             string userName = UserName.Text;
             string password = Password.Text;
             conn.Open();
@@ -123,6 +126,11 @@ namespace QuanLyDeTai.Login
             {
                 MessageBox.Show("dang nhap that bai");
             }
+        }
+
+        private void Password_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

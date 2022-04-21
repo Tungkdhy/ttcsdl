@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -14,6 +15,7 @@ namespace QuanLyDeTai.User.New
     public partial class New : Form
     {
         private static string maGV;
+        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public New(string MaGv)
         {
             maGV = MaGv;
@@ -24,7 +26,7 @@ namespace QuanLyDeTai.User.New
         }
         private void getListNew()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "exec getAllBBByMGV '"+maGV+"'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
@@ -86,7 +88,7 @@ namespace QuanLyDeTai.User.New
             //var categorySearch = "ChuyenNganh";
             
             Console.WriteLine(maGV);
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "";
             if (comboBox1.Text == "ChuyenNganh")
@@ -122,7 +124,7 @@ namespace QuanLyDeTai.User.New
 
         private void comboBoxDetail_SelectedIndexChanged(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "";
             if(comboBox1.Text == "ChuyenNganh")
@@ -151,7 +153,7 @@ namespace QuanLyDeTai.User.New
         private void textBox1_TextChanged_1(object sender, EventArgs e)
         {
             string searchValue = textbox1.Text.Trim();
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "";
             if (comboBox1.Text == "TapChi")
@@ -209,7 +211,7 @@ namespace QuanLyDeTai.User.New
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "select * from BaiBaoKH where MABB in(select MABB from GVVietBB v where v.MGV = '" + maGV + "' ) and (TenBaiBao like '%"+ textbox1 .Text.Trim()+ "%') ";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
@@ -222,7 +224,7 @@ namespace QuanLyDeTai.User.New
         private void textbox1_TextChanged_2(object sender, EventArgs e)
         {
             string searchValue = textbox1.Text.Trim();
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "";
             if (comboBox1.Text == "TapChi")

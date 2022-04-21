@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Configuration;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,7 @@ namespace QuanLyDeTai.User.Infor
     public partial class Infor : Form
     {
         public static string maGV;
+        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public Infor(string MaGv)
         {
             maGV = MaGv;
@@ -23,7 +25,8 @@ namespace QuanLyDeTai.User.Infor
         }
         private void getInfor()
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            //SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
             string query = "select * from GV where MaGv='"+maGV+"'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
@@ -76,7 +79,7 @@ namespace QuanLyDeTai.User.Infor
 
         private void Save_Click_1(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
             string query = "update GV set Capbac =N'" + Capbac.Text + "', Chucvu=N'" + chucvu.Text + "', MABM = '" + MaBM.Text + "' where MaGv='" + maGV + "'";
