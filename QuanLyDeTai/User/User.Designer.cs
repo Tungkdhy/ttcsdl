@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges11 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges12 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges13 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges14 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges15 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges5 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.panel1 = new System.Windows.Forms.Panel();
             this.Info = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.dk = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -46,7 +46,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.bunifuPictureBox1 = new Bunifu.UI.WinForms.BunifuPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panelChildForm = new System.Windows.Forms.Panel();
             this.header = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,7 +54,6 @@
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelChildForm.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,7 +61,7 @@
             // 
             this.panel1.AutoScroll = true;
             this.panel1.AutoSize = true;
-            this.panel1.BackColor = System.Drawing.Color.DeepSkyBlue;
+            this.panel1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.panel1.Controls.Add(this.Info);
             this.panel1.Controls.Add(this.dk);
             this.panel1.Controls.Add(this.caidat);
@@ -88,7 +86,7 @@
             this.Info.AutoSizeLeftIcon = true;
             this.Info.AutoSizeRightIcon = true;
             this.Info.BackColor = System.Drawing.Color.Transparent;
-            this.Info.BackColor1 = System.Drawing.Color.DeepSkyBlue;
+            this.Info.BackColor1 = System.Drawing.Color.MediumSlateBlue;
             this.Info.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("Info.BackgroundImage")));
             this.Info.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Info.ButtonText = "Thông tin giáo viên";
@@ -96,11 +94,11 @@
             this.Info.ColorContrastOnClick = 45;
             this.Info.ColorContrastOnHover = 45;
             this.Info.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges11.BottomLeft = true;
-            borderEdges11.BottomRight = true;
-            borderEdges11.TopLeft = true;
-            borderEdges11.TopRight = true;
-            this.Info.CustomizableEdges = borderEdges11;
+            borderEdges1.BottomLeft = true;
+            borderEdges1.BottomRight = true;
+            borderEdges1.TopLeft = true;
+            borderEdges1.TopRight = true;
+            this.Info.CustomizableEdges = borderEdges1;
             this.Info.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Info.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Info.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -117,10 +115,10 @@
             this.Info.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.Info.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.Info.IconSize = 25;
-            this.Info.IdleBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.Info.IdleBorderColor = System.Drawing.Color.MediumSlateBlue;
             this.Info.IdleBorderRadius = 1;
             this.Info.IdleBorderThickness = 1;
-            this.Info.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.Info.IdleFillColor = System.Drawing.Color.MediumSlateBlue;
             this.Info.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("Info.IdleIconLeftImage")));
             this.Info.IdleIconRightImage = null;
             this.Info.IndicateFocus = false;
@@ -142,11 +140,11 @@
             this.Info.onHoverState.ForeColor = System.Drawing.Color.White;
             this.Info.onHoverState.IconLeftImage = null;
             this.Info.onHoverState.IconRightImage = null;
-            this.Info.OnIdleState.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.Info.OnIdleState.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.Info.OnIdleState.BorderRadius = 1;
             this.Info.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.Info.OnIdleState.BorderThickness = 1;
-            this.Info.OnIdleState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.Info.OnIdleState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.Info.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.Info.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("Info.OnIdleState.IconLeftImage")));
             this.Info.OnIdleState.IconRightImage = null;
@@ -178,7 +176,7 @@
             this.dk.AutoSizeLeftIcon = true;
             this.dk.AutoSizeRightIcon = true;
             this.dk.BackColor = System.Drawing.Color.Transparent;
-            this.dk.BackColor1 = System.Drawing.Color.DeepSkyBlue;
+            this.dk.BackColor1 = System.Drawing.Color.MediumSlateBlue;
             this.dk.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("dk.BackgroundImage")));
             this.dk.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.dk.ButtonText = "Đăng ký đề tài";
@@ -186,11 +184,11 @@
             this.dk.ColorContrastOnClick = 45;
             this.dk.ColorContrastOnHover = 45;
             this.dk.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges12.BottomLeft = true;
-            borderEdges12.BottomRight = true;
-            borderEdges12.TopLeft = true;
-            borderEdges12.TopRight = true;
-            this.dk.CustomizableEdges = borderEdges12;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.dk.CustomizableEdges = borderEdges2;
             this.dk.DialogResult = System.Windows.Forms.DialogResult.None;
             this.dk.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.dk.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -207,10 +205,10 @@
             this.dk.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.dk.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.dk.IconSize = 25;
-            this.dk.IdleBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.dk.IdleBorderColor = System.Drawing.Color.MediumSlateBlue;
             this.dk.IdleBorderRadius = 1;
             this.dk.IdleBorderThickness = 1;
-            this.dk.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.dk.IdleFillColor = System.Drawing.Color.MediumSlateBlue;
             this.dk.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("dk.IdleIconLeftImage")));
             this.dk.IdleIconRightImage = null;
             this.dk.IndicateFocus = false;
@@ -232,11 +230,11 @@
             this.dk.onHoverState.ForeColor = System.Drawing.Color.White;
             this.dk.onHoverState.IconLeftImage = null;
             this.dk.onHoverState.IconRightImage = null;
-            this.dk.OnIdleState.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.dk.OnIdleState.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.dk.OnIdleState.BorderRadius = 1;
             this.dk.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.dk.OnIdleState.BorderThickness = 1;
-            this.dk.OnIdleState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.dk.OnIdleState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.dk.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.dk.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("dk.OnIdleState.IconLeftImage")));
             this.dk.OnIdleState.IconRightImage = null;
@@ -268,7 +266,7 @@
             this.caidat.AutoSizeLeftIcon = true;
             this.caidat.AutoSizeRightIcon = true;
             this.caidat.BackColor = System.Drawing.Color.Transparent;
-            this.caidat.BackColor1 = System.Drawing.Color.DeepSkyBlue;
+            this.caidat.BackColor1 = System.Drawing.Color.MediumSlateBlue;
             this.caidat.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("caidat.BackgroundImage")));
             this.caidat.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.caidat.ButtonText = "Cài đặt";
@@ -276,11 +274,11 @@
             this.caidat.ColorContrastOnClick = 45;
             this.caidat.ColorContrastOnHover = 45;
             this.caidat.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges13.BottomLeft = true;
-            borderEdges13.BottomRight = true;
-            borderEdges13.TopLeft = true;
-            borderEdges13.TopRight = true;
-            this.caidat.CustomizableEdges = borderEdges13;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.caidat.CustomizableEdges = borderEdges3;
             this.caidat.DialogResult = System.Windows.Forms.DialogResult.None;
             this.caidat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.caidat.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -297,10 +295,10 @@
             this.caidat.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.caidat.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.caidat.IconSize = 25;
-            this.caidat.IdleBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.caidat.IdleBorderColor = System.Drawing.Color.MediumSlateBlue;
             this.caidat.IdleBorderRadius = 1;
             this.caidat.IdleBorderThickness = 1;
-            this.caidat.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.caidat.IdleFillColor = System.Drawing.Color.MediumSlateBlue;
             this.caidat.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("caidat.IdleIconLeftImage")));
             this.caidat.IdleIconRightImage = null;
             this.caidat.IndicateFocus = false;
@@ -322,11 +320,11 @@
             this.caidat.onHoverState.ForeColor = System.Drawing.Color.White;
             this.caidat.onHoverState.IconLeftImage = null;
             this.caidat.onHoverState.IconRightImage = null;
-            this.caidat.OnIdleState.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.caidat.OnIdleState.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.caidat.OnIdleState.BorderRadius = 1;
             this.caidat.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.caidat.OnIdleState.BorderThickness = 1;
-            this.caidat.OnIdleState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.caidat.OnIdleState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.caidat.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.caidat.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("caidat.OnIdleState.IconLeftImage")));
             this.caidat.OnIdleState.IconRightImage = null;
@@ -358,7 +356,7 @@
             this.bb.AutoSizeLeftIcon = true;
             this.bb.AutoSizeRightIcon = true;
             this.bb.BackColor = System.Drawing.Color.Transparent;
-            this.bb.BackColor1 = System.Drawing.Color.DeepSkyBlue;
+            this.bb.BackColor1 = System.Drawing.Color.MediumSlateBlue;
             this.bb.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bb.BackgroundImage")));
             this.bb.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bb.ButtonText = "Bài báo khoa học";
@@ -366,11 +364,11 @@
             this.bb.ColorContrastOnClick = 45;
             this.bb.ColorContrastOnHover = 45;
             this.bb.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges14.BottomLeft = true;
-            borderEdges14.BottomRight = true;
-            borderEdges14.TopLeft = true;
-            borderEdges14.TopRight = true;
-            this.bb.CustomizableEdges = borderEdges14;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.bb.CustomizableEdges = borderEdges4;
             this.bb.DialogResult = System.Windows.Forms.DialogResult.None;
             this.bb.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.bb.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -387,10 +385,10 @@
             this.bb.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.bb.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.bb.IconSize = 25;
-            this.bb.IdleBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.bb.IdleBorderColor = System.Drawing.Color.MediumSlateBlue;
             this.bb.IdleBorderRadius = 1;
             this.bb.IdleBorderThickness = 1;
-            this.bb.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.bb.IdleFillColor = System.Drawing.Color.MediumSlateBlue;
             this.bb.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("bb.IdleIconLeftImage")));
             this.bb.IdleIconRightImage = null;
             this.bb.IndicateFocus = false;
@@ -412,11 +410,11 @@
             this.bb.onHoverState.ForeColor = System.Drawing.Color.White;
             this.bb.onHoverState.IconLeftImage = null;
             this.bb.onHoverState.IconRightImage = null;
-            this.bb.OnIdleState.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.bb.OnIdleState.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.bb.OnIdleState.BorderRadius = 1;
             this.bb.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.bb.OnIdleState.BorderThickness = 1;
-            this.bb.OnIdleState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.bb.OnIdleState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.bb.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.bb.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("bb.OnIdleState.IconLeftImage")));
             this.bb.OnIdleState.IconRightImage = null;
@@ -448,7 +446,7 @@
             this.list.AutoSizeLeftIcon = true;
             this.list.AutoSizeRightIcon = true;
             this.list.BackColor = System.Drawing.Color.Transparent;
-            this.list.BackColor1 = System.Drawing.Color.DeepSkyBlue;
+            this.list.BackColor1 = System.Drawing.Color.MediumSlateBlue;
             this.list.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("list.BackgroundImage")));
             this.list.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.list.ButtonText = "Danh sách đề tài";
@@ -456,11 +454,11 @@
             this.list.ColorContrastOnClick = 45;
             this.list.ColorContrastOnHover = 45;
             this.list.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges15.BottomLeft = true;
-            borderEdges15.BottomRight = true;
-            borderEdges15.TopLeft = true;
-            borderEdges15.TopRight = true;
-            this.list.CustomizableEdges = borderEdges15;
+            borderEdges5.BottomLeft = true;
+            borderEdges5.BottomRight = true;
+            borderEdges5.TopLeft = true;
+            borderEdges5.TopRight = true;
+            this.list.CustomizableEdges = borderEdges5;
             this.list.DialogResult = System.Windows.Forms.DialogResult.None;
             this.list.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.list.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -477,10 +475,10 @@
             this.list.IconRightCursor = System.Windows.Forms.Cursors.Default;
             this.list.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
             this.list.IconSize = 25;
-            this.list.IdleBorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.list.IdleBorderColor = System.Drawing.Color.MediumSlateBlue;
             this.list.IdleBorderRadius = 1;
             this.list.IdleBorderThickness = 1;
-            this.list.IdleFillColor = System.Drawing.Color.DeepSkyBlue;
+            this.list.IdleFillColor = System.Drawing.Color.MediumSlateBlue;
             this.list.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("list.IdleIconLeftImage")));
             this.list.IdleIconRightImage = null;
             this.list.IndicateFocus = false;
@@ -502,11 +500,11 @@
             this.list.onHoverState.ForeColor = System.Drawing.Color.White;
             this.list.onHoverState.IconLeftImage = null;
             this.list.onHoverState.IconRightImage = null;
-            this.list.OnIdleState.BorderColor = System.Drawing.Color.DeepSkyBlue;
+            this.list.OnIdleState.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.list.OnIdleState.BorderRadius = 1;
             this.list.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
             this.list.OnIdleState.BorderThickness = 1;
-            this.list.OnIdleState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.list.OnIdleState.FillColor = System.Drawing.Color.MediumSlateBlue;
             this.list.OnIdleState.ForeColor = System.Drawing.Color.White;
             this.list.OnIdleState.IconLeftImage = ((System.Drawing.Image)(resources.GetObject("list.OnIdleState.IconLeftImage")));
             this.list.OnIdleState.IconRightImage = null;
@@ -599,7 +597,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.pictureBox1.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Top;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
@@ -608,19 +606,9 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.PaleGreen;
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(0, 436);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1031, 73);
-            this.panel3.TabIndex = 0;
-            // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.LightGreen;
-            this.panelChildForm.Controls.Add(this.panel3);
+            this.panelChildForm.BackColor = System.Drawing.Color.Transparent;
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelChildForm.ForeColor = System.Drawing.SystemColors.ButtonShadow;
             this.panelChildForm.Location = new System.Drawing.Point(258, 86);
@@ -646,7 +634,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.PaleGreen;
+            this.panel4.BackColor = System.Drawing.Color.Transparent;
             this.panel4.Controls.Add(this.header);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(258, 0);
@@ -672,7 +660,6 @@
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelChildForm.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -693,7 +680,6 @@
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton caidat;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton bb;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton list;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panelChildForm;
         private System.Windows.Forms.Label header;
         private System.Windows.Forms.Panel panel4;

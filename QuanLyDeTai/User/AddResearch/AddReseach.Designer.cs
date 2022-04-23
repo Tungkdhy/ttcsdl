@@ -1023,6 +1023,7 @@
             this.Controls.Add(this.Ten);
             this.Name = "AddReseach";
             this.Text = "AddReseach";
+            this.Load += new System.EventHandler(this.AddReseach_Load);
             this.ResumeLayout(false);
 
         }

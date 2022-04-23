@@ -7,7 +7,6 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data.SqlClient;
 using System.Windows.Forms;
 
 namespace QuanLyDeTai.User.Infor
@@ -15,7 +14,6 @@ namespace QuanLyDeTai.User.Infor
     public partial class Infor : Form
     {
         public static string maGV;
-        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public Infor(string MaGv)
         {
             maGV = MaGv;
@@ -25,28 +23,18 @@ namespace QuanLyDeTai.User.Infor
         }
         private void getInfor()
         {
-            //SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
             string query = "select * from GV where MaGv='"+maGV+"'";
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            try
-            {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                hoten.Text = dt.Rows[0][1].ToString().Trim();
-                gioitinh.Text = dt.Rows[0][3].ToString().Trim();
-                ngaysinh.Text = dt.Rows[0][2].ToString().Split(' ')[0];
-                MaBM.Text = dt.Rows[0][7].ToString().Trim();
-                MaKhoa.Text = dt.Rows[0][8].ToString().Trim();
-                Capbac.Text = dt.Rows[0][4].ToString().Trim();
-                chucvu.Text = dt.Rows[0][5].ToString().Trim();
+            DataTable dt = ConnectDB.Connected.getData(query);
+            hoten.Text = dt.Rows[0][1].ToString().Trim();
+            gioitinh.Text = dt.Rows[0][3].ToString().Trim();
+            ngaysinh.Text = dt.Rows[0][2].ToString().Split(' ')[0];
+            MaBM.Text = dt.Rows[0][7].ToString().Trim();
+            MaKhoa.Text = dt.Rows[0][8].ToString().Trim();
+            Capbac.Text = dt.Rows[0][4].ToString().Trim();
+            chucvu.Text = dt.Rows[0][5].ToString().Trim();
 
-            }
-            catch
-            {
-                MessageBox.Show("Fail");
-            }
+      
+            
         }
         private void enable()
         {
@@ -79,23 +67,11 @@ namespace QuanLyDeTai.User.Infor
 
         private void Save_Click_1(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
+         
 
             string query = "update GV set Capbac =N'" + Capbac.Text + "', Chucvu=N'" + chucvu.Text + "', MABM = '" + MaBM.Text + "' where MaGv='" + maGV + "'";
-            SqlCommand cmd = new SqlCommand(query, conn);
-            try
-            {
-                cmd.ExecuteNonQuery();
-                conn.Close();
-                MessageBox.Show("Sửa thành công");
-                getInfor();
-                enable();
-            }
-            catch
-            {
-                MessageBox.Show("Faild");
-            }
+            MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Sửa"));
+            enable();
         }
 
         private void huy_Click_1(object sender, EventArgs e)

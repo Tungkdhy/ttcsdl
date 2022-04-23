@@ -15,7 +15,6 @@ namespace QuanLyDeTai.User.AddResearch
     public partial class AddReseach : Form
     {
         public static string maGV;
-        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public AddReseach(string MaGV)
         {
             maGV = MaGV;
@@ -24,22 +23,14 @@ namespace QuanLyDeTai.User.AddResearch
        
         private void DK_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
             string query = "exec addDTNCGV '"+MDT.Text+"', '"+Ten.Text+"', '"+CN.Text+"', '"+cap.Text+"', '"+SQTL.Text+"', '"+NBD.Text+"','"+NGT.Text+"','"+SP.Text+ "','" +MP.Text+ "','" +BM.Text+"' ";
-            conn.Open();
-            Console.WriteLine(query);
-            SqlCommand cmd = new SqlCommand(query, conn);
-            try
-            {
-               
-                cmd.ExecuteNonQuery();
-                MessageBox.Show("Thêm mới thành công");
-                conn.Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Faild");
-            }
+            string actions = "Thêm";
+            MessageBox.Show(ConnectDB.Connected.ChangeData(query, actions));
+
+        }
+
+        private void AddReseach_Load(object sender, EventArgs e)
+        {
 
         }
     }

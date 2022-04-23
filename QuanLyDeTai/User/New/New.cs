@@ -26,22 +26,9 @@ namespace QuanLyDeTai.User.New
         }
         private void getListNew()
         {
-            SqlConnection conn = new SqlConnection(connectionString);
-            conn.Open();
+            
             string query = "exec getAllBBByMGV '"+maGV+"'";
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            try
-            {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                conn.Close();
-                bunifuDataGridView1.DataSource = dt;
-               
-            }
-            catch
-            {
-                MessageBox.Show("Ket noi that bai");
-            }
+            bunifuDataGridView1.DataSource = ConnectDB.Connected.getData(query);
         }
         int DropDownWidth(ComboBox myCombo)
         {
@@ -136,18 +123,11 @@ namespace QuanLyDeTai.User.New
             {
                 query = "select * from BaiBaoKH where MABB in (select MABB from GVVietBB v where v.MGV = '" + maGV + "') and TapChi='" + comboBoxDetail.Text + "'";
             }
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            try
-            {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                bunifuDataGridView1.DataSource = dt;
+          
+                bunifuDataGridView1.DataSource = ConnectDB.Connected.getData(query);
 
-            }
-            catch
-            {
-                MessageBox.Show("Ket noi that bai");
-            }
+  
+           
         }
 
         private void textBox1_TextChanged_1(object sender, EventArgs e)

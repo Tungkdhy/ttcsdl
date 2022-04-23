@@ -354,7 +354,7 @@
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "ChangePassword";
             this.Text = "ChangePassword";
-            this.Load += new System.EventHandler(this.ChangePassword_Load);
+
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

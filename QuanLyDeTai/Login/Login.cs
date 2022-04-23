@@ -107,11 +107,11 @@ namespace QuanLyDeTai.Login
                         Gv.Show();
                         this.Hide();
                     }
-                    if (MaKhoa != "")
+                    if (MP!="")
                     {
-                        Form MK = new Admin.Admin();
+                        Form PKHCN = new PKHCN.PKHCN(MP);
                         MessageBox.Show("Đăng nhập thành công");
-                        MK.Show();
+                        PKHCN.Show();
                         this.Hide();
                     }
                 }

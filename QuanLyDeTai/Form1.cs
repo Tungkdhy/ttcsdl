@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
@@ -13,34 +14,29 @@ namespace QuanLyDeTai
 {
     public partial class Form1 : Form
     {
+        private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
         public Form1()
         {
             InitializeComponent();
-            getList();
+            
         }
-        private void getList()
-        {
 
-            SqlConnection conn = new SqlConnection(@"Data Source=MSI\MSSQLSERVER01;Initial Catalog=QUANLY;Integrated Security=True");
+
+       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
-            string query = "select * from DeTaiNCKH where MADT in(select MADT from GVTGDT TGDT where TGDT.MAGV = 'GV01' )";
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            try
-            {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                conn.Close();
-                data.DataSource = dt;
-            }
-            catch
-            {
-                MessageBox.Show("Ket noi that bai");
-            }
-        }
-
-        private void data_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            string query = "select count(NS) as 'Tong', YEAR(NS) AS Year from GV group by YEAR(NS)";
+            SqlDataAdapter d = new SqlDataAdapter(query, conn);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            MessageBox.Show(dt.Rows[0][1].ToString());
+            chart1.DataSource = dt;
+            chart1.Series["SoGv"].YValueMembers = "Tong";
+            chart1.Series["SoGv"].XValueMember = "Year";
+            chart1.Titles.Add("Salary Chart");
+            conn.Close();
         }
     }
 }
