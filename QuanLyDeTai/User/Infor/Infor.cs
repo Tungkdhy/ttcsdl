@@ -72,6 +72,10 @@ namespace QuanLyDeTai.User.Infor
             string query = "update GV set Capbac =N'" + Capbac.Text + "', Chucvu=N'" + chucvu.Text + "', MABM = '" + MaBM.Text + "' where MaGv='" + maGV + "'";
             MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Sửa"));
             enable();
+
+
+
+
         }
 
         private void huy_Click_1(object sender, EventArgs e)
