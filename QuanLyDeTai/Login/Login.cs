@@ -108,7 +108,7 @@ namespace QuanLyDeTai.Login
                     }
                     if (MP!="")
                     {
-                        Form PKHCN = new PKHCN.PKHCN(MP);
+                        Form PKHCN = new PKHCN.PKHCN();
                         MessageBox.Show("Đăng nhập thành công");
                         PKHCN.Show();
                         this.Hide();
