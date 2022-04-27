@@ -87,7 +87,7 @@ namespace QuanLyDeTai.Login
             string userName = UserName.Text;
             string password = Password.Text;
             conn.Open();
-            string query = "select * from NGUOIDUNG where UserName = '" + userName + "' and Passwords = '" + password + "'";
+            string query = "select * from DANGNHAP where UserName = '" + userName + "' and Passwords = '" + password + "'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             try
             {
