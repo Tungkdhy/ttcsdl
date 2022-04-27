@@ -46,14 +46,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.btnTk = new System.Windows.Forms.Button();
+            this.btnAddTk = new System.Windows.Forms.Button();
             this.btnHd = new System.Windows.Forms.Button();
-            this.btnAddTK = new System.Windows.Forms.Button();
+            this.btnTK = new System.Windows.Forms.Button();
             this.btnKhoa = new System.Windows.Forms.Button();
             this.btnQdt = new System.Windows.Forms.Button();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.panel = new System.Windows.Forms.Panel();
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
+            this.button1 = new System.Windows.Forms.Button();
             this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.MenuVertical.SuspendLayout();
@@ -137,9 +138,9 @@
             this.MenuVertical.Controls.Add(this.lbluser);
             this.MenuVertical.Controls.Add(this.pictureBox2);
             this.MenuVertical.Controls.Add(this.lblusuario);
-            this.MenuVertical.Controls.Add(this.btnTk);
+            this.MenuVertical.Controls.Add(this.btnAddTk);
             this.MenuVertical.Controls.Add(this.btnHd);
-            this.MenuVertical.Controls.Add(this.btnAddTK);
+            this.MenuVertical.Controls.Add(this.btnTK);
             this.MenuVertical.Controls.Add(this.btnKhoa);
             this.MenuVertical.Controls.Add(this.btnQdt);
             this.MenuVertical.Controls.Add(this.btnlogoInicio);
@@ -157,7 +158,7 @@
             this.panel1.Controls.Add(this.btnSetting);
             this.bunifuTransition1.SetDecoration(this.panel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 489);
+            this.panel1.Location = new System.Drawing.Point(0, 539);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 150);
             this.panel1.TabIndex = 22;
@@ -234,13 +235,14 @@
             // 
             // TkSubMenu
             // 
+            this.TkSubMenu.Controls.Add(this.button1);
             this.TkSubMenu.Controls.Add(this.button2);
             this.TkSubMenu.Controls.Add(this.button3);
             this.bunifuTransition1.SetDecoration(this.TkSubMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.TkSubMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.TkSubMenu.Location = new System.Drawing.Point(0, 389);
             this.TkSubMenu.Name = "TkSubMenu";
-            this.TkSubMenu.Size = new System.Drawing.Size(250, 100);
+            this.TkSubMenu.Size = new System.Drawing.Size(250, 150);
             this.TkSubMenu.TabIndex = 22;
             // 
             // button2
@@ -293,26 +295,26 @@
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
             // 
-            // btnTk
+            // btnAddTk
             // 
-            this.bunifuTransition1.SetDecoration(this.btnTk, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnTk.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnTk.FlatAppearance.BorderSize = 0;
-            this.btnTk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnTk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTk.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnTk.ForeColor = System.Drawing.Color.White;
-            this.btnTk.Image = ((System.Drawing.Image)(resources.GetObject("btnTk.Image")));
-            this.btnTk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTk.Location = new System.Drawing.Point(0, 339);
-            this.btnTk.Name = "btnTk";
-            this.btnTk.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnTk.Size = new System.Drawing.Size(250, 50);
-            this.btnTk.TabIndex = 5;
-            this.btnTk.Text = "                  Thống kê";
-            this.btnTk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTk.UseVisualStyleBackColor = true;
-            this.btnTk.Click += new System.EventHandler(this.btnTk_Click);
+            this.bunifuTransition1.SetDecoration(this.btnAddTk, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnAddTk.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnAddTk.FlatAppearance.BorderSize = 0;
+            this.btnAddTk.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnAddTk.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAddTk.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddTk.ForeColor = System.Drawing.Color.White;
+            this.btnAddTk.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTk.Image")));
+            this.btnAddTk.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddTk.Location = new System.Drawing.Point(0, 339);
+            this.btnAddTk.Name = "btnAddTk";
+            this.btnAddTk.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnAddTk.Size = new System.Drawing.Size(250, 50);
+            this.btnAddTk.TabIndex = 5;
+            this.btnAddTk.Text = "                   Quản lý tài khoản";
+            this.btnAddTk.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddTk.UseVisualStyleBackColor = true;
+            this.btnAddTk.Click += new System.EventHandler(this.btnTk_Click);
             // 
             // btnHd
             // 
@@ -330,29 +332,29 @@
             this.btnHd.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnHd.Size = new System.Drawing.Size(250, 50);
             this.btnHd.TabIndex = 4;
-            this.btnHd.Text = "                 Hội đồng nghiệm thu";
+            this.btnHd.Text = "                   Hội đồng nghiệm thu";
             this.btnHd.UseVisualStyleBackColor = true;
             this.btnHd.Click += new System.EventHandler(this.btnHd_Click);
             // 
-            // btnAddTK
+            // btnTK
             // 
-            this.bunifuTransition1.SetDecoration(this.btnAddTK, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.btnAddTK.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAddTK.FlatAppearance.BorderSize = 0;
-            this.btnAddTK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btnAddTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAddTK.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddTK.ForeColor = System.Drawing.Color.White;
-            this.btnAddTK.Image = ((System.Drawing.Image)(resources.GetObject("btnAddTK.Image")));
-            this.btnAddTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddTK.Location = new System.Drawing.Point(0, 239);
-            this.btnAddTK.Name = "btnAddTK";
-            this.btnAddTK.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnAddTK.Size = new System.Drawing.Size(250, 50);
-            this.btnAddTK.TabIndex = 3;
-            this.btnAddTK.Text = "       Thêm tài khoản";
-            this.btnAddTK.UseVisualStyleBackColor = true;
-            this.btnAddTK.Click += new System.EventHandler(this.btnAddTK_Click);
+            this.bunifuTransition1.SetDecoration(this.btnTK, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.btnTK.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnTK.FlatAppearance.BorderSize = 0;
+            this.btnTK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTK.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTK.ForeColor = System.Drawing.Color.White;
+            this.btnTK.Image = ((System.Drawing.Image)(resources.GetObject("btnTK.Image")));
+            this.btnTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTK.Location = new System.Drawing.Point(0, 239);
+            this.btnTK.Name = "btnTK";
+            this.btnTK.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnTK.Size = new System.Drawing.Size(250, 50);
+            this.btnTK.TabIndex = 3;
+            this.btnTK.Text = "Thống kê";
+            this.btnTK.UseVisualStyleBackColor = true;
+            this.btnTK.Click += new System.EventHandler(this.btnAddTK_Click);
             // 
             // btnKhoa
             // 
@@ -370,7 +372,7 @@
             this.btnKhoa.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnKhoa.Size = new System.Drawing.Size(250, 50);
             this.btnKhoa.TabIndex = 2;
-            this.btnKhoa.Text = "         Danh sách khoa";
+            this.btnKhoa.Text = "             Danh sách khoa";
             this.btnKhoa.UseVisualStyleBackColor = true;
             this.btnKhoa.Click += new System.EventHandler(this.btnKhoa_Click);
             // 
@@ -390,7 +392,7 @@
             this.btnQdt.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnQdt.Size = new System.Drawing.Size(250, 50);
             this.btnQdt.TabIndex = 1;
-            this.btnQdt.Text = "          Danh sách đề tài";
+            this.btnQdt.Text = "             Danh sách đề tài";
             this.btnQdt.UseVisualStyleBackColor = true;
             this.btnQdt.Click += new System.EventHandler(this.btnQdt_Click);
             // 
@@ -429,7 +431,7 @@
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
+            animation1.Padding = new System.Windows.Forms.Padding(0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
@@ -437,6 +439,25 @@
             animation1.TimeCoeff = 0F;
             animation1.TransparencyCoeff = 0F;
             this.bunifuTransition1.DefaultAnimation = animation1;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(190)))));
+            this.bunifuTransition1.SetDecoration(this.button1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(0, 100);
+            this.button1.Name = "button1";
+            this.button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.button1.Size = new System.Drawing.Size(250, 50);
+            this.button1.TabIndex = 21;
+            this.button1.Text = "Productos";
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // PKHCN
             // 
@@ -473,10 +494,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.Button btnSetting;
-        private System.Windows.Forms.Button btnTk;
+        private System.Windows.Forms.Button btnAddTk;
         private System.Windows.Forms.Button btnHd;
         private System.Windows.Forms.Panel BarraTitulo;
-        private System.Windows.Forms.Button btnAddTK;
+        private System.Windows.Forms.Button btnTK;
         private System.Windows.Forms.Button btnKhoa;
         private System.Windows.Forms.Button btnQdt;
         private System.Windows.Forms.Panel MenuVertical;
@@ -490,5 +511,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Panel panel;
         private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
+        private System.Windows.Forms.Button button1;
     }
 }

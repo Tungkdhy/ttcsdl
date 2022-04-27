@@ -98,7 +98,7 @@ namespace QuanLyDeTai.User.New
                 foreach (DataRow dr in dt.Rows)
                 {
                     comboBoxDetail.Items.Add(dr[0].ToString());
-                }
+                } 
                
             }
             catch
