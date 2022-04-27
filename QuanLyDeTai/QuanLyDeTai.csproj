@@ -127,41 +127,11 @@
     <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="PKHCN\DSDT\DSDT.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PKHCN\DSDT\DSDT.Designer.cs">
-      <DependentUpon>DSDT.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PKHCN\DSKhoa\DSK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PKHCN\DSKhoa\DSK.Designer.cs">
-      <DependentUpon>DSK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PKHCN\HD\HD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PKHCN\HD\HD.Designer.cs">
-      <DependentUpon>HD.cs</DependentUpon>
-    </Compile>
     <Compile Include="PKHCN\PKHCN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PKHCN\PKHCN.Designer.cs">
       <DependentUpon>PKHCN.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PKHCN\ThemTk\ThemTK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PKHCN\ThemTk\ThemTK.Designer.cs">
-      <DependentUpon>ThemTK.cs</DependentUpon>
-    </Compile>
-    <Compile Include="PKHCN\ThongKe\ThongKe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="PKHCN\ThongKe\ThongKe.Designer.cs">
-      <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -213,20 +183,8 @@
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PKHCN\DSDT\DSDT.resx">
-      <DependentUpon>DSDT.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PKHCN\DSKhoa\DSK.resx">
-      <DependentUpon>DSK.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PKHCN\HD\HD.resx">
-      <DependentUpon>HD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PKHCN\PKHCN.resx">
       <DependentUpon>PKHCN.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="PKHCN\ThemTk\ThemTK.resx">
-      <DependentUpon>ThemTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">

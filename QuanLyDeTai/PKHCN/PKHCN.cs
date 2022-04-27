@@ -12,7 +12,7 @@ namespace QuanLyDeTai.PKHCN
 {
     public partial class PKHCN : Form
     {
-        public PKHCN()
+        public PKHCN(string MP)
         {
             InitializeComponent();
             customiDegsin();
@@ -45,26 +45,21 @@ namespace QuanLyDeTai.PKHCN
         {
             if (MenuVertical.Width == 250)
             {
-               MenuVertical.Visible = false;
                 MenuVertical.Width = 70;
                 btnAddTK.Text = "";
                 btnHd.Text = "";
                 btnKhoa.Text = "";
                 btnSetting.Text = "";
                 btnQdt.Text = "";
-                bunifuTransition1.ShowSync(MenuVertical);
-
             }
             else
             {
-                MenuVertical.Visible=false;
                 MenuVertical.Width = 250;
-                btnAddTK.Text = "      Thêm tài khoản";
-                btnHd.Text = "                Hội đồng nghiệm thu";
-                btnKhoa.Text = "         Danh sách khoa";
-                btnSetting.Text = "                  Cài đặt";
-                btnQdt.Text = "          Danh sách đề tài";
-                bunifuTransition1.ShowSync(MenuVertical);
+                btnAddTK.Text = "   Thêm tài khoản";
+                btnHd.Text = "             Hội đồng nghiệm thu";
+                btnKhoa.Text = "      Danh sách khoa";
+                btnSetting.Text = "                 Cài đặt";
+                btnQdt.Text = "       Danh sách đề tài";
             }
         }
         private Form activeForm = null;
@@ -78,15 +73,13 @@ namespace QuanLyDeTai.PKHCN
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panel.Controls.Add(childForm);
-            panel.Tag = childForm;
+            panelChildForm.Controls.Add(childForm);
+            panelChildForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
         private void btnQdt_Click(object sender, EventArgs e)
         {
-          
-            openChilForm(new DSDT.DSDT());
 
         }
 
@@ -98,27 +91,11 @@ namespace QuanLyDeTai.PKHCN
         private void btnTk_Click(object sender, EventArgs e)
         {
             showSubMenu(TkSubMenu);
-            openChilForm(new ThongKe.ThongKe());
         }
 
         private void MenuVertical_Paint(object sender, PaintEventArgs e)
         {
 
-        }
-
-        private void btnKhoa_Click(object sender, EventArgs e)
-        {
-            openChilForm(new DSKhoa.DSK());
-        }
-
-        private void btnAddTK_Click(object sender, EventArgs e)
-        {
-            openChilForm(new ThemTk.ThemTK());
-        }
-
-        private void btnHd_Click(object sender, EventArgs e)
-        {
-            openChilForm(new HD.HD());
         }
     }
 }
