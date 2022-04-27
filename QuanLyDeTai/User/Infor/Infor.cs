@@ -47,6 +47,9 @@ namespace QuanLyDeTai.User.Infor
             MaKhoa.Enabled=false;
             Save.Enabled=false;
             huy.Enabled=false;
+
+
+
         }
         
         private void Infor_Load(object sender, EventArgs e)
