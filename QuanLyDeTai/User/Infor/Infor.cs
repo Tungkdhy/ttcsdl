@@ -23,7 +23,7 @@ namespace QuanLyDeTai.User.Infor
         }
         private void getInfor()
         {
-            string query = "select * from GV where MaGv='"+maGV+"'";
+            string query = "select * from GV where MAGV='"+maGV+"'";
             DataTable dt = ConnectDB.Connected.getData(query);
             hoten.Text = dt.Rows[0][1].ToString().Trim();
             gioitinh.Text = dt.Rows[0][3].ToString().Trim();
@@ -69,7 +69,7 @@ namespace QuanLyDeTai.User.Infor
         {
          
 
-            string query = "update GV set Capbac =N'" + Capbac.Text + "', Chucvu=N'" + chucvu.Text + "', MABM = '" + MaBM.Text + "' where MaGv='" + maGV + "'";
+            string query = "update GV set CapBac =N'" + Capbac.Text + "', ChucVu=N'" + chucvu.Text + "', MABM = '" + MaBM.Text + "' where MAGV='" + maGV + "'";
             MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Sửa"));
             enable();
 
@@ -82,6 +82,11 @@ namespace QuanLyDeTai.User.Infor
         {
             getInfor();
             enable();
+        }
+
+        private void hoten_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

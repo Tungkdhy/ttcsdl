@@ -33,5 +33,10 @@ namespace QuanLyDeTai.User.AddResearch
         {
 
         }
+
+        private void MDT_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

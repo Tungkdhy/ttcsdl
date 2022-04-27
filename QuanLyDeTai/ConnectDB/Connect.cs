@@ -33,12 +33,12 @@ namespace QuanLyDeTai.ConnectDB
             {
                 cmd.ExecuteNonQuery();
                 conn.Close();
-                return ""+actions+" thành công";
+                return actions + " thành công";
                 
             }
             catch (Exception ex)
             {
-                return "Kết nối thất bại";
+                return actions + " thất bại";
             }
             
         }

@@ -84,9 +84,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(67, 69);
+            this.label1.Location = new System.Drawing.Point(89, 85);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 18);
+            this.label1.Size = new System.Drawing.Size(66, 24);
             this.label1.TabIndex = 6;
             this.label1.Text = "Họ tên";
             // 
@@ -94,9 +95,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(67, 288);
+            this.label2.Location = new System.Drawing.Point(89, 354);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 18);
+            this.label2.Size = new System.Drawing.Size(106, 24);
             this.label2.TabIndex = 7;
             this.label2.Text = "Mã bộ môn";
             // 
@@ -104,9 +106,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(365, 140);
+            this.label4.Location = new System.Drawing.Point(487, 172);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 18);
+            this.label4.Size = new System.Drawing.Size(80, 24);
             this.label4.TabIndex = 9;
             this.label4.Text = "Chức vụ";
             // 
@@ -114,9 +117,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(364, 69);
+            this.label5.Location = new System.Drawing.Point(485, 85);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 18);
+            this.label5.Size = new System.Drawing.Size(80, 24);
             this.label5.TabIndex = 10;
             this.label5.Text = "Cập bậc";
             // 
@@ -124,9 +128,10 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(67, 207);
+            this.label6.Location = new System.Drawing.Point(89, 255);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 18);
+            this.label6.Size = new System.Drawing.Size(94, 24);
             this.label6.TabIndex = 11;
             this.label6.Text = "Ngày sinh";
             // 
@@ -134,9 +139,10 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(67, 140);
+            this.label7.Location = new System.Drawing.Point(89, 172);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(62, 18);
+            this.label7.Size = new System.Drawing.Size(78, 24);
             this.label7.TabIndex = 12;
             this.label7.Text = "Giới tính";
             // 
@@ -144,9 +150,10 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(364, 207);
+            this.label8.Location = new System.Drawing.Point(485, 255);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(66, 18);
+            this.label8.Size = new System.Drawing.Size(82, 24);
             this.label8.TabIndex = 15;
             this.label8.Text = "Mã khoa";
             // 
@@ -177,7 +184,8 @@
             this.hoten.IconRight = null;
             this.hoten.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.hoten.Lines = new string[0];
-            this.hoten.Location = new System.Drawing.Point(154, 55);
+            this.hoten.Location = new System.Drawing.Point(205, 68);
+            this.hoten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hoten.MaxLength = 32767;
             this.hoten.MinimumSize = new System.Drawing.Size(1, 1);
             this.hoten.Modified = false;
@@ -203,7 +211,7 @@
             stateProperties4.ForeColor = System.Drawing.Color.Empty;
             stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.hoten.OnIdleState = stateProperties4;
-            this.hoten.Padding = new System.Windows.Forms.Padding(3);
+            this.hoten.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.hoten.PasswordChar = '\0';
             this.hoten.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.hoten.PlaceholderText = "Enter text";
@@ -213,7 +221,7 @@
             this.hoten.SelectionLength = 0;
             this.hoten.SelectionStart = 0;
             this.hoten.ShortcutsEnabled = true;
-            this.hoten.Size = new System.Drawing.Size(162, 40);
+            this.hoten.Size = new System.Drawing.Size(216, 49);
             this.hoten.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.hoten.TabIndex = 19;
             this.hoten.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -223,6 +231,7 @@
             this.hoten.TextPlaceholder = "Enter text";
             this.hoten.UseSystemPasswordChar = false;
             this.hoten.WordWrap = true;
+            this.hoten.TextChanged += new System.EventHandler(this.hoten_TextChanged);
             // 
             // MaBM
             // 
@@ -251,7 +260,8 @@
             this.MaBM.IconRight = null;
             this.MaBM.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.MaBM.Lines = new string[0];
-            this.MaBM.Location = new System.Drawing.Point(157, 276);
+            this.MaBM.Location = new System.Drawing.Point(209, 340);
+            this.MaBM.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaBM.MaxLength = 32767;
             this.MaBM.MinimumSize = new System.Drawing.Size(1, 1);
             this.MaBM.Modified = false;
@@ -277,7 +287,7 @@
             stateProperties8.ForeColor = System.Drawing.Color.Empty;
             stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.MaBM.OnIdleState = stateProperties8;
-            this.MaBM.Padding = new System.Windows.Forms.Padding(3);
+            this.MaBM.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaBM.PasswordChar = '\0';
             this.MaBM.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.MaBM.PlaceholderText = "Enter text";
@@ -287,7 +297,7 @@
             this.MaBM.SelectionLength = 0;
             this.MaBM.SelectionStart = 0;
             this.MaBM.ShortcutsEnabled = true;
-            this.MaBM.Size = new System.Drawing.Size(162, 40);
+            this.MaBM.Size = new System.Drawing.Size(216, 49);
             this.MaBM.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.MaBM.TabIndex = 20;
             this.MaBM.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -297,7 +307,6 @@
             this.MaBM.TextPlaceholder = "Enter text";
             this.MaBM.UseSystemPasswordChar = false;
             this.MaBM.WordWrap = true;
-
             // 
             // gioitinh
             // 
@@ -326,7 +335,8 @@
             this.gioitinh.IconRight = null;
             this.gioitinh.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.gioitinh.Lines = new string[0];
-            this.gioitinh.Location = new System.Drawing.Point(154, 126);
+            this.gioitinh.Location = new System.Drawing.Point(205, 155);
+            this.gioitinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gioitinh.MaxLength = 32767;
             this.gioitinh.MinimumSize = new System.Drawing.Size(1, 1);
             this.gioitinh.Modified = false;
@@ -352,7 +362,7 @@
             stateProperties12.ForeColor = System.Drawing.Color.Empty;
             stateProperties12.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.gioitinh.OnIdleState = stateProperties12;
-            this.gioitinh.Padding = new System.Windows.Forms.Padding(3);
+            this.gioitinh.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gioitinh.PasswordChar = '\0';
             this.gioitinh.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.gioitinh.PlaceholderText = "Enter text";
@@ -362,7 +372,7 @@
             this.gioitinh.SelectionLength = 0;
             this.gioitinh.SelectionStart = 0;
             this.gioitinh.ShortcutsEnabled = true;
-            this.gioitinh.Size = new System.Drawing.Size(162, 40);
+            this.gioitinh.Size = new System.Drawing.Size(216, 49);
             this.gioitinh.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.gioitinh.TabIndex = 21;
             this.gioitinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -400,7 +410,8 @@
             this.MaKhoa.IconRight = null;
             this.MaKhoa.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.MaKhoa.Lines = new string[0];
-            this.MaKhoa.Location = new System.Drawing.Point(433, 195);
+            this.MaKhoa.Location = new System.Drawing.Point(577, 240);
+            this.MaKhoa.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaKhoa.MaxLength = 32767;
             this.MaKhoa.MinimumSize = new System.Drawing.Size(1, 1);
             this.MaKhoa.Modified = false;
@@ -426,7 +437,7 @@
             stateProperties16.ForeColor = System.Drawing.Color.Empty;
             stateProperties16.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.MaKhoa.OnIdleState = stateProperties16;
-            this.MaKhoa.Padding = new System.Windows.Forms.Padding(3);
+            this.MaKhoa.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaKhoa.PasswordChar = '\0';
             this.MaKhoa.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.MaKhoa.PlaceholderText = "Enter text";
@@ -436,7 +447,7 @@
             this.MaKhoa.SelectionLength = 0;
             this.MaKhoa.SelectionStart = 0;
             this.MaKhoa.ShortcutsEnabled = true;
-            this.MaKhoa.Size = new System.Drawing.Size(162, 40);
+            this.MaKhoa.Size = new System.Drawing.Size(216, 49);
             this.MaKhoa.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.MaKhoa.TabIndex = 22;
             this.MaKhoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -446,7 +457,7 @@
             this.MaKhoa.TextPlaceholder = "Enter text";
             this.MaKhoa.UseSystemPasswordChar = false;
             this.MaKhoa.WordWrap = true;
-
+            // 
             // chucvu
             // 
             this.chucvu.AcceptsReturn = false;
@@ -474,7 +485,8 @@
             this.chucvu.IconRight = null;
             this.chucvu.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.chucvu.Lines = new string[0];
-            this.chucvu.Location = new System.Drawing.Point(433, 126);
+            this.chucvu.Location = new System.Drawing.Point(577, 155);
+            this.chucvu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chucvu.MaxLength = 32767;
             this.chucvu.MinimumSize = new System.Drawing.Size(1, 1);
             this.chucvu.Modified = false;
@@ -500,7 +512,7 @@
             stateProperties20.ForeColor = System.Drawing.Color.Empty;
             stateProperties20.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.chucvu.OnIdleState = stateProperties20;
-            this.chucvu.Padding = new System.Windows.Forms.Padding(3);
+            this.chucvu.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.chucvu.PasswordChar = '\0';
             this.chucvu.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.chucvu.PlaceholderText = "Enter text";
@@ -510,7 +522,7 @@
             this.chucvu.SelectionLength = 0;
             this.chucvu.SelectionStart = 0;
             this.chucvu.ShortcutsEnabled = true;
-            this.chucvu.Size = new System.Drawing.Size(162, 40);
+            this.chucvu.Size = new System.Drawing.Size(216, 49);
             this.chucvu.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.chucvu.TabIndex = 23;
             this.chucvu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -520,7 +532,6 @@
             this.chucvu.TextPlaceholder = "Enter text";
             this.chucvu.UseSystemPasswordChar = false;
             this.chucvu.WordWrap = true;
-
             // 
             // Capbac
             // 
@@ -549,7 +560,8 @@
             this.Capbac.IconRight = null;
             this.Capbac.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.Capbac.Lines = new string[0];
-            this.Capbac.Location = new System.Drawing.Point(433, 55);
+            this.Capbac.Location = new System.Drawing.Point(577, 68);
+            this.Capbac.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Capbac.MaxLength = 32767;
             this.Capbac.MinimumSize = new System.Drawing.Size(1, 1);
             this.Capbac.Modified = false;
@@ -575,7 +587,7 @@
             stateProperties24.ForeColor = System.Drawing.Color.Empty;
             stateProperties24.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.Capbac.OnIdleState = stateProperties24;
-            this.Capbac.Padding = new System.Windows.Forms.Padding(3);
+            this.Capbac.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Capbac.PasswordChar = '\0';
             this.Capbac.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.Capbac.PlaceholderText = "Enter text";
@@ -585,7 +597,7 @@
             this.Capbac.SelectionLength = 0;
             this.Capbac.SelectionStart = 0;
             this.Capbac.ShortcutsEnabled = true;
-            this.Capbac.Size = new System.Drawing.Size(162, 40);
+            this.Capbac.Size = new System.Drawing.Size(216, 49);
             this.Capbac.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.Capbac.TabIndex = 25;
             this.Capbac.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -595,7 +607,6 @@
             this.Capbac.TextPlaceholder = "Enter text";
             this.Capbac.UseSystemPasswordChar = false;
             this.Capbac.WordWrap = true;
-
             // 
             // ngaysinh
             // 
@@ -624,7 +635,8 @@
             this.ngaysinh.IconRight = null;
             this.ngaysinh.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.ngaysinh.Lines = new string[0];
-            this.ngaysinh.Location = new System.Drawing.Point(154, 195);
+            this.ngaysinh.Location = new System.Drawing.Point(205, 240);
+            this.ngaysinh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ngaysinh.MaxLength = 32767;
             this.ngaysinh.MinimumSize = new System.Drawing.Size(1, 1);
             this.ngaysinh.Modified = false;
@@ -650,7 +662,7 @@
             stateProperties28.ForeColor = System.Drawing.Color.Empty;
             stateProperties28.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.ngaysinh.OnIdleState = stateProperties28;
-            this.ngaysinh.Padding = new System.Windows.Forms.Padding(3);
+            this.ngaysinh.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ngaysinh.PasswordChar = '\0';
             this.ngaysinh.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.ngaysinh.PlaceholderText = "Enter text";
@@ -660,7 +672,7 @@
             this.ngaysinh.SelectionLength = 0;
             this.ngaysinh.SelectionStart = 0;
             this.ngaysinh.ShortcutsEnabled = true;
-            this.ngaysinh.Size = new System.Drawing.Size(162, 40);
+            this.ngaysinh.Size = new System.Drawing.Size(216, 49);
             this.ngaysinh.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Bunifu;
             this.ngaysinh.TabIndex = 26;
             this.ngaysinh.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -670,7 +682,6 @@
             this.ngaysinh.TextPlaceholder = "Enter text";
             this.ngaysinh.UseSystemPasswordChar = false;
             this.ngaysinh.WordWrap = true;
-
             // 
             // Save
             // 
@@ -719,7 +730,8 @@
             this.Save.IdleIconLeftImage = null;
             this.Save.IdleIconRightImage = null;
             this.Save.IndicateFocus = false;
-            this.Save.Location = new System.Drawing.Point(300, 352);
+            this.Save.Location = new System.Drawing.Point(400, 433);
+            this.Save.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Save.Name = "Save";
             this.Save.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Save.OnDisabledState.BorderRadius = 1;
@@ -753,7 +765,7 @@
             this.Save.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Save.OnPressedState.IconLeftImage = null;
             this.Save.OnPressedState.IconRightImage = null;
-            this.Save.Size = new System.Drawing.Size(92, 39);
+            this.Save.Size = new System.Drawing.Size(123, 48);
             this.Save.TabIndex = 27;
             this.Save.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Save.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -809,7 +821,8 @@
             this.Edit.IdleIconLeftImage = null;
             this.Edit.IdleIconRightImage = null;
             this.Edit.IndicateFocus = false;
-            this.Edit.Location = new System.Drawing.Point(154, 352);
+            this.Edit.Location = new System.Drawing.Point(205, 433);
+            this.Edit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Edit.Name = "Edit";
             this.Edit.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.Edit.OnDisabledState.BorderRadius = 1;
@@ -843,7 +856,7 @@
             this.Edit.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.Edit.OnPressedState.IconLeftImage = null;
             this.Edit.OnPressedState.IconRightImage = null;
-            this.Edit.Size = new System.Drawing.Size(93, 39);
+            this.Edit.Size = new System.Drawing.Size(124, 48);
             this.Edit.TabIndex = 28;
             this.Edit.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.Edit.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -899,7 +912,8 @@
             this.huy.IdleIconLeftImage = null;
             this.huy.IdleIconRightImage = null;
             this.huy.IndicateFocus = false;
-            this.huy.Location = new System.Drawing.Point(433, 352);
+            this.huy.Location = new System.Drawing.Point(577, 433);
+            this.huy.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.huy.Name = "huy";
             this.huy.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.huy.OnDisabledState.BorderRadius = 1;
@@ -933,7 +947,7 @@
             this.huy.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.huy.OnPressedState.IconLeftImage = null;
             this.huy.OnPressedState.IconRightImage = null;
-            this.huy.Size = new System.Drawing.Size(84, 39);
+            this.huy.Size = new System.Drawing.Size(112, 48);
             this.huy.TabIndex = 29;
             this.huy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.huy.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -944,9 +958,9 @@
             // 
             // Infor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.huy);
             this.Controls.Add(this.Edit);
             this.Controls.Add(this.Save);
@@ -964,6 +978,7 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Infor";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Infor_Load);

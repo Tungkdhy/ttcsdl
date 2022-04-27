@@ -71,15 +71,7 @@ namespace QuanLyDeTai.Login
         //}
 
 
-        private void Login_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void bunifuLabel2_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -87,7 +79,7 @@ namespace QuanLyDeTai.Login
             string userName = UserName.Text;
             string password = Password.Text;
             conn.Open();
-            string query = "select * from NGUOIDUNG where UserName = '" + userName + "' and Passwords = '" + password + "'";
+            string query = "select * from DANGNHAP where UserName = '" + userName + "' and Passwords = '" + password + "'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             try
             {
@@ -99,12 +91,19 @@ namespace QuanLyDeTai.Login
                     string MaBM = dt.Rows[0][4].ToString().Trim();
                     string MP = dt.Rows[0][5].ToString().Trim();
                     string maGV = dt.Rows[0][6].ToString().Trim();
-
+                    
                     if (maGV != "")
                     {
                         Form Gv = new User.User(maGV);
                         MessageBox.Show("Đăng nhập thành công");
                         Gv.Show();
+                        this.Hide();
+                    }
+                    if (MaKhoa != "")
+                    {
+                        Form Khoa = new Khoa.Khoa(MaKhoa);
+                        MessageBox.Show("Đăng nhập thành công");
+                        Khoa.Show();
                         this.Hide();
                     }
                     if (MP!="")
