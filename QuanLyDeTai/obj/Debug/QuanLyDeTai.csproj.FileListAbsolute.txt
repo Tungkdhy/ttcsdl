@@ -156,3 +156,9 @@ C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.csproj.CoreC
 C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.csproj.CopyComplete
 C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.exe
 C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.pdb
+C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.Khoa.resources
+C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.QLDT.modalDT.resources
+C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.QLDT.QuanLyDeTai.resources
+C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.QLGV.function.resources
+C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.QuanLyGV.resources
+C:\Users\admin\Desktop\Huy\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.TK.ThongKe.resources
