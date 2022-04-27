@@ -85,6 +85,7 @@ C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\bin\Debug\System.Security.Permiss
 C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.PKHCN.resources
 C:\Users\Admin\Desktop\QuanLyDeTai\QuanLyDeTai\bin\Debug\Bunifu.UI.WinForms.BunifuTransition.dll
+<<<<<<< HEAD
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\bin\Debug\QuanLyDeTai.exe.config
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\bin\Debug\QuanLyDeTai.exe
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\bin\Debug\QuanLyDeTai.pdb
@@ -129,3 +130,5 @@ C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.DSKh
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.HD.HD.resources
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.ThemTk.ThemTK.resources
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.ThongKe.ThongKe.resources
+=======
+>>>>>>> 89a08604afcc705e384dc006571b64e01c3bef7c
