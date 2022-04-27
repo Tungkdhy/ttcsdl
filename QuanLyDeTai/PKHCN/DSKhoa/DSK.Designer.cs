@@ -101,7 +101,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 348);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(948, 102);
+            this.panel2.Size = new System.Drawing.Size(1815, 548);
             this.panel2.TabIndex = 4;
             // 
             // listKhoa
@@ -161,7 +161,7 @@
             this.listKhoa.RowHeadersVisible = false;
             this.listKhoa.RowTemplate.Height = 40;
             this.listKhoa.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.listKhoa.Size = new System.Drawing.Size(948, 102);
+            this.listKhoa.Size = new System.Drawing.Size(1815, 548);
             this.listKhoa.TabIndex = 0;
             this.listKhoa.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             // 
@@ -184,7 +184,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(948, 348);
+            this.panel1.Size = new System.Drawing.Size(1815, 348);
             this.panel1.TabIndex = 3;
             // 
             // cancel
@@ -1303,7 +1303,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(948, 450);
+            this.ClientSize = new System.Drawing.Size(1815, 896);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "DSK";

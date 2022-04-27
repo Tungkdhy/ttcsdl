@@ -47,7 +47,7 @@ namespace QuanLyDeTai.PKHCN
             {
                MenuVertical.Visible = false;
                 MenuVertical.Width = 70;
-                btnAddTK.Text = "";
+                btnTK.Text = "";
                 btnHd.Text = "";
                 btnKhoa.Text = "";
                 btnSetting.Text = "";
@@ -59,7 +59,7 @@ namespace QuanLyDeTai.PKHCN
             {
                 MenuVertical.Visible=false;
                 MenuVertical.Width = 250;
-                btnAddTK.Text = "      Thêm tài khoản";
+                btnTK.Text = "      Thêm tài khoản";
                 btnHd.Text = "                Hội đồng nghiệm thu";
                 btnKhoa.Text = "         Danh sách khoa";
                 btnSetting.Text = "                  Cài đặt";
@@ -98,7 +98,7 @@ namespace QuanLyDeTai.PKHCN
         private void btnTk_Click(object sender, EventArgs e)
         {
             showSubMenu(TkSubMenu);
-            openChilForm(new ThongKe.ThongKe());
+          
         }
 
         private void MenuVertical_Paint(object sender, PaintEventArgs e)
@@ -113,7 +113,8 @@ namespace QuanLyDeTai.PKHCN
 
         private void btnAddTK_Click(object sender, EventArgs e)
         {
-            openChilForm(new ThemTk.ThemTK());
+            
+            openChilForm(new ThongKe.ThongKe());
         }
 
         private void btnHd_Click(object sender, EventArgs e)

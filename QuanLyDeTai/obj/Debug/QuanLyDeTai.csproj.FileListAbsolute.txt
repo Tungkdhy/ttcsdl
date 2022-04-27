@@ -128,3 +128,4 @@ C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.DSDT
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.DSKhoa.DSK.resources
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.HD.HD.resources
 C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.ThemTk.ThemTK.resources
+C:\Users\Admin\Desktop\TCSDL\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.ThongKe.ThongKe.resources
