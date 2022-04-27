@@ -46,7 +46,7 @@ namespace QuanLyDeTai.PKHCN
             if (MenuVertical.Width == 250)
             {
                 MenuVertical.Width = 70;
-                btnAddTK.Text = "";
+                btnTK.Text = "";
                 btnHd.Text = "";
                 btnKhoa.Text = "";
                 btnSetting.Text = "";
@@ -55,11 +55,20 @@ namespace QuanLyDeTai.PKHCN
             else
             {
                 MenuVertical.Width = 250;
+<<<<<<< HEAD
+                btnTK.Text = "      Thêm tài khoản";
+                btnHd.Text = "                Hội đồng nghiệm thu";
+                btnKhoa.Text = "         Danh sách khoa";
+                btnSetting.Text = "                  Cài đặt";
+                btnQdt.Text = "          Danh sách đề tài";
+                bunifuTransition1.ShowSync(MenuVertical);
+=======
                 btnAddTK.Text = "   Thêm tài khoản";
                 btnHd.Text = "             Hội đồng nghiệm thu";
                 btnKhoa.Text = "      Danh sách khoa";
                 btnSetting.Text = "                 Cài đặt";
                 btnQdt.Text = "       Danh sách đề tài";
+>>>>>>> 89a08604afcc705e384dc006571b64e01c3bef7c
             }
         }
         private Form activeForm = null;
@@ -91,11 +100,34 @@ namespace QuanLyDeTai.PKHCN
         private void btnTk_Click(object sender, EventArgs e)
         {
             showSubMenu(TkSubMenu);
+<<<<<<< HEAD
+          
+=======
+>>>>>>> 89a08604afcc705e384dc006571b64e01c3bef7c
         }
 
         private void MenuVertical_Paint(object sender, PaintEventArgs e)
         {
 
         }
+<<<<<<< HEAD
+
+        private void btnKhoa_Click(object sender, EventArgs e)
+        {
+            openChilForm(new DSKhoa.DSK());
+        }
+
+        private void btnAddTK_Click(object sender, EventArgs e)
+        {
+            
+            openChilForm(new ThongKe.ThongKe());
+        }
+
+        private void btnHd_Click(object sender, EventArgs e)
+        {
+            openChilForm(new HD.HD());
+        }
+=======
+>>>>>>> 89a08604afcc705e384dc006571b64e01c3bef7c
     }
 }
