@@ -120,19 +120,18 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnThem.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAG8AAAAnCAYAAAABzhZhAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACISURBVHhe7dExEYAwAMBAlNQy9YcM9hYEIIDc/fBTxhxj
-        rmvMvalZ1zvvK1BgXph5YeaFmRdmXph5YeaFmRdmXph5YeaFmRdmXph5YeaFmRdmXph5YeaFmRdmXph5
-        YeaFmRdmXph5YeaFmRdmXph5YeaFmRdmXph5YeaFmRd2jHPdX4GfO9f9AOOdMMoSpJ58AAAAAElFTkSu
-        QmCC
+        iVBORw0KGgoAAAANSUhEUgAAAFMAAAAgCAYAAABuBERvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB0SURBVGhD7dCxAUBAAMBAk/zK7GcM/WMADVJecVW6LGOb
+        +9jOk7/mfs98CnxhZsjMkJkhM0NmhswMmRkyM2RmyMyQmSEzQ2aGzAyZGTIzZGbIzJCZITNDZobMDJkZ
+        MjNkZsjMkJkhM0NmhpaxzuMp8NI6jwsI5rmwzvGZYgAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="btnLoc.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAnCAYAAAC/mE48AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAB1SURBVGhD7dAxAYAwFMRQlNQy9YcM9l8QEAfJ8Ja7Ldfa
-        86x9jtM8fwA6PApAo0kBaDQpAI0mBaDRpAA0mhSARpMC0GhSABpNCkCjSQFoNCkAjSYFoNGkADSaFIBG
-        kwLQaFIAGk0KQKNJAWg0udY9Lx0K97wfVRwOIe6KJdwAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVGhD7dAxAcAgAMTAKsFy8YcMdmgFxEEy3PK/5Rnz
+        rDHvdTrrD0CHRwFoNCkAjSYFoNGkADSaFIBGkwLQaFIAGk0KQKNJAWg0KQCNJgWg0aQANJoUgEaTAtBo
+        UoDxnk2Hwnv2B8R0YNZuvIhhAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnLoc.IdleIconLeftImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -163,9 +162,9 @@
   </data>
   <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAQQAAAAvCAYAAAAFFLRLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABHSURBVHhe7cExAQAAAMKg9U9tDQ8gAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD+1QC/HwABMQLzUgAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAAMMAAAAmCAYAAAB59i+bAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAzSURBVHhe7cEBDQAAAMKg90/tZg4gAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAOBqc+4AATNbw/wAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="btnSuaDT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

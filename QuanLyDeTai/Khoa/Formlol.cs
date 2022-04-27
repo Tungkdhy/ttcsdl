@@ -13,9 +13,9 @@ namespace QuanLyDeTai.Khoa
     public partial class Khoa : Form
     {
         public static string MaKhoa = "";
-        public Khoa(string makhoa)
+        public Khoa()
         {
-            MaKhoa = makhoa;
+           
             InitializeComponent();
         }
 
@@ -36,19 +36,19 @@ namespace QuanLyDeTai.Khoa
             childForm.BringToFront();
             childForm.Show();
         }
-        public string getTenKhoa(string makhoa)
-        {
+        //public string getTenKhoa(string makhoa)
+        //{
             
-            string query = "select TenKhoa from KHOA where MAKHOA = '"+makhoa+"'";
-            DataTable dt = ConnectDB.Connected.getData(query);
-            string tenkhoa = dt.Rows[0][0].ToString();
-            return tenkhoa;
-        }
+        //    string query = "select TenKhoa from KHOA where MAKHOA = '"+makhoa+"'";
+        //    DataTable dt = ConnectDB.Connected.getData(query);
+        //    string tenkhoa = dt.Rows[0][0].ToString();
+        //    return tenkhoa;
+        //}
 
         private void btnQLGV_Click(object sender, EventArgs e)
         {
-            Form qlgv = new QuanLyGV(MaKhoa);
-            openChilForm(qlgv);
+            //Form qlgv = new QuanLyGV(MaKhoa);
+            //openChilForm(qlgv);
             
         }
 
@@ -60,13 +60,13 @@ namespace QuanLyDeTai.Khoa
 
         private void btnQLKP_Click(object sender, EventArgs e)
         {
-            Form thongke = new TK.ThongKe();
-            openChilForm(thongke);
+            //Form thongke = new TK.ThongKe();
+            //openChilForm(thongke);
         }
 
         private void Khoa_Load(object sender, EventArgs e)
         {
-            Labeltenkhoa.Text = getTenKhoa(MaKhoa);
+            //Labeltenkhoa.Text = getTenKhoa(MaKhoa);
         }
     }
 }
