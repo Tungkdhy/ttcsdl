@@ -145,15 +145,11 @@
     <Compile Include="Khoa\QLGV\function.Designer.cs">
       <DependentUpon>function.cs</DependentUpon>
     </Compile>
-    <Compile Include="Khoa\QLGV\QuanLyGV.cs" />
-    <Compile Include="Khoa\QLGV\QuanLyGV.Designer.cs">
-      <DependentUpon>QuanLyGV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Khoa\TK\ThongKe.cs">
+    <Compile Include="Khoa\QLGV\QuanLyGV.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Khoa\TK\ThongKe.Designer.cs">
-      <DependentUpon>ThongKe.cs</DependentUpon>
+    <Compile Include="Khoa\QLGV\QuanLyGV.Designer.cs">
+      <DependentUpon>QuanLyGV.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
@@ -228,9 +224,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLGV\QuanLyGV.resx">
       <DependentUpon>QuanLyGV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Khoa\TK\ThongKe.resx">
-      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

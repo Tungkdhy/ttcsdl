@@ -1,4 +1,4 @@
-﻿using DevExpress.XtraEditors;
+﻿//using DevExpress.XtraEditors;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,7 +12,7 @@ using System.Windows.Forms;
 
 namespace QuanLyDeTai.Khoa
 {
-    public partial class QuanLyGV : DevExpress.XtraEditors.XtraForm
+    public partial class QuanLyGV : Form
     {
         public static List<string> inforGV = new List<string>();
         public static string state = "";
