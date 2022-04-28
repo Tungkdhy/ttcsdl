@@ -84,8 +84,13 @@ namespace QuanLyDeTai.Khoa
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
-            List<string> empty = new List<string>() { };
+            
+            
+            string query_get_next_mGV = "declare @nextMGV nvarchar(10) \n exec @nextMGV = TuTangMaGV \n select @nextMGV";
+            string next_MAGV = ConnectDB.Connected.getData(query_get_next_mGV).Rows[0][0].ToString();
             state = "add";
+            List<string> empty = new List<string>() {next_MAGV,"","","","","","",""};
+
             Form function = new QLGV.function(empty, state);
             function.ShowDialog();
             getListGV();

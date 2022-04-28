@@ -114,6 +114,13 @@ namespace QuanLyDeTai.Login
                         PKHCN.Show();
                         this.Hide();
                     }
+                    if (MaKhoa != "")
+                    {
+                        Form KHoa = new Khoa.Khoa(MaKhoa);
+                        MessageBox.Show("Đăng nhập thành công");
+                        KHoa.Show();
+                        this.Hide();
+                    }
                 }
                 else
                 {

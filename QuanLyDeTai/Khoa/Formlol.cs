@@ -13,9 +13,9 @@ namespace QuanLyDeTai.Khoa
     public partial class Khoa : Form
     {
         public static string MaKhoa = "";
-        public Khoa()
+        public Khoa(string makhoa)
         {
-           
+            MaKhoa = makhoa;
             InitializeComponent();
         }
 
@@ -47,9 +47,9 @@ namespace QuanLyDeTai.Khoa
 
         private void btnQLGV_Click(object sender, EventArgs e)
         {
-            //Form qlgv = new QuanLyGV(MaKhoa);
-            //openChilForm(qlgv);
-            
+            Form qlgv = new QuanLyGV(MaKhoa);
+            openChilForm(qlgv);
+
         }
 
         private void btnQLDT_Click(object sender, EventArgs e)
