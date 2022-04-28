@@ -20,7 +20,7 @@ namespace QuanLyDeTai.PKHCN
         private void customiDegsin()
         {
             SubMenu.Visible = false;
-            TkSubMenu.Visible = false;
+            
         }
         private void hideSubMenu()
         {
@@ -43,23 +43,28 @@ namespace QuanLyDeTai.PKHCN
         }
         private void btnMenu_Click(object sender, EventArgs e)
         {
-            if (MenuVertical.Width == 250)
-            {
+            if (MenuVertical.Width == 280)
+            {   
+                MenuVertical.Visible = false;
                 MenuVertical.Width = 70;
-                btnAddTK.Text = "";
-                btnHd.Text = "";
+                btnHD.Text = "";
+                btnTk.Text = "";
                 btnKhoa.Text = "";
                 btnSetting.Text = "";
                 btnQdt.Text = "";
+                bunifuTransition1.ShowSync(MenuVertical);
             }
             else
             {
-                MenuVertical.Width = 250;
-                btnAddTK.Text = "   Thêm tài khoản";
-                btnHd.Text = "             Hội đồng nghiệm thu";
-                btnKhoa.Text = "      Danh sách khoa";
+                MenuVertical.Visible = false;
+                MenuVertical.Width = 280;
+                btnAddTK.Text = "                 Thêm tài khoản";
+                btnHD.Text = "                   Hội đồng nghiệm thu";
+                btnKhoa.Text = "                 Danh sách khoa";
                 btnSetting.Text = "                 Cài đặt";
-                btnQdt.Text = "       Danh sách đề tài";
+                btnQdt.Text = "                 Danh sách đề tài";
+                btnTk.Text = "                 Thống kê";
+                bunifuTransition1.ShowSync(MenuVertical);
             }
         }
         private Form activeForm = null;
@@ -90,7 +95,7 @@ namespace QuanLyDeTai.PKHCN
 
         private void btnTk_Click(object sender, EventArgs e)
         {
-            showSubMenu(TkSubMenu);
+           
         }
 
         private void MenuVertical_Paint(object sender, PaintEventArgs e)

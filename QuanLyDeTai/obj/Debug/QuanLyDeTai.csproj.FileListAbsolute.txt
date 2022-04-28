@@ -206,3 +206,4 @@ C:\Users\Admin\Desktop\Test\ttcsdl\QuanLyDeTai\bin\Debug\System.Security.AccessC
 C:\Users\Admin\Desktop\Test\ttcsdl\QuanLyDeTai\bin\Debug\System.Security.Permissions.xml
 C:\Users\Admin\Desktop\Test\ttcsdl\QuanLyDeTai\bin\Debug\System.Security.Principal.Windows.xml
 C:\Users\Admin\Desktop\Test\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.csproj.CopyComplete
+C:\Users\Admin\Desktop\Test\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.QLDT.QLDT.resources
