@@ -125,7 +125,7 @@ namespace QuanLyDeTai.Khoa.QLDT
 
         private void ListDT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            footerpanel.Show();
+            bunifuTransition1.ShowSync(footerpanel);
             int index = e.RowIndex;
             DataGridViewRow selectedRow = ListDT.Rows[index];
             string MADT = selectedRow.Cells["MADT"].Value.ToString();
@@ -178,6 +178,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             getListDT();
         }
 
-        
+        private void ListDT_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

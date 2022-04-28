@@ -96,5 +96,9 @@ namespace QuanLyDeTai.Khoa
             getListGV();
         }
 
+        private void ListGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
