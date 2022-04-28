@@ -19,6 +19,7 @@ namespace QuanLyDeTai.Khoa.QLGV
         public static string State = "";
         public function(List<string> dataGV, string state)
         {
+
             State = state.Trim();
             inforGV = dataGV;
             InitializeComponent();
@@ -28,6 +29,7 @@ namespace QuanLyDeTai.Khoa.QLGV
             }
             
             setup(state);
+            
         }
 
         private void txtName_TextChanged(object sender, EventArgs e)
@@ -56,9 +58,8 @@ namespace QuanLyDeTai.Khoa.QLGV
             }
             else if (state == "add")
             {
-                txtMAGV.Enabled = true;
+                txtMAGV.Enabled = false;
                 txtName.Enabled = true;
-                txtMAGV.Text = "";
                 txtName.Text = "";
                 txtNS.Text = "";
                 txtGT.Text = "";

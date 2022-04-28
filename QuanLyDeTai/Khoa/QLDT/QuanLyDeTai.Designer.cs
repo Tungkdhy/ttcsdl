@@ -30,15 +30,15 @@ namespace QuanLyDeTai.Khoa.QLDT
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QuanLyDeTai));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.navpanel = new System.Windows.Forms.Panel();
             this.btnThem = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
             this.btnLoc = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -71,9 +71,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.navpanel.Controls.Add(this.bunifuTextBox1);
             this.navpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.navpanel.Location = new System.Drawing.Point(0, 0);
-            this.navpanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.navpanel.Name = "navpanel";
-            this.navpanel.Size = new System.Drawing.Size(1221, 45);
+            this.navpanel.Size = new System.Drawing.Size(1628, 55);
             this.navpanel.TabIndex = 0;
             // 
             // btnThem
@@ -96,11 +96,11 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnThem.ColorContrastOnClick = 45;
             this.btnThem.ColorContrastOnHover = 45;
             this.btnThem.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.btnThem.CustomizableEdges = borderEdges1;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.btnThem.CustomizableEdges = borderEdges3;
             this.btnThem.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnThem.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThem.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -124,8 +124,8 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnThem.IdleIconLeftImage = null;
             this.btnThem.IdleIconRightImage = null;
             this.btnThem.IndicateFocus = false;
-            this.btnThem.Location = new System.Drawing.Point(979, 8);
-            this.btnThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnThem.Location = new System.Drawing.Point(1368, 11);
+            this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnThem.OnDisabledState.BorderRadius = 1;
@@ -159,7 +159,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnThem.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnThem.OnPressedState.IconLeftImage = null;
             this.btnThem.OnPressedState.IconRightImage = null;
-            this.btnThem.Size = new System.Drawing.Size(83, 32);
+            this.btnThem.Size = new System.Drawing.Size(111, 39);
             this.btnThem.TabIndex = 3;
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnThem.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
@@ -183,16 +183,16 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnLoc.BackColor1 = System.Drawing.Color.DodgerBlue;
             this.btnLoc.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLoc.BackgroundImage")));
             this.btnLoc.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
-            this.btnLoc.ButtonText = "Lọc";
+            this.btnLoc.ButtonText = "    Lọc";
             this.btnLoc.ButtonTextMarginLeft = 0;
             this.btnLoc.ColorContrastOnClick = 45;
             this.btnLoc.ColorContrastOnHover = 45;
             this.btnLoc.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.btnLoc.CustomizableEdges = borderEdges2;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.btnLoc.CustomizableEdges = borderEdges4;
             this.btnLoc.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLoc.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoc.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -216,8 +216,8 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnLoc.IdleIconLeftImage = ((System.Drawing.Image)(resources.GetObject("btnLoc.IdleIconLeftImage")));
             this.btnLoc.IdleIconRightImage = null;
             this.btnLoc.IndicateFocus = false;
-            this.btnLoc.Location = new System.Drawing.Point(1093, 8);
-            this.btnLoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLoc.Location = new System.Drawing.Point(1499, 11);
+            this.btnLoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLoc.Name = "btnLoc";
             this.btnLoc.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.btnLoc.OnDisabledState.BorderRadius = 1;
@@ -251,9 +251,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnLoc.OnPressedState.ForeColor = System.Drawing.Color.White;
             this.btnLoc.OnPressedState.IconLeftImage = null;
             this.btnLoc.OnPressedState.IconRightImage = null;
-            this.btnLoc.Size = new System.Drawing.Size(64, 32);
+            this.btnLoc.Size = new System.Drawing.Size(85, 39);
             this.btnLoc.TabIndex = 2;
-            this.btnLoc.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnLoc.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnLoc.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnLoc.TextMarginLeft = 0;
             this.btnLoc.TextPadding = new System.Windows.Forms.Padding(0);
@@ -289,34 +289,34 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.bunifuTextBox1.Lines = new string[] {
         "Danh sách đề tài"};
-            this.bunifuTextBox1.Location = new System.Drawing.Point(71, 2);
-            this.bunifuTextBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuTextBox1.Location = new System.Drawing.Point(12, 4);
+            this.bunifuTextBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuTextBox1.MaxLength = 32767;
             this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
             this.bunifuTextBox1.Modified = false;
             this.bunifuTextBox1.Multiline = false;
             this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties1.BorderColor = System.Drawing.Color.DodgerBlue;
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.SystemColors.Control;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            stateProperties5.BorderColor = System.Drawing.Color.DodgerBlue;
+            stateProperties5.FillColor = System.Drawing.Color.Empty;
+            stateProperties5.ForeColor = System.Drawing.Color.Empty;
+            stateProperties5.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnActiveState = stateProperties5;
+            stateProperties6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            stateProperties6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            stateProperties6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            stateProperties6.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.bunifuTextBox1.OnDisabledState = stateProperties6;
+            stateProperties7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(181)))), ((int)(((byte)(255)))));
+            stateProperties7.FillColor = System.Drawing.Color.Empty;
+            stateProperties7.ForeColor = System.Drawing.Color.Empty;
+            stateProperties7.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnHoverState = stateProperties7;
+            stateProperties8.BorderColor = System.Drawing.Color.Silver;
+            stateProperties8.FillColor = System.Drawing.SystemColors.Control;
+            stateProperties8.ForeColor = System.Drawing.Color.Empty;
+            stateProperties8.PlaceholderForeColor = System.Drawing.Color.Empty;
+            this.bunifuTextBox1.OnIdleState = stateProperties8;
+            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuTextBox1.PasswordChar = '\0';
             this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.Color.Silver;
             this.bunifuTextBox1.PlaceholderText = "";
@@ -326,7 +326,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTextBox1.SelectionLength = 0;
             this.bunifuTextBox1.SelectionStart = 0;
             this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(195, 38);
+            this.bunifuTextBox1.Size = new System.Drawing.Size(260, 47);
             this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
             this.bunifuTextBox1.TabIndex = 0;
             this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -342,10 +342,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.panel2.Controls.Add(this.footerpanel);
             this.panel2.Controls.Add(this.ListDT);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 91);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(0, 112);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1221, 483);
+            this.panel2.Size = new System.Drawing.Size(1628, 594);
             this.panel2.TabIndex = 1;
             // 
             // footerpanel
@@ -356,10 +356,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.footerpanel.Controls.Add(this.btnSuaDT);
             this.footerpanel.Controls.Add(this.btnXoaDT);
             this.footerpanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footerpanel.Location = new System.Drawing.Point(0, 432);
-            this.footerpanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.footerpanel.Location = new System.Drawing.Point(0, 531);
+            this.footerpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.footerpanel.Name = "footerpanel";
-            this.footerpanel.Size = new System.Drawing.Size(1221, 51);
+            this.footerpanel.Size = new System.Drawing.Size(1628, 63);
             this.footerpanel.TabIndex = 1;
             this.footerpanel.Visible = false;
             // 
@@ -368,24 +368,22 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(629, 36);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(839, 44);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(32, 13);
+            this.label3.Size = new System.Drawing.Size(87, 17);
             this.label3.TabIndex = 9;
-            this.label3.Text = "  Xóa";
+            this.label3.Text = "Yêu cầu hủy";
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(554, 36);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(588, 44);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(32, 13);
+            this.label2.Size = new System.Drawing.Size(166, 17);
             this.label2.TabIndex = 8;
-            this.label2.Text = "  Sửa";
+            this.label2.Text = "Sửa và cập nhật tiến độộ";
             // 
             // btnSuaDT
             // 
@@ -393,10 +391,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnSuaDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSuaDT.Image = ((System.Drawing.Image)(resources.GetObject("btnSuaDT.Image")));
             this.btnSuaDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSuaDT.Location = new System.Drawing.Point(556, -6);
-            this.btnSuaDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSuaDT.Location = new System.Drawing.Point(652, 0);
+            this.btnSuaDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaDT.Name = "btnSuaDT";
-            this.btnSuaDT.Size = new System.Drawing.Size(35, 41);
+            this.btnSuaDT.Size = new System.Drawing.Size(47, 44);
             this.btnSuaDT.TabIndex = 7;
             this.btnSuaDT.UseVisualStyleBackColor = true;
             this.btnSuaDT.Click += new System.EventHandler(this.btnSuaDT_Click);
@@ -407,31 +405,32 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnXoaDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnXoaDT.Image = ((System.Drawing.Image)(resources.GetObject("btnXoaDT.Image")));
             this.btnXoaDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoaDT.Location = new System.Drawing.Point(631, 2);
-            this.btnXoaDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnXoaDT.Location = new System.Drawing.Point(856, 4);
+            this.btnXoaDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnXoaDT.Name = "btnXoaDT";
-            this.btnXoaDT.Size = new System.Drawing.Size(38, 31);
+            this.btnXoaDT.Size = new System.Drawing.Size(51, 38);
             this.btnXoaDT.TabIndex = 6;
             this.btnXoaDT.UseVisualStyleBackColor = true;
+            this.btnXoaDT.Click += new System.EventHandler(this.btnXoaDT_Click);
             // 
             // ListDT
             // 
             this.ListDT.AllowCustomTheming = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.ListDT.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.ListDT.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.ListDT.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.ListDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.ListDT.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.ListDT.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.DodgerBlue;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.ListDT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.DodgerBlue;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 11.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(115)))), ((int)(((byte)(204)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.ListDT.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.ListDT.ColumnHeadersHeight = 40;
             this.ListDT.CurrentTheme.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(251)))), ((int)(((byte)(255)))));
             this.ListDT.CurrentTheme.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
@@ -451,14 +450,14 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.ListDT.CurrentTheme.RowsStyle.ForeColor = System.Drawing.Color.Black;
             this.ListDT.CurrentTheme.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
             this.ListDT.CurrentTheme.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.ListDT.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(232)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.ListDT.DefaultCellStyle = dataGridViewCellStyle6;
             this.ListDT.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ListDT.EnableHeadersVisualStyles = false;
             this.ListDT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(221)))), ((int)(((byte)(238)))), ((int)(((byte)(255)))));
@@ -466,13 +465,13 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.ListDT.HeaderBgColor = System.Drawing.Color.Empty;
             this.ListDT.HeaderForeColor = System.Drawing.Color.White;
             this.ListDT.Location = new System.Drawing.Point(0, 0);
-            this.ListDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ListDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ListDT.Name = "ListDT";
             this.ListDT.RowHeadersVisible = false;
             this.ListDT.RowHeadersWidth = 51;
             this.ListDT.RowTemplate.Height = 40;
             this.ListDT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ListDT.Size = new System.Drawing.Size(1221, 483);
+            this.ListDT.Size = new System.Drawing.Size(1628, 594);
             this.ListDT.TabIndex = 0;
             this.ListDT.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.ListDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListDT_CellClick);
@@ -487,10 +486,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.panelLoc.Controls.Add(this.cmbBOMON);
             this.panelLoc.Controls.Add(this.cmbCap);
             this.panelLoc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLoc.Location = new System.Drawing.Point(0, 45);
-            this.panelLoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelLoc.Location = new System.Drawing.Point(0, 55);
+            this.panelLoc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelLoc.Name = "panelLoc";
-            this.panelLoc.Size = new System.Drawing.Size(1221, 46);
+            this.panelLoc.Size = new System.Drawing.Size(1628, 57);
             this.panelLoc.TabIndex = 1;
             this.panelLoc.Visible = false;
             // 
@@ -500,12 +499,12 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuLabel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuLabel3.AutoEllipsis = false;
             this.bunifuLabel3.CursorType = null;
-            this.bunifuLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel3.Location = new System.Drawing.Point(484, 14);
-            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel3.Font = new System.Drawing.Font("Source Sans Pro Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel3.Location = new System.Drawing.Point(645, 17);
+            this.bunifuLabel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel3.Name = "bunifuLabel3";
             this.bunifuLabel3.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel3.Size = new System.Drawing.Size(53, 15);
+            this.bunifuLabel3.Size = new System.Drawing.Size(74, 22);
             this.bunifuLabel3.TabIndex = 5;
             this.bunifuLabel3.Text = "Trạng thái";
             this.bunifuLabel3.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -516,10 +515,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbTrangThai.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTrangThai.FormattingEnabled = true;
-            this.cmbTrangThai.Location = new System.Drawing.Point(552, 7);
-            this.cmbTrangThai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTrangThai.Location = new System.Drawing.Point(735, 9);
+            this.cmbTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTrangThai.Name = "cmbTrangThai";
-            this.cmbTrangThai.Size = new System.Drawing.Size(92, 25);
+            this.cmbTrangThai.Size = new System.Drawing.Size(176, 28);
             this.cmbTrangThai.TabIndex = 4;
             this.cmbTrangThai.SelectedIndexChanged += new System.EventHandler(this.cmbTrangThai_SelectedIndexChanged);
             // 
@@ -529,12 +528,12 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuLabel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.bunifuLabel2.AutoEllipsis = false;
             this.bunifuLabel2.CursorType = null;
-            this.bunifuLabel2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel2.Location = new System.Drawing.Point(265, 14);
-            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel2.Font = new System.Drawing.Font("Source Sans Pro Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel2.Location = new System.Drawing.Point(353, 17);
+            this.bunifuLabel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel2.Name = "bunifuLabel2";
             this.bunifuLabel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel2.Size = new System.Drawing.Size(42, 15);
+            this.bunifuLabel2.Size = new System.Drawing.Size(55, 22);
             this.bunifuLabel2.TabIndex = 3;
             this.bunifuLabel2.Text = "Bộ môn";
             this.bunifuLabel2.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -547,12 +546,12 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuLabel1.AutoEllipsis = false;
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.bunifuLabel1.Location = new System.Drawing.Point(81, 14);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuLabel1.Font = new System.Drawing.Font("Source Sans Pro Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel1.Location = new System.Drawing.Point(108, 17);
+            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(21, 15);
+            this.bunifuLabel1.Size = new System.Drawing.Size(29, 22);
             this.bunifuLabel1.TabIndex = 2;
             this.bunifuLabel1.Text = "Cấp";
             this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -563,10 +562,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbBOMON.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbBOMON.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBOMON.FormattingEnabled = true;
-            this.cmbBOMON.Location = new System.Drawing.Point(320, 7);
-            this.cmbBOMON.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbBOMON.Location = new System.Drawing.Point(427, 9);
+            this.cmbBOMON.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBOMON.Name = "cmbBOMON";
-            this.cmbBOMON.Size = new System.Drawing.Size(113, 25);
+            this.cmbBOMON.Size = new System.Drawing.Size(174, 28);
             this.cmbBOMON.TabIndex = 1;
             this.cmbBOMON.SelectedIndexChanged += new System.EventHandler(this.cmbBOMON_SelectedIndexChanged);
             // 
@@ -575,22 +574,22 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbCap.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCap.FormattingEnabled = true;
-            this.cmbCap.Location = new System.Drawing.Point(115, 7);
-            this.cmbCap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbCap.Location = new System.Drawing.Point(144, 12);
+            this.cmbCap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbCap.Name = "cmbCap";
-            this.cmbCap.Size = new System.Drawing.Size(92, 25);
+            this.cmbCap.Size = new System.Drawing.Size(146, 28);
             this.cmbCap.TabIndex = 0;
             this.cmbCap.SelectedIndexChanged += new System.EventHandler(this.cmbCap_SelectedIndexChanged);
             // 
             // QuanLyDeTai
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1221, 574);
+            this.ClientSize = new System.Drawing.Size(1628, 706);
             this.Controls.Add(this.panelLoc);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.navpanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "QuanLyDeTai";
             this.Text = "QuanLyDeTai";
             this.Load += new System.EventHandler(this.QuanLyDeTai_Load);
