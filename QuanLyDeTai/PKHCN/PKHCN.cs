@@ -20,7 +20,7 @@ namespace QuanLyDeTai.PKHCN
         private void customiDegsin()
         {
             SubMenu.Visible = false;
-            TkSubMenu.Visible = false;
+           
         }
         private void hideSubMenu()
         {
@@ -45,21 +45,25 @@ namespace QuanLyDeTai.PKHCN
         {
             if (MenuVertical.Width == 250)
             {
+                MenuVertical.Visible = false;
                 MenuVertical.Width = 70;
-                btnAddTK.Text = "";
                 btnHd.Text = "";
+                btnAddTK.Text = "";
                 btnKhoa.Text = "";
                 btnSetting.Text = "";
                 btnQdt.Text = "";
+                bunifuTransition1.ShowSync(MenuVertical);
             }
             else
             {
+                MenuVertical.Visible = false;
                 MenuVertical.Width = 250;
-                btnAddTK.Text = "   Thêm tài khoản";
                 btnHd.Text = "             Hội đồng nghiệm thu";
+                btnAddTK.Text = "   Thêm tài khoản";
                 btnKhoa.Text = "      Danh sách khoa";
                 btnSetting.Text = "                 Cài đặt";
                 btnQdt.Text = "       Danh sách đề tài";
+                bunifuTransition1.ShowSync(MenuVertical);
             }
         }
         private Form activeForm = null;
@@ -90,7 +94,7 @@ namespace QuanLyDeTai.PKHCN
 
         private void btnTk_Click(object sender, EventArgs e)
         {
-            showSubMenu(TkSubMenu);
+            
         }
 
         private void MenuVertical_Paint(object sender, PaintEventArgs e)
