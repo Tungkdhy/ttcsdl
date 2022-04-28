@@ -50,13 +50,13 @@ namespace QuanLyDeTai.Khoa
             this.bunifuPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.bunifuPictureBox1.AutoSizeHeight = true;
-            this.bunifuPictureBox1.BorderRadius = 45;
+            this.bunifuPictureBox1.BorderRadius = 51;
             this.bunifuPictureBox1.Image = global::QuanLyDeTai.Properties.Resources.tải_xuống;
             this.bunifuPictureBox1.IsCircle = true;
             this.bunifuPictureBox1.Location = new System.Drawing.Point(9, 0);
-            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bunifuPictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.bunifuPictureBox1.Name = "bunifuPictureBox1";
-            this.bunifuPictureBox1.Size = new System.Drawing.Size(91, 91);
+            this.bunifuPictureBox1.Size = new System.Drawing.Size(103, 103);
             this.bunifuPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuPictureBox1.TabIndex = 0;
             this.bunifuPictureBox1.TabStop = false;
@@ -67,12 +67,13 @@ namespace QuanLyDeTai.Khoa
             this.Labeltenkhoa.BackColor = System.Drawing.SystemColors.Control;
             this.Labeltenkhoa.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.Labeltenkhoa.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.Labeltenkhoa.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Labeltenkhoa.Location = new System.Drawing.Point(128, 57);
-            this.Labeltenkhoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Labeltenkhoa.Font = new System.Drawing.Font("Times New Roman", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Labeltenkhoa.Location = new System.Drawing.Point(142, 54);
+            this.Labeltenkhoa.Margin = new System.Windows.Forms.Padding(2);
             this.Labeltenkhoa.Name = "Labeltenkhoa";
-            this.Labeltenkhoa.Size = new System.Drawing.Size(232, 22);
+            this.Labeltenkhoa.Size = new System.Drawing.Size(232, 25);
             this.Labeltenkhoa.TabIndex = 4;
+            this.Labeltenkhoa.Text = "Khoa công nghệ thông tin";
             this.Labeltenkhoa.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnQLDT
@@ -84,8 +85,8 @@ namespace QuanLyDeTai.Khoa
             this.btnQLDT.ForeColor = System.Drawing.Color.White;
             this.btnQLDT.Image = ((System.Drawing.Image)(resources.GetObject("btnQLDT.Image")));
             this.btnQLDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLDT.Location = new System.Drawing.Point(930, 18);
-            this.btnQLDT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLDT.Location = new System.Drawing.Point(947, 18);
+            this.btnQLDT.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLDT.Name = "btnQLDT";
             this.btnQLDT.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnQLDT.Size = new System.Drawing.Size(170, 61);
@@ -99,11 +100,11 @@ namespace QuanLyDeTai.Khoa
             this.textBox2.BackColor = System.Drawing.SystemColors.Control;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(104, 18);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(274, 25);
+            this.textBox2.Size = new System.Drawing.Size(323, 28);
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "Học Viện Kỹ Thuật Quân Sự\r\n";
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -117,8 +118,8 @@ namespace QuanLyDeTai.Khoa
             this.btnQLKP.ForeColor = System.Drawing.Color.White;
             this.btnQLKP.Image = ((System.Drawing.Image)(resources.GetObject("btnQLKP.Image")));
             this.btnQLKP.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLKP.Location = new System.Drawing.Point(1112, 18);
-            this.btnQLKP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLKP.Location = new System.Drawing.Point(1129, 18);
+            this.btnQLKP.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLKP.Name = "btnQLKP";
             this.btnQLKP.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.btnQLKP.Size = new System.Drawing.Size(174, 61);
@@ -136,11 +137,11 @@ namespace QuanLyDeTai.Khoa
             this.btnQLGV.ForeColor = System.Drawing.Color.White;
             this.btnQLGV.Image = ((System.Drawing.Image)(resources.GetObject("btnQLGV.Image")));
             this.btnQLGV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnQLGV.Location = new System.Drawing.Point(729, 18);
-            this.btnQLGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnQLGV.Location = new System.Drawing.Point(741, 18);
+            this.btnQLGV.Margin = new System.Windows.Forms.Padding(2);
             this.btnQLGV.Name = "btnQLGV";
             this.btnQLGV.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.btnQLGV.Size = new System.Drawing.Size(188, 61);
+            this.btnQLGV.Size = new System.Drawing.Size(193, 61);
             this.btnQLGV.TabIndex = 2;
             this.btnQLGV.Text = "        Quản lý giáo viên";
             this.btnQLGV.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -163,10 +164,10 @@ namespace QuanLyDeTai.Khoa
             this.navpanel.Controls.Add(this.btnQLDT);
             this.navpanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.navpanel.Location = new System.Drawing.Point(0, 0);
-            this.navpanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.navpanel.Margin = new System.Windows.Forms.Padding(2);
             this.navpanel.Name = "navpanel";
             this.navpanel.ShowBorders = true;
-            this.navpanel.Size = new System.Drawing.Size(1332, 102);
+            this.navpanel.Size = new System.Drawing.Size(1367, 102);
             this.navpanel.TabIndex = 6;
             // 
             // left
@@ -179,7 +180,7 @@ namespace QuanLyDeTai.Khoa
             this.left.BorderThickness = 1;
             this.left.Dock = System.Windows.Forms.DockStyle.Left;
             this.left.Location = new System.Drawing.Point(0, 102);
-            this.left.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.left.Margin = new System.Windows.Forms.Padding(2);
             this.left.Name = "left";
             this.left.ShowBorders = true;
             this.left.Size = new System.Drawing.Size(53, 506);
@@ -194,8 +195,8 @@ namespace QuanLyDeTai.Khoa
             this.right.BorderRadius = 3;
             this.right.BorderThickness = 1;
             this.right.Dock = System.Windows.Forms.DockStyle.Right;
-            this.right.Location = new System.Drawing.Point(1286, 102);
-            this.right.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.right.Location = new System.Drawing.Point(1321, 102);
+            this.right.Margin = new System.Windows.Forms.Padding(2);
             this.right.Name = "right";
             this.right.ShowBorders = true;
             this.right.Size = new System.Drawing.Size(46, 506);
@@ -211,10 +212,10 @@ namespace QuanLyDeTai.Khoa
             this.cotentpanel.BorderThickness = 1;
             this.cotentpanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cotentpanel.Location = new System.Drawing.Point(53, 102);
-            this.cotentpanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cotentpanel.Margin = new System.Windows.Forms.Padding(2);
             this.cotentpanel.Name = "cotentpanel";
             this.cotentpanel.ShowBorders = true;
-            this.cotentpanel.Size = new System.Drawing.Size(1233, 506);
+            this.cotentpanel.Size = new System.Drawing.Size(1268, 506);
             this.cotentpanel.TabIndex = 9;
             // 
             // Khoa
@@ -222,12 +223,12 @@ namespace QuanLyDeTai.Khoa
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(1332, 608);
+            this.ClientSize = new System.Drawing.Size(1367, 608);
             this.Controls.Add(this.cotentpanel);
             this.Controls.Add(this.right);
             this.Controls.Add(this.left);
             this.Controls.Add(this.navpanel);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Khoa";
             this.Text = "Khoa";
             this.Load += new System.EventHandler(this.Khoa_Load);
