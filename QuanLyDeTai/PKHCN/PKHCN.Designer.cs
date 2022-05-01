@@ -31,10 +31,7 @@
             this.components = new System.ComponentModel.Container();
             Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PKHCN));
-            this.lblcorreo = new System.Windows.Forms.Label();
-            this.lbluser = new System.Windows.Forms.Label();
-            this.lblusuario = new System.Windows.Forms.Label();
-            this.BarraTitulo = new System.Windows.Forms.Panel();
+            this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.btnMenu = new System.Windows.Forms.PictureBox();
             this.MenuVertical = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -42,7 +39,10 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.btnSetting = new System.Windows.Forms.Button();
+            this.lblcorreo = new System.Windows.Forms.Label();
+            this.lbluser = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.lblusuario = new System.Windows.Forms.Label();
             this.btnTk = new System.Windows.Forms.Button();
             this.btnAddTK = new System.Windows.Forms.Button();
             this.btnHd = new System.Windows.Forms.Button();
@@ -50,8 +50,6 @@
             this.btnQdt = new System.Windows.Forms.Button();
             this.btnlogoInicio = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new System.Windows.Forms.Panel();
-            this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
-            this.BarraTitulo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
             this.MenuVertical.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -60,63 +58,33 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblcorreo
+            // bunifuTransition1
             // 
-            this.lblcorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblcorreo.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lblcorreo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lblcorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblcorreo.ForeColor = System.Drawing.Color.White;
-            this.lblcorreo.Location = new System.Drawing.Point(72, 700);
-            this.lblcorreo.Name = "lblcorreo";
-            this.lblcorreo.Size = new System.Drawing.Size(53, 17);
-            this.lblcorreo.TabIndex = 17;
-            this.lblcorreo.Text = "Correo";
-            // 
-            // lbluser
-            // 
-            this.lbluser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbluser.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lbluser, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lbluser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbluser.ForeColor = System.Drawing.Color.White;
-            this.lbluser.Location = new System.Drawing.Point(72, 682);
-            this.lbluser.Name = "lbluser";
-            this.lbluser.Size = new System.Drawing.Size(54, 17);
-            this.lbluser.TabIndex = 16;
-            this.lbluser.Text = "Usuario";
-            // 
-            // lblusuario
-            // 
-            this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lblusuario.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.lblusuario, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lblusuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblusuario.ForeColor = System.Drawing.Color.White;
-            this.lblusuario.Location = new System.Drawing.Point(72, 665);
-            this.lblusuario.Name = "lblusuario";
-            this.lblusuario.Size = new System.Drawing.Size(50, 17);
-            this.lblusuario.TabIndex = 14;
-            this.lblusuario.Text = "Cargo";
-            // 
-            // BarraTitulo
-            // 
-            this.BarraTitulo.AutoSize = true;
-            this.BarraTitulo.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.BarraTitulo.Controls.Add(this.btnMenu);
-            this.bunifuTransition1.SetDecoration(this.BarraTitulo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.BarraTitulo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BarraTitulo.Location = new System.Drawing.Point(250, 0);
-            this.BarraTitulo.Name = "BarraTitulo";
-            this.BarraTitulo.Size = new System.Drawing.Size(964, 44);
-            this.BarraTitulo.TabIndex = 4;
+            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition1.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // btnMenu
             // 
             this.btnMenu.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.btnMenu, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnMenu.Image = ((System.Drawing.Image)(resources.GetObject("btnMenu.Image")));
-            this.btnMenu.Location = new System.Drawing.Point(8, 6);
+            this.btnMenu.Location = new System.Drawing.Point(209, 672);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(35, 35);
             this.btnMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -127,6 +95,7 @@
             // MenuVertical
             // 
             this.MenuVertical.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
+            this.MenuVertical.Controls.Add(this.btnMenu);
             this.MenuVertical.Controls.Add(this.panel1);
             this.MenuVertical.Controls.Add(this.lblcorreo);
             this.MenuVertical.Controls.Add(this.lbluser);
@@ -187,6 +156,7 @@
             this.button7.Text = "Đăng xuất";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -229,6 +199,32 @@
             this.btnSetting.UseVisualStyleBackColor = true;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
             // 
+            // lblcorreo
+            // 
+            this.lblcorreo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblcorreo.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lblcorreo, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblcorreo.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblcorreo.ForeColor = System.Drawing.Color.White;
+            this.lblcorreo.Location = new System.Drawing.Point(72, 700);
+            this.lblcorreo.Name = "lblcorreo";
+            this.lblcorreo.Size = new System.Drawing.Size(53, 17);
+            this.lblcorreo.TabIndex = 17;
+            this.lblcorreo.Text = "Correo";
+            // 
+            // lbluser
+            // 
+            this.lbluser.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbluser.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lbluser, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lbluser.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbluser.ForeColor = System.Drawing.Color.White;
+            this.lbluser.Location = new System.Drawing.Point(72, 682);
+            this.lbluser.Name = "lbluser";
+            this.lbluser.Size = new System.Drawing.Size(54, 17);
+            this.lbluser.TabIndex = 16;
+            this.lbluser.Text = "Usuario";
+            // 
             // pictureBox2
             // 
             this.pictureBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -240,6 +236,19 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
+            // 
+            // lblusuario
+            // 
+            this.lblusuario.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lblusuario.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lblusuario, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lblusuario.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblusuario.ForeColor = System.Drawing.Color.White;
+            this.lblusuario.Location = new System.Drawing.Point(72, 665);
+            this.lblusuario.Name = "lblusuario";
+            this.lblusuario.Size = new System.Drawing.Size(50, 17);
+            this.lblusuario.TabIndex = 14;
+            this.lblusuario.Text = "Cargo";
             // 
             // btnTk
             // 
@@ -278,8 +287,9 @@
             this.btnAddTK.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btnAddTK.Size = new System.Drawing.Size(250, 50);
             this.btnAddTK.TabIndex = 4;
-            this.btnAddTK.Text = "             Hội đồng nghiệm thu";
+            this.btnAddTK.Text = "     Thêm tài khoản";
             this.btnAddTK.UseVisualStyleBackColor = true;
+            this.btnAddTK.Click += new System.EventHandler(this.btnAddTK_Click);
             // 
             // btnHd
             // 
@@ -296,7 +306,7 @@
             this.btnHd.Name = "btnHd";
             this.btnHd.Size = new System.Drawing.Size(250, 50);
             this.btnHd.TabIndex = 3;
-            this.btnHd.Text = "      Thêm tài khoản";
+            this.btnHd.Text = "               Hội đồng nghiệm thu";
             this.btnHd.UseVisualStyleBackColor = true;
             // 
             // btnKhoa
@@ -353,34 +363,12 @@
             // 
             // panelChildForm
             // 
-            this.panelChildForm.BackColor = System.Drawing.Color.WhiteSmoke;
             this.bunifuTransition1.SetDecoration(this.panelChildForm, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelChildForm.Location = new System.Drawing.Point(0, 0);
+            this.panelChildForm.Location = new System.Drawing.Point(250, 0);
             this.panelChildForm.Name = "panelChildForm";
-            this.panelChildForm.Size = new System.Drawing.Size(1214, 719);
-            this.panelChildForm.TabIndex = 5;
-            // 
-            // bunifuTransition1
-            // 
-            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.HorizSlide;
-            this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            this.panelChildForm.Size = new System.Drawing.Size(1180, 719);
+            this.panelChildForm.TabIndex = 4;
             // 
             // PKHCN
             // 
@@ -388,15 +376,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1214, 719);
-            this.Controls.Add(this.BarraTitulo);
-            this.Controls.Add(this.MenuVertical);
+            this.ClientSize = new System.Drawing.Size(1430, 719);
             this.Controls.Add(this.panelChildForm);
+            this.Controls.Add(this.MenuVertical);
             this.bunifuTransition1.SetDecoration(this, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "PKHCN";
             this.Text = "PKHCN";
-            this.BarraTitulo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).EndInit();
             this.MenuVertical.ResumeLayout(false);
             this.MenuVertical.PerformLayout();
@@ -405,30 +391,28 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnlogoInicio)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
+        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
         private System.Windows.Forms.PictureBox btnMenu;
+        private System.Windows.Forms.Panel MenuVertical;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel SubMenu;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Label lblcorreo;
         private System.Windows.Forms.Label lbluser;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblusuario;
-        private System.Windows.Forms.Button btnSetting;
         private System.Windows.Forms.Button btnTk;
         private System.Windows.Forms.Button btnAddTK;
-        private System.Windows.Forms.Panel BarraTitulo;
         private System.Windows.Forms.Button btnHd;
         private System.Windows.Forms.Button btnKhoa;
         private System.Windows.Forms.Button btnQdt;
-        private System.Windows.Forms.Panel MenuVertical;
         private System.Windows.Forms.PictureBox btnlogoInicio;
         private System.Windows.Forms.Panel panelChildForm;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel SubMenu;
-        private System.Windows.Forms.Panel panel1;
-        private Bunifu.UI.WinForms.BunifuTransition bunifuTransition1;
     }
 }

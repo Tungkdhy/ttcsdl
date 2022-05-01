@@ -84,7 +84,7 @@ namespace QuanLyDeTai.PKHCN
         }
         private void btnQdt_Click(object sender, EventArgs e)
         {
-
+            openChilForm(new QLTK.QLTK());
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
@@ -100,6 +100,23 @@ namespace QuanLyDeTai.PKHCN
         private void MenuVertical_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnAddTK_Click(object sender, EventArgs e)
+        {
+            openChilForm(new QLTK.QLTK());
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form login = new Login.Login();
+            login.Show();
         }
     }
 }

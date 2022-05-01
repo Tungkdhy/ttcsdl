@@ -249,3 +249,6 @@ C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.csproj.Cor
 C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.csproj.CopyComplete
 C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.exe
 C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.pdb
+C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.QLDT.QLDT.resources
+C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.QLTK.QLTK.resources
+C:\Users\Admin\Desktop\QLĐT\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.PKHCN.QLTK.ThemTk.resources
