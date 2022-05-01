@@ -218,6 +218,7 @@
             this.btnExit.TextMarginLeft = 0;
             this.btnExit.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnExit.UseDefaultRadiusAndThickness = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnLogin
             // 
