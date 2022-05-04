@@ -65,7 +65,6 @@ namespace QuanLyDeTai.Khoa
             this.panel1.Size = new System.Drawing.Size(1333, 86);
             this.panel1.TabIndex = 1;
             this.panel1.Visible = false;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -179,7 +178,6 @@ namespace QuanLyDeTai.Khoa
             this.ListGV.TabIndex = 3;
             this.ListGV.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.ListGV.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListGV_CellClick_1);
-            this.ListGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListGV_CellContentClick);
             // 
             // bunifuPanel1
             // 

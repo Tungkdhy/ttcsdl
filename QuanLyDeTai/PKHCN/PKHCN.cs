@@ -118,5 +118,60 @@ namespace QuanLyDeTai.PKHCN
             Form login = new Login.Login();
             login.Show();
         }
+
+        private void panelChildForm_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void SubMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblcorreo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbluser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblusuario_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHd_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKhoa_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnlogoInicio_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

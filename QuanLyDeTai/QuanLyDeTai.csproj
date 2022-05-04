@@ -49,6 +49,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\..\..\Desktop\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
       <HintPath>..\..\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
     </Reference>
@@ -127,6 +130,12 @@
     <Compile Include="Khoa\Formlol.Designer.cs">
       <DependentUpon>Formlol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Khoa\QLBBKH\QLBBKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoa\QLBBKH\QLBBKhoaHoc.Designer.cs">
+      <DependentUpon>QLBBKhoaHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khoa\QLDT\modalDT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +159,12 @@
     </Compile>
     <Compile Include="Khoa\QLGV\QuanLyGV.Designer.cs">
       <DependentUpon>QuanLyGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khoa\TK\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoa\TK\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
@@ -237,6 +252,9 @@
     <EmbeddedResource Include="Khoa\Formlol.resx">
       <DependentUpon>Formlol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Khoa\QLBBKH\QLBBKhoaHoc.resx">
+      <DependentUpon>QLBBKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLDT\modalDT.resx">
       <DependentUpon>modalDT.cs</DependentUpon>
     </EmbeddedResource>
@@ -248,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLGV\QuanLyGV.resx">
       <DependentUpon>QuanLyGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khoa\TK\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

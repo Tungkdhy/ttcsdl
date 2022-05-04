@@ -31,13 +31,7 @@ namespace QuanLyDeTai.Khoa
             DataTable dt = ConnectDB.Connected.getData(query);
 
             ListGV.DataSource = dt;
-
-
         }
-
-
-
-
         private void btnSua_Click(object sender, EventArgs e)
         {
             state = "update";
@@ -45,9 +39,6 @@ namespace QuanLyDeTai.Khoa
             function.ShowDialog();
             getListGV();
         }
-
-
-
         private void btnXoa_Click(object sender, EventArgs e)
         {
             string query = "exec prd_khoa_deleteGV '" + inforGV[0] + "'";
@@ -84,8 +75,6 @@ namespace QuanLyDeTai.Khoa
 
         private void btnThem_Click_1(object sender, EventArgs e)
         {
-            
-            
             string query_get_next_mGV = "declare @nextMGV nvarchar(10) \n exec @nextMGV = TuTangMaGV \n select @nextMGV";
             string next_MAGV = ConnectDB.Connected.getData(query_get_next_mGV).Rows[0][0].ToString();
             state = "add";
@@ -94,16 +83,6 @@ namespace QuanLyDeTai.Khoa
             Form function = new QLGV.function(empty, state);
             function.ShowDialog();
             getListGV();
-        }
-
-        private void ListGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+        }     
     }
 }

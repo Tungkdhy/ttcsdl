@@ -36,7 +36,9 @@ namespace QuanLyDeTai.Khoa.QLDT
 
         private void btnLoc_Click(object sender, EventArgs e)
         {
-            
+            cmbCap.Items.Clear();
+            cmbBOMON.Items.Clear();
+            cmbTrangThai.Items.Clear();
             string query1 = "select distinct(Cap) from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '"+MaKhoa+"'";
             DataTable dt1 = ConnectDB.Connected.getData(query1);
             foreach (DataRow dr in dt1.Rows)
@@ -59,68 +61,52 @@ namespace QuanLyDeTai.Khoa.QLDT
         }
         private void cmbCap_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "";
-            query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
-
-            if (cmbBOMON.Text != "" && cmbTrangThai.Text == "") {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
-               
-            }else if(cmbBOMON.Text == "" && cmbTrangThai.Text != "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
-            }
-            else if (cmbBOMON.Text != "" && cmbTrangThai.Text != "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "') and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
-            }
-            DataTable dt = ConnectDB.Connected.getData(query);
-            ListDT.DataSource = dt;
 
         }
 
         private void cmbBOMON_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "";
-            query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  BOMON.TenBM = N'"+cmbBOMON.Text+"')";
+            //string query = "";
+            //query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  BOMON.TenBM = N'" + cmbBOMON.Text + "')";
 
-            if (cmbCap.Text != "" && cmbTrangThai.Text == "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+            //if (cmbCap.Text != "" && cmbTrangThai.Text == "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
 
-            }
-            else if (cmbCap.Text == "" && cmbTrangThai.Text != "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
-            }
-            else if (cmbCap.Text != "" && cmbTrangThai.Text != "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
-            }
-            DataTable dt = ConnectDB.Connected.getData(query);
-            ListDT.DataSource = dt;
+            //}
+            //else if (cmbCap.Text == "" && cmbTrangThai.Text != "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+            //}
+            //else if (cmbCap.Text != "" && cmbTrangThai.Text != "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            //}
+            //DataTable dt = ConnectDB.Connected.getData(query);
+            //ListDT.DataSource = dt;
         }
 
         private void cmbTrangThai_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string query = "";
-            query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+            //string query = "";
+            //query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
 
-            if (cmbCap.Text != "" && cmbBOMON.Text == "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+            //if (cmbCap.Text != "" && cmbBOMON.Text == "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
 
-            }
-            else if (cmbCap.Text == "" && cmbBOMON.Text != "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
-                
-            }
-            else if (cmbCap.Text != "" && cmbTrangThai.Text != "")
-            {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
-            }
-            DataTable dt = ConnectDB.Connected.getData(query);
-            ListDT.DataSource = dt;
+            //}
+            //else if (cmbCap.Text == "" && cmbBOMON.Text != "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+
+            //}
+            //else if (cmbCap.Text != "" && cmbTrangThai.Text != "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            //}
+            //DataTable dt = ConnectDB.Connected.getData(query);
+            //ListDT.DataSource = dt;
         }
 
         private void ListDT_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -154,6 +140,7 @@ namespace QuanLyDeTai.Khoa.QLDT
 
         private void btnThem_Click(object sender, EventArgs e)
         {
+            
             state = "add";
             List<string> empty = new List<string>() { };
             
@@ -181,6 +168,70 @@ namespace QuanLyDeTai.Khoa.QLDT
         private void ListDT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnApDung_Click(object sender, EventArgs e)
+        {
+            string query = "";
+            
+            if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
+
+            }
+            else if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "'";
+            }
+            else if (cmbCap.Text == "" && cmbBOMON.Text != "" && cmbTrangThai.Text != "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+            }
+            else if (cmbCap.Text != ""  && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            }
+            else if (cmbCap.Text != "" && cmbBOMON.Text != "" && cmbTrangThai.Text == "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+            }
+            else if (cmbCap.Text != "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+            }
+            else
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            }
+            DataTable dt = ConnectDB.Connected.getData(query);
+            ListDT.DataSource = dt;
+        }
+        private void cmbTrangThai_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            //string query = "";
+            //query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+
+            //if (cmbCap.Text != "" && cmbBOMON.Text == "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+
+            //}
+            //else if (cmbCap.Text == "" && cmbBOMON.Text != "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+
+            //}
+            //else if (cmbCap.Text != "" && cmbTrangThai.Text != "")
+            //{
+            //    query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            //}
+            //DataTable dt = ConnectDB.Connected.getData(query);
+            //ListDT.DataSource = dt;
+        }
+
+        private void btnclose_Click(object sender, EventArgs e)
+        {
+            panelLoc.Visible = false;
         }
     }
 }
