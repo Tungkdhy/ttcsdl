@@ -233,5 +233,71 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             panelLoc.Visible = false;
         }
+
+        private void txtsearchTopic_TextChanged(object sender, EventArgs e)
+        {
+            string query = "";
+
+            if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
+
+            }
+            else if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "'";
+            }
+            else if (cmbCap.Text == "" && cmbBOMON.Text != "" && cmbTrangThai.Text != "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+            }
+            else if (cmbCap.Text != "" && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            }
+            else if (cmbCap.Text != "" && cmbBOMON.Text != "" && cmbTrangThai.Text == "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+            }
+            else if (cmbCap.Text != "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+            }
+            else
+            {
+                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+            }
+            try
+            {
+                DataTable dt = ConnectDB.Connected.getData(query);
+                ListDT.DataSource = dt;
+                var re = from row in dt.AsEnumerable()
+                         where row[1].ToString().ToLower().Contains(txtsearchTopic.Text.ToLower())
+                         select row;
+                ListDT.DataSource = re.CopyToDataTable();
+            }
+            catch
+            {
+
+            }
+        }
+
+        private void btnXuatExcel_Click(object sender, EventArgs e)
+        {
+            ListDT.SelectAll();
+            DataObject copydata = ListDT.GetClipboardContent();
+            if (copydata != null) Clipboard.SetDataObject(copydata);
+            Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();
+            xlapp.Visible = true;
+            Microsoft.Office.Interop.Excel.Workbook xlWbook;
+            Microsoft.Office.Interop.Excel.Worksheet xlsheet;
+            object misedata = System.Reflection.Missing.Value;
+            xlWbook = xlapp.Workbooks.Add(misedata);
+            xlsheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWbook.Worksheets.get_Item(1);
+            Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
+            xlr.Select();
+            xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+
+        }
     }
 }

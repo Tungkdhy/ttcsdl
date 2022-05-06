@@ -274,3 +274,4 @@ C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\bin\Debug\System.Security.Princip
 C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\bin\Debug\Bunifu.UI.WinForms.BunifuDatePicker.dll
 C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.TK.ThongKe.resources
 C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.Khoa.QLBBKH.QLBBKhoaHoc.resources
+C:\Users\admin\Desktop\csdl\ttcsdl\QuanLyDeTai\obj\Debug\QuanLyDeTai.csproj.ResolveComReference.cache

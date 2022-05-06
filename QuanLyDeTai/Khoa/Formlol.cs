@@ -114,5 +114,17 @@ namespace QuanLyDeTai.Khoa
             Form bbkh = new QLBBKH.QLBBKhoaHoc(MaKhoa);
             openChilForm(bbkh);
         }
+
+        private void btnDMK_Click(object sender, EventArgs e)
+        {
+            openChilForm(new User.Setting.ChangePassword(MaKhoa));
+        }
+
+        private void btnDX_Click(object sender, EventArgs e)
+        {
+            Form login = new Login.Login();
+            this.Hide();
+            login.Show();
+        }
     }
 }

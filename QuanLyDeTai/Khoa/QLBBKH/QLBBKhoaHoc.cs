@@ -37,21 +37,15 @@ namespace QuanLyDeTai.Khoa.QLBBKH
             }
             else if (cmbChuyenNganh.Text != "" && cmbTapChi.Text == "")
             {
-                query = "select MABB as 'Mã bài báo', TenBaiBao as 'Tên bài báo', BaiBaoKH.ChuyenNganh as 'Chuyên ngành', BaiBaoKH.NgayDang as 'Ngày đăng', BaiBaoKH.TapChi as 'Tạp chí', BaiBaoKH.MDT as 'Mã đề tài' from BaiBaoKH " +
-                    "join DeTaiNCKH on BaiBaoKH.MDT = DeTaiNCKH.MADT where DeTaiNCKH.MABM in " +
-                    "(select BOMON.MABM from BOMON left join KHOA on BOMON.MAKHOA = KHOA.MAKHOA where KHOA.MAKHOA= '"+MaKhoa+"') and BaiBaoKH.ChuyenNganh = N'"+cmbChuyenNganh.Text+"'";
+                query = "exec proc_khoa_getBBtheoCN N'" + cmbChuyenNganh.Text + "', '" + MaKhoa + "'";
             }
             else if (cmbChuyenNganh.Text == "" && cmbTapChi.Text != "")
             {
-                query = "select MABB as 'Mã bài báo', TenBaiBao as 'Tên bài báo', BaiBaoKH.ChuyenNganh as 'Chuyên ngành', BaiBaoKH.NgayDang as 'Ngày đăng', BaiBaoKH.TapChi as 'Tạp chí', BaiBaoKH.MDT as 'Mã đề tài' from BaiBaoKH " +
-                    "join DeTaiNCKH on BaiBaoKH.MDT = DeTaiNCKH.MADT where DeTaiNCKH.MABM in " +
-                    "(select BOMON.MABM from BOMON left join KHOA on BOMON.MAKHOA = KHOA.MAKHOA where KHOA.MAKHOA= '"+MaKhoa+"') and BaiBaoKH.TapChi = N'" + cmbTapChi.Text + "'";
+                query = "exec proc_khoa_getBBtheoTC N'" + cmbTapChi.Text + "', '" + MaKhoa + "'";
             }
             else
             {
-                query = "select MABB as 'Mã bài báo', TenBaiBao as 'Tên bài báo', BaiBaoKH.ChuyenNganh as 'Chuyên ngành', BaiBaoKH.NgayDang as 'Ngày đăng', BaiBaoKH.TapChi as 'Tạp chí', BaiBaoKH.MDT as 'Mã đề tài' from BaiBaoKH " +
-                    "join DeTaiNCKH on BaiBaoKH.MDT = DeTaiNCKH.MADT where DeTaiNCKH.MABM in " +
-                    "(select BOMON.MABM from BOMON left join KHOA on BOMON.MAKHOA = KHOA.MAKHOA where KHOA.MAKHOA= '"+MaKhoa+"') and BaiBaoKH.ChuyenNganh = N'" + cmbChuyenNganh.Text + "' and BaiBaoKH.TapChi = N'"+cmbTapChi.Text+"'";
+                query = "exec proc_khoa_getBBtheoTCCN N'" + cmbTapChi.Text + "',N'" + cmbChuyenNganh.Text + "', '" + MaKhoa + "'";
             }
             DataTable dt = ConnectDB.Connected.getData(query);
             ListBBKH.DataSource = dt;
@@ -99,21 +93,15 @@ namespace QuanLyDeTai.Khoa.QLBBKH
             }
             else if (cmbChuyenNganh.Text != "" && cmbTapChi.Text == "")
             {
-                query = "select MABB as 'Mã bài báo', TenBaiBao as 'Tên bài báo', BaiBaoKH.ChuyenNganh as 'Chuyên ngành', BaiBaoKH.NgayDang as 'Ngày đăng', BaiBaoKH.TapChi as 'Tạp chí', BaiBaoKH.MDT as 'Mã đề tài' from BaiBaoKH " +
-                    "join DeTaiNCKH on BaiBaoKH.MDT = DeTaiNCKH.MADT where DeTaiNCKH.MABM in " +
-                    "(select BOMON.MABM from BOMON left join KHOA on BOMON.MAKHOA = KHOA.MAKHOA where KHOA.MAKHOA= '" + MaKhoa + "') and BaiBaoKH.ChuyenNganh = N'" + cmbChuyenNganh.Text + "'";
+                query = "exec proc_khoa_getBBtheoCN N'"+cmbChuyenNganh.Text+"', '"+MaKhoa+"'";
             }
             else if (cmbChuyenNganh.Text == "" && cmbTapChi.Text != "")
             {
-                query = "select MABB as 'Mã bài báo', TenBaiBao as 'Tên bài báo', BaiBaoKH.ChuyenNganh as 'Chuyên ngành', BaiBaoKH.NgayDang as 'Ngày đăng', BaiBaoKH.TapChi as 'Tạp chí', BaiBaoKH.MDT as 'Mã đề tài' from BaiBaoKH " +
-                    "join DeTaiNCKH on BaiBaoKH.MDT = DeTaiNCKH.MADT where DeTaiNCKH.MABM in " +
-                    "(select BOMON.MABM from BOMON left join KHOA on BOMON.MAKHOA = KHOA.MAKHOA where KHOA.MAKHOA= '" + MaKhoa + "') and BaiBaoKH.TapChi = N'" + cmbTapChi.Text + "'";
+                query = "exec proc_khoa_getBBtheoTC N'" + cmbTapChi.Text + "', '" + MaKhoa + "'";
             }
             else
             {
-                query = "select MABB as 'Mã bài báo', TenBaiBao as 'Tên bài báo', BaiBaoKH.ChuyenNganh as 'Chuyên ngành', BaiBaoKH.NgayDang as 'Ngày đăng', BaiBaoKH.TapChi as 'Tạp chí', BaiBaoKH.MDT as 'Mã đề tài' from BaiBaoKH " +
-                    "join DeTaiNCKH on BaiBaoKH.MDT = DeTaiNCKH.MADT where DeTaiNCKH.MABM in " +
-                    "(select BOMON.MABM from BOMON left join KHOA on BOMON.MAKHOA = KHOA.MAKHOA where KHOA.MAKHOA= '" + MaKhoa + "') and BaiBaoKH.ChuyenNganh = N'" + cmbChuyenNganh.Text + "' and BaiBaoKH.TapChi = N'" + cmbTapChi.Text + "'";
+                query = "exec proc_khoa_getBBtheoTCCN N'"+cmbTapChi.Text+"',N'"+cmbChuyenNganh.Text+"', '"+MaKhoa+"'";
             }
             try
             {
@@ -129,5 +117,7 @@ namespace QuanLyDeTai.Khoa.QLBBKH
 
             }
         }
+
+        
     }
 }

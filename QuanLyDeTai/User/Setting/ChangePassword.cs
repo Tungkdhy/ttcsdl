@@ -14,11 +14,11 @@ namespace QuanLyDeTai.User.Setting
 {
     public partial class ChangePassword : Form
     {
-        private static string maGV;
+        private static string ma;
         private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
-        public ChangePassword(string MaGV)
+        public ChangePassword(string Ma)
         {
-            maGV = MaGV;
+            ma = Ma;
             InitializeComponent();
         }
 
@@ -27,7 +27,7 @@ namespace QuanLyDeTai.User.Setting
             SqlConnection conn = new SqlConnection(connectionString);
             conn.Open();
 
-            string query = "select Passwords from NGUOIDUNG where MGV ='"+maGV+"'";
+            string query = "select Passwords from DANGNHAP where MGV ='"+ma+"' or MAKHOA = '"+ma+"'";
             SqlDataAdapter da = new SqlDataAdapter(query, conn);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -57,7 +57,7 @@ namespace QuanLyDeTai.User.Setting
                     SqlConnection conn = new SqlConnection(connectionString);
                     conn.Open();
 
-                    string query = "update NGUOIDUNG set Passwords ='" + mkm.Text.Trim() + "'";
+                    string query = "update DANGNHAP set Passwords ='" + mkm.Text.Trim() + "'";
                     SqlCommand cmd = new SqlCommand(query, conn);
                     cmd.ExecuteNonQuery();
                     conn.Close();
