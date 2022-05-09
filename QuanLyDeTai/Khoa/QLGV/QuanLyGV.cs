@@ -37,7 +37,16 @@ namespace QuanLyDeTai.Khoa
             state = "update";
             Form function = new QLGV.function(inforGV, state);
             function.ShowDialog();
-            getListGV();
+            if(lbQLGV.Text == "Danh sách giáo viên"){
+                getListGV();
+            }
+            else
+            {
+                string query = "exec prd_khoa_DSchunhiemDT '" + MaKhoa + "'";
+                DataTable dt = ConnectDB.Connected.getData(query);
+                ListGV.DataSource = dt;
+            }
+            
         }
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -83,6 +92,8 @@ namespace QuanLyDeTai.Khoa
             Form function = new QLGV.function(empty, state);
             function.ShowDialog();
             getListGV();
+            
+            
         }
 
         private void btnXuatExcel_Click(object sender, EventArgs e)
@@ -100,6 +111,54 @@ namespace QuanLyDeTai.Khoa
             Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
             xlr.Select();
             xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+        }
+
+        private void lbQLGV_Click(object sender, EventArgs e)
+        {
+            getListGV();
+        }
+
+        private void btnDSCN_Click(object sender, EventArgs e)
+        {
+            lbQLGV.Text = "Danh sách chủ nhiệm";
+            btnUndo.Visible = true;
+            string query = "exec prd_khoa_DSchunhiemDT '"+MaKhoa+"'";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            ListGV.DataSource = dt;
+        }
+
+        private void btnUndo_Click(object sender, EventArgs e)
+        {
+            getListGV();
+            btnUndo.Visible = false;
+            lbQLGV.Text = "Danh sách giáo viên";
+        }
+
+        private void txtsearchGV_TextChanged(object sender, EventArgs e)
+        {
+            string query = "";
+            if (lbQLGV.Text == "Danh sách chủ nhiệm")
+            {
+                query = "prd_khoa_DSchunhiemDT '" + MaKhoa + "'";
+            }
+            else
+            {
+                query = "select * from GV where MAKHOA = '" + MaKhoa + "'";
+            }
+            string searchGV = txtsearchGV.Text;
+            try
+            {
+                DataTable dt = ConnectDB.Connected.getData(query);
+                ListGV.DataSource = dt;
+                var re = from row in dt.AsEnumerable()
+                         where row[1].ToString().ToLower().Contains(searchGV.ToLower())
+                         select row;
+                ListGV.DataSource = re.CopyToDataTable();
+            }
+            catch
+            {
+
+            }
         }
     }
 }

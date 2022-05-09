@@ -30,13 +30,15 @@ namespace QuanLyDeTai.Khoa.QLDT
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongTinTV));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.txtMaDT = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtTenDT = new System.Windows.Forms.TextBox();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label3 = new System.Windows.Forms.Label();
             this.listTV = new System.Windows.Forms.DataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.bunifuPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.listTV)).BeginInit();
             this.SuspendLayout();
@@ -50,18 +52,18 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(28, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 22);
+            this.label1.Size = new System.Drawing.Size(72, 22);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mã ĐT";
+            this.label1.Text = "Mã ĐT:";
             // 
             // txtMaDT
             // 
             this.txtMaDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtMaDT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMaDT.Location = new System.Drawing.Point(101, 42);
+            this.txtMaDT.Location = new System.Drawing.Point(106, 42);
             this.txtMaDT.Name = "txtMaDT";
             this.txtMaDT.ReadOnly = true;
-            this.txtMaDT.Size = new System.Drawing.Size(133, 23);
+            this.txtMaDT.Size = new System.Drawing.Size(128, 23);
             this.txtMaDT.TabIndex = 1;
             // 
             // label2
@@ -71,19 +73,19 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(331, 43);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 22);
+            this.label2.Size = new System.Drawing.Size(76, 22);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Tên ĐT";
+            this.label2.Text = "Tên ĐT:";
             // 
             // txtTenDT
             // 
             this.txtTenDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtTenDT.Cursor = System.Windows.Forms.Cursors.No;
             this.txtTenDT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenDT.Location = new System.Drawing.Point(408, 42);
+            this.txtTenDT.Location = new System.Drawing.Point(413, 42);
             this.txtTenDT.Name = "txtTenDT";
             this.txtTenDT.ReadOnly = true;
-            this.txtTenDT.Size = new System.Drawing.Size(430, 23);
+            this.txtTenDT.Size = new System.Drawing.Size(425, 23);
             this.txtTenDT.TabIndex = 3;
             // 
             // bunifuPanel1
@@ -102,6 +104,23 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuPanel1.Size = new System.Drawing.Size(871, 269);
             this.bunifuPanel1.TabIndex = 4;
             // 
+            // listTV
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.TopCenter;
+            this.listTV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.listTV.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.listTV.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.listTV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.listTV.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listTV.Location = new System.Drawing.Point(0, 0);
+            this.listTV.Name = "listTV";
+            this.listTV.RowHeadersWidth = 51;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listTV.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.listTV.RowTemplate.Height = 24;
+            this.listTV.Size = new System.Drawing.Size(871, 269);
+            this.listTV.TabIndex = 0;
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -111,17 +130,6 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label3.Size = new System.Drawing.Size(97, 22);
             this.label3.TabIndex = 5;
             this.label3.Text = "Thành viên";
-            // 
-            // listTV
-            // 
-            this.listTV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.listTV.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listTV.Location = new System.Drawing.Point(0, 0);
-            this.listTV.Name = "listTV";
-            this.listTV.RowHeadersWidth = 51;
-            this.listTV.RowTemplate.Height = 24;
-            this.listTV.Size = new System.Drawing.Size(871, 269);
-            this.listTV.TabIndex = 0;
             // 
             // ThongTinTV
             // 

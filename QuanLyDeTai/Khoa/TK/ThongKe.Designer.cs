@@ -30,18 +30,18 @@ namespace QuanLyDeTai.Khoa.TK
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKe));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelTKDT = new Bunifu.UI.WinForms.BunifuPanel();
             this.label5 = new System.Windows.Forms.Label();
             this.txtSLDT = new System.Windows.Forms.TextBox();
@@ -114,18 +114,18 @@ namespace QuanLyDeTai.Khoa.TK
             this.chartTKPT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chartTKPT.BackSecondaryColor = System.Drawing.Color.White;
             this.chartTKPT.BorderlineColor = System.Drawing.SystemColors.Control;
-            chartArea5.Name = "ChartArea1";
-            this.chartTKPT.ChartAreas.Add(chartArea5);
-            legend5.Name = "Legend1";
-            this.chartTKPT.Legends.Add(legend5);
+            chartArea1.Name = "ChartArea1";
+            this.chartTKPT.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chartTKPT.Legends.Add(legend1);
             this.chartTKPT.Location = new System.Drawing.Point(895, 21);
             this.chartTKPT.Name = "chartTKPT";
-            series5.ChartArea = "ChartArea1";
-            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series5.IsValueShownAsLabel = true;
-            series5.Legend = "Legend1";
-            series5.Name = "TKPT";
-            this.chartTKPT.Series.Add(series5);
+            series1.ChartArea = "ChartArea1";
+            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series1.IsValueShownAsLabel = true;
+            series1.Legend = "Legend1";
+            series1.Name = "TKPT";
+            this.chartTKPT.Series.Add(series1);
             this.chartTKPT.Size = new System.Drawing.Size(516, 341);
             this.chartTKPT.TabIndex = 5;
             // 
@@ -175,16 +175,16 @@ namespace QuanLyDeTai.Khoa.TK
             // 
             this.chartTKDTBM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chartTKDTBM.BorderlineColor = System.Drawing.SystemColors.Control;
-            chartArea6.Name = "ChartArea1";
-            this.chartTKDTBM.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chartTKDTBM.Legends.Add(legend6);
+            chartArea2.Name = "ChartArea1";
+            this.chartTKDTBM.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chartTKDTBM.Legends.Add(legend2);
             this.chartTKDTBM.Location = new System.Drawing.Point(261, 21);
             this.chartTKDTBM.Name = "chartTKDTBM";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "DTBM";
-            this.chartTKDTBM.Series.Add(series6);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "DTBM";
+            this.chartTKDTBM.Series.Add(series2);
             this.chartTKDTBM.Size = new System.Drawing.Size(516, 341);
             this.chartTKDTBM.TabIndex = 2;
             this.chartTKDTBM.Text = "chart1";
@@ -192,9 +192,10 @@ namespace QuanLyDeTai.Khoa.TK
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(13, 13);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 17);
+            this.label2.Size = new System.Drawing.Size(58, 22);
             this.label2.TabIndex = 1;
             this.label2.Text = "Đề tài";
             // 
@@ -227,7 +228,7 @@ namespace QuanLyDeTai.Khoa.TK
             this.cmbSelectCNTC.Items.AddRange(new object[] {
             "Chuyên ngành",
             "Tạp chí"});
-            this.cmbSelectCNTC.Location = new System.Drawing.Point(64, 98);
+            this.cmbSelectCNTC.Location = new System.Drawing.Point(64, 113);
             this.cmbSelectCNTC.Name = "cmbSelectCNTC";
             this.cmbSelectCNTC.Size = new System.Drawing.Size(121, 24);
             this.cmbSelectCNTC.TabIndex = 10;
@@ -237,7 +238,7 @@ namespace QuanLyDeTai.Khoa.TK
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(17, 103);
+            this.label6.Location = new System.Drawing.Point(15, 118);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 19);
             this.label6.TabIndex = 9;
@@ -247,17 +248,17 @@ namespace QuanLyDeTai.Khoa.TK
             // 
             this.chartTKBBCN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chartTKBBCN.BorderlineColor = System.Drawing.SystemColors.Control;
-            chartArea7.Name = "ChartArea1";
-            this.chartTKBBCN.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chartTKBBCN.Legends.Add(legend7);
+            chartArea3.Name = "ChartArea1";
+            this.chartTKBBCN.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartTKBBCN.Legends.Add(legend3);
             this.chartTKBBCN.Location = new System.Drawing.Point(261, 13);
             this.chartTKBBCN.Name = "chartTKBBCN";
-            series7.ChartArea = "ChartArea1";
-            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series7.Legend = "Legend1";
-            series7.Name = "TKBBCNTC";
-            this.chartTKBBCN.Series.Add(series7);
+            series3.ChartArea = "ChartArea1";
+            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series3.Legend = "Legend1";
+            series3.Name = "TKBBCNTC";
+            this.chartTKBBCN.Series.Add(series3);
             this.chartTKBBCN.Size = new System.Drawing.Size(516, 341);
             this.chartTKBBCN.TabIndex = 8;
             // 
@@ -265,18 +266,18 @@ namespace QuanLyDeTai.Khoa.TK
             // 
             this.chartTKBBBM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.chartTKBBBM.BorderlineColor = System.Drawing.SystemColors.Control;
-            chartArea8.Name = "ChartArea1";
-            this.chartTKBBBM.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chartTKBBBM.Legends.Add(legend8);
+            chartArea4.Name = "ChartArea1";
+            this.chartTKBBBM.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartTKBBBM.Legends.Add(legend4);
             this.chartTKBBBM.Location = new System.Drawing.Point(895, 13);
             this.chartTKBBBM.Name = "chartTKBBBM";
-            series8.ChartArea = "ChartArea1";
-            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series8.IsValueShownAsLabel = true;
-            series8.Legend = "Legend1";
-            series8.Name = "TKBBTBM";
-            this.chartTKBBBM.Series.Add(series8);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series4.IsValueShownAsLabel = true;
+            series4.Legend = "Legend1";
+            series4.Name = "TKBBTBM";
+            this.chartTKBBBM.Series.Add(series4);
             this.chartTKBBBM.Size = new System.Drawing.Size(516, 341);
             this.chartTKBBBM.TabIndex = 8;
             // 
@@ -284,7 +285,7 @@ namespace QuanLyDeTai.Khoa.TK
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 52);
+            this.label4.Location = new System.Drawing.Point(17, 61);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 19);
             this.label4.TabIndex = 7;
@@ -293,9 +294,10 @@ namespace QuanLyDeTai.Khoa.TK
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(13, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(118, 17);
+            this.label1.Size = new System.Drawing.Size(147, 22);
             this.label1.TabIndex = 0;
             this.label1.Text = "Bài báo khoa học";
             // 
@@ -325,7 +327,7 @@ namespace QuanLyDeTai.Khoa.TK
             "2028",
             "2029",
             "2030"});
-            this.cmbYearTKBBKH.Location = new System.Drawing.Point(64, 47);
+            this.cmbYearTKBBKH.Location = new System.Drawing.Point(64, 56);
             this.cmbYearTKBBKH.Name = "cmbYearTKBBKH";
             this.cmbYearTKBBKH.Size = new System.Drawing.Size(121, 24);
             this.cmbYearTKBBKH.TabIndex = 6;

@@ -144,5 +144,17 @@ namespace QuanLyDeTai.Login
         {
             this.Hide();
         }
+
+        private void chkbHienMK_CheckedChanged(object sender, EventArgs e)
+        {
+            if (chkbHienMK.Checked)
+            {
+                Password.PasswordChar = '\0';
+            }
+            else
+            {
+                Password.PasswordChar = '*';
+            }
+        }
     }
 }

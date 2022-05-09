@@ -111,25 +111,41 @@ namespace QuanLyDeTai.Khoa.QLDT
 
         private void ListDT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            bunifuTransition1.ShowSync(footerpanel);
-            int index = e.RowIndex;
-            DataGridViewRow selectedRow = ListDT.Rows[index];
-            string MADT = selectedRow.Cells["MADT"].Value.ToString();
-            string TenDT = selectedRow.Cells["TenDT"].Value.ToString();
-            string ChuyenNganh = selectedRow.Cells["ChuyenNganh"].Value.ToString().Split()[0];
-            string Cap = selectedRow.Cells["Cap"].Value.ToString();
-            string SQDThanhLap = selectedRow.Cells["SQDThanhLap"].Value.ToString();
-            string NgayBD = selectedRow.Cells["NgayBD"].Value.ToString();
-            string NgayNT = selectedRow.Cells["NgayNT"].Value.ToString();
-            string TrangThai = selectedRow.Cells["TrangThai"].Value.ToString();
-            string LoaiSP = selectedRow.Cells["LoaiSP"].Value.ToString();
-            string TenBM = selectedRow.Cells["TenBM"].Value.ToString();
-            string TienDo = selectedRow.Cells["TienDo"].Value.ToString();
-            string[] dataGT = { MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, TenBM, TienDo };
-            inforDT.Clear();
-            inforDT.AddRange(dataGT);
-        }
+            try
+            {
+                int index = e.RowIndex;
+                DataGridViewRow selectedRow = ListDT.Rows[index];
+                if (selectedRow.Cells["TrangThai"].Value.ToString() == "Yêu cầu hủy")
+                {
+                    btnYChuyDT.Visible = false;
+                    lbYChuy.Visible = false;
+                }
+                else
+                {
+                    btnYChuyDT.Visible = true;
+                    lbYChuy.Visible = true;
+                }
+                bunifuTransition1.ShowSync(footerpanel);
+                string MADT = selectedRow.Cells["MADT"].Value.ToString();
+                string TenDT = selectedRow.Cells["TenDT"].Value.ToString();
+                string ChuyenNganh = selectedRow.Cells["ChuyenNganh"].Value.ToString().Split()[0];
+                string Cap = selectedRow.Cells["Cap"].Value.ToString();
+                string SQDThanhLap = selectedRow.Cells["SQDThanhLap"].Value.ToString();
+                string NgayBD = selectedRow.Cells["NgayBD"].Value.ToString();
+                string NgayNT = selectedRow.Cells["NgayNT"].Value.ToString();
+                string TrangThai = selectedRow.Cells["TrangThai"].Value.ToString();
+                string LoaiSP = selectedRow.Cells["LoaiSP"].Value.ToString();
+                string TenBM = selectedRow.Cells["TenBM"].Value.ToString();
+                string TienDo = selectedRow.Cells["TienDo"].Value.ToString();
+                string[] dataGT = { MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, TenBM, TienDo };
+                inforDT.Clear();
+                inforDT.AddRange(dataGT);
+            }
+            catch
+            {
 
+            }
+        }
         private void btnSuaDT_Click(object sender, EventArgs e)
         {
             state = "update";
@@ -206,6 +222,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             }
             DataTable dt = ConnectDB.Connected.getData(query);
             ListDT.DataSource = dt;
+            panelLoc.Visible = false;
+            cmbBOMON.Text = "";
+            cmbCap.Text = "";
+            cmbTrangThai.Text = "";
         }
         private void cmbTrangThai_SelectedIndexChanged_1(object sender, EventArgs e)
         {

@@ -64,7 +64,7 @@ namespace QuanLyDeTai.Khoa.QLBBKH
             this.labelTapChi.AutoEllipsis = false;
             this.labelTapChi.CursorType = null;
             this.labelTapChi.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTapChi.Location = new System.Drawing.Point(418, 33);
+            this.labelTapChi.Location = new System.Drawing.Point(409, 33);
             this.labelTapChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.labelTapChi.Name = "labelTapChi";
             this.labelTapChi.RightToLeft = System.Windows.Forms.RightToLeft.No;
@@ -82,7 +82,7 @@ namespace QuanLyDeTai.Khoa.QLBBKH
             this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
             this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(28, 33);
+            this.bunifuLabel1.Location = new System.Drawing.Point(17, 32);
             this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel1.Name = "bunifuLabel1";
             this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;

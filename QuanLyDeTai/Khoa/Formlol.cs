@@ -17,6 +17,7 @@ namespace QuanLyDeTai.Khoa
         {
             MaKhoa = makhoa;
             InitializeComponent();
+            getTenKhoa();
             customiDegsin();
         }
 
@@ -130,6 +131,12 @@ namespace QuanLyDeTai.Khoa
         private void Khoa_Load(object sender, EventArgs e)
         {
 
+        }
+        public void getTenKhoa()
+        {
+            string query = "prd_khoa_getTenkhoa '" + MaKhoa + "'";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            lbTenKhoa.Text = "Khoa " + dt.Rows[0][0].ToString();
         }
     }
 }

@@ -49,7 +49,7 @@ namespace QuanLyDeTai.Khoa
             this.btnQLGV = new System.Windows.Forms.Button();
             this.btnQLDT = new System.Windows.Forms.Button();
             this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTenKhoa = new System.Windows.Forms.Label();
             this.astMenu = new System.Windows.Forms.PictureBox();
             this.contentpanel = new Bunifu.UI.WinForms.BunifuPanel();
             ((System.ComponentModel.ISupportInitialize)(this.btnMenu)).BeginInit();
@@ -63,7 +63,7 @@ namespace QuanLyDeTai.Khoa
             // 
             // bunifuTransition1
             // 
-            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.HorizSlide;
+            this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
             animation1.AnimateOnlyDifferences = true;
             animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
@@ -73,13 +73,13 @@ namespace QuanLyDeTai.Khoa
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
             animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
             animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
             this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // btnMenu
@@ -359,7 +359,7 @@ namespace QuanLyDeTai.Khoa
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
             this.bunifuPanel1.BorderRadius = 3;
             this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.label1);
+            this.bunifuPanel1.Controls.Add(this.lbTenKhoa);
             this.bunifuPanel1.Controls.Add(this.astMenu);
             this.bunifuTransition1.SetDecoration(this.bunifuPanel1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -369,17 +369,17 @@ namespace QuanLyDeTai.Khoa
             this.bunifuPanel1.Size = new System.Drawing.Size(1200, 47);
             this.bunifuPanel1.TabIndex = 6;
             // 
-            // label1
+            // lbTenKhoa
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.bunifuTransition1.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(502, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(229, 22);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Khoa Công Nghệ Thông Tin";
+            this.lbTenKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbTenKhoa.AutoSize = true;
+            this.bunifuTransition1.SetDecoration(this.lbTenKhoa, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
+            this.lbTenKhoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenKhoa.Location = new System.Drawing.Point(502, 9);
+            this.lbTenKhoa.Name = "lbTenKhoa";
+            this.lbTenKhoa.Size = new System.Drawing.Size(229, 22);
+            this.lbTenKhoa.TabIndex = 2;
+            this.lbTenKhoa.Text = "Khoa Công Nghệ Thông Tin";
             // 
             // astMenu
             // 
@@ -458,7 +458,7 @@ namespace QuanLyDeTai.Khoa
         private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
         private System.Windows.Forms.PictureBox astMenu;
         private Bunifu.UI.WinForms.BunifuPanel contentpanel;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbTenKhoa;
         private System.Windows.Forms.Button btnSetting;
     }
 }
