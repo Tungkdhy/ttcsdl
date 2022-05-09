@@ -126,5 +126,10 @@ namespace QuanLyDeTai.Khoa
             this.Hide();
             login.Show();
         }
+
+        private void Khoa_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

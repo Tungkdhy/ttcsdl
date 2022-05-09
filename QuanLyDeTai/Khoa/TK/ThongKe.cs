@@ -66,16 +66,12 @@ namespace QuanLyDeTai.Khoa.TK
                     chartTKBBCN.Series["TKBBCNTC"].XValueMember = "Chuyên ngành";
                     chartTKBBCN.Series["TKBBCNTC"].YValueMembers = "Số lượng";
                     chartTKBBCN.Titles.Add("TKBBCNTC");
-                }
-                
-
+                }          
             }
             catch
             {
 
-            }
-            
-            
+            }     
         }
 
         private void cmbYearTKBBKH_SelectedIndexChanged(object sender, EventArgs e)

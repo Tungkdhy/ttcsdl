@@ -83,6 +83,23 @@ namespace QuanLyDeTai.Khoa
             Form function = new QLGV.function(empty, state);
             function.ShowDialog();
             getListGV();
-        }     
+        }
+
+        private void btnXuatExcel_Click(object sender, EventArgs e)
+        {
+            ListGV.SelectAll();
+            DataObject copydata = ListGV.GetClipboardContent();
+            if (copydata != null) Clipboard.SetDataObject(copydata);
+            Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();
+            xlapp.Visible = true;
+            Microsoft.Office.Interop.Excel.Workbook xlWbook;
+            Microsoft.Office.Interop.Excel.Worksheet xlsheet;
+            object misedata = System.Reflection.Missing.Value;
+            xlWbook = xlapp.Workbooks.Add(misedata);
+            xlsheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWbook.Worksheets.get_Item(1);
+            Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
+            xlr.Select();
+            xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+        }
     }
 }

@@ -52,6 +52,7 @@ namespace QuanLyDeTai.Khoa.QLGV
         {
             if (state == "update")
             {
+                lbFuncQLGV.Text = "Sửa giáo viên";
                 txtMAGV.Enabled = false;
                 txtName.Enabled = false;
                 txtCapBac.Focus();

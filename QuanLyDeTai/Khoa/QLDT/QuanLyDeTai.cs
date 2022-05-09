@@ -142,8 +142,9 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             
             state = "add";
-            List<string> empty = new List<string>() { };
-            
+            string query_get_next_mGV = "declare @nextMadt nvarchar(10) \n exec @nextMadt = TuTangMaDT \n select @nextMadt";
+            string next_MADT = ConnectDB.Connected.getData(query_get_next_mGV).Rows[0][0].ToString();
+            List<string> empty = new List<string>() { next_MADT, "", "", "", "", "", "", "", "", "","" };
             Form function = new QLDT.modalDT(empty, state, MaKhoa);
             function.ShowDialog();
             getListDT();
@@ -151,11 +152,11 @@ namespace QuanLyDeTai.Khoa.QLDT
 
         private void btnXoaDT_Click(object sender, EventArgs e)
         {
-            string query = "exec prd_khoa_deleteGV '" + inforDT[0] + "'";
-            DialogResult dr = MessageBox.Show("Delete đề tài " + inforDT[1].Trim() + "", "Are you sure for", MessageBoxButtons.YesNo);
+            string query = "exec proc_Khoa_yeucauhuydt '" + inforDT[0] + "'";
+            DialogResult dr = MessageBox.Show("Yêu cầu hủy đề tài " + inforDT[1].Trim() + "", "Are you sure for", MessageBoxButtons.YesNo);
             if (dr == DialogResult.Yes)
             {
-                MessageBox.Show(ConnectDB.Connected.ChangeData(query, "xóa"));
+                MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Yêu cầu hủy thành công"));
             }
             else
             {

@@ -32,6 +32,7 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             if (state == "update")
             {
+                lbModalQLDT.Text = "Sửa đề tài";
                 txtMADT.Enabled = false;
                 txtTenBM.Enabled = false;
                 cmbSelectTenBM.Visible = false;
@@ -44,19 +45,20 @@ namespace QuanLyDeTai.Khoa.QLDT
                 {
                     cmbSelectTenBM.Items.Add(dr[0].ToString());
                 }
-                txtMADT.Enabled = true;
-                txtMADT.Text = "";
+                txtMADT.Enabled = false;
+                txtMADT.Text = inforDT[0];
                 txtTenDT.Text = "";
                 txtChuyenNganh.Text = "";
                 txtCap.Text = "";
+                txtTienDo.Text = "0";
                 txtSQDTLap.Text = "";
                 txtNgayBD.Text = "";
                 txtNgayNT.Text = "";
-                txtTrangThai.Text = "";
+                txtTrangThai.Text = "Chờ phê duyệt";
                 txtLoaiSP.Text = "";
                 txtTenBM.Visible = false;
-                
-
+                txtTrangThai.Enabled = false;
+                txtTienDo.Enabled = false;
             }
         }
         public void getdataInforDT()

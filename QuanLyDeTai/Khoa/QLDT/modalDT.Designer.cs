@@ -53,8 +53,8 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnHuy = new System.Windows.Forms.Button();
             this.cmbSelectTenBM = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.txtTienDo = new System.Windows.Forms.TextBox();
+            this.lbModalQLDT = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -76,9 +76,8 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtMADT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMADT.Location = new System.Drawing.Point(179, 94);
             this.txtMADT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMADT.Multiline = true;
             this.txtMADT.Name = "txtMADT";
-            this.txtMADT.Size = new System.Drawing.Size(153, 34);
+            this.txtMADT.Size = new System.Drawing.Size(153, 30);
             this.txtMADT.TabIndex = 10;
             // 
             // label2
@@ -126,7 +125,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(405, 410);
+            this.label5.Location = new System.Drawing.Point(408, 411);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label5.Size = new System.Drawing.Size(82, 34);
@@ -191,10 +190,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtNgayNT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayNT.Location = new System.Drawing.Point(179, 336);
             this.txtNgayNT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNgayNT.Multiline = true;
             this.txtNgayNT.Name = "txtNgayNT";
-            this.txtNgayNT.Size = new System.Drawing.Size(153, 34);
-            this.txtNgayNT.TabIndex = 19;
+            this.txtNgayNT.Size = new System.Drawing.Size(153, 30);
+            this.txtNgayNT.TabIndex = 6;
             // 
             // txtTrangThai
             // 
@@ -202,10 +200,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtTrangThai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTrangThai.Location = new System.Drawing.Point(179, 411);
             this.txtTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTrangThai.Multiline = true;
             this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(153, 34);
-            this.txtTrangThai.TabIndex = 20;
+            this.txtTrangThai.Size = new System.Drawing.Size(153, 30);
+            this.txtTrangThai.TabIndex = 8;
             // 
             // txtLoaiSP
             // 
@@ -213,10 +210,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtLoaiSP.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLoaiSP.Location = new System.Drawing.Point(567, 254);
             this.txtLoaiSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtLoaiSP.Multiline = true;
             this.txtLoaiSP.Name = "txtLoaiSP";
-            this.txtLoaiSP.Size = new System.Drawing.Size(347, 34);
-            this.txtLoaiSP.TabIndex = 21;
+            this.txtLoaiSP.Size = new System.Drawing.Size(347, 30);
+            this.txtLoaiSP.TabIndex = 5;
             // 
             // txtNgayBD
             // 
@@ -224,10 +220,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtNgayBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtNgayBD.Location = new System.Drawing.Point(179, 255);
             this.txtNgayBD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtNgayBD.Multiline = true;
             this.txtNgayBD.Name = "txtNgayBD";
-            this.txtNgayBD.Size = new System.Drawing.Size(153, 34);
-            this.txtNgayBD.TabIndex = 22;
+            this.txtNgayBD.Size = new System.Drawing.Size(153, 30);
+            this.txtNgayBD.TabIndex = 4;
             // 
             // txtChuyenNganh
             // 
@@ -238,17 +233,17 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtChuyenNganh.Multiline = true;
             this.txtChuyenNganh.Name = "txtChuyenNganh";
             this.txtChuyenNganh.Size = new System.Drawing.Size(347, 34);
-            this.txtChuyenNganh.TabIndex = 23;
+            this.txtChuyenNganh.TabIndex = 3;
             // 
             // txtSQDTLap
             // 
             this.txtSQDTLap.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.txtSQDTLap.Location = new System.Drawing.Point(567, 410);
+            this.txtSQDTLap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSQDTLap.Location = new System.Drawing.Point(567, 406);
             this.txtSQDTLap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSQDTLap.Multiline = true;
             this.txtSQDTLap.Name = "txtSQDTLap";
-            this.txtSQDTLap.Size = new System.Drawing.Size(104, 34);
-            this.txtSQDTLap.TabIndex = 24;
+            this.txtSQDTLap.Size = new System.Drawing.Size(104, 30);
+            this.txtSQDTLap.TabIndex = 9;
             // 
             // txtCap
             // 
@@ -256,10 +251,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtCap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCap.Location = new System.Drawing.Point(179, 180);
             this.txtCap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCap.Multiline = true;
             this.txtCap.Name = "txtCap";
-            this.txtCap.Size = new System.Drawing.Size(153, 34);
-            this.txtCap.TabIndex = 25;
+            this.txtCap.Size = new System.Drawing.Size(153, 30);
+            this.txtCap.TabIndex = 2;
             // 
             // txtTenDT
             // 
@@ -267,10 +261,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.txtTenDT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDT.Location = new System.Drawing.Point(567, 95);
             this.txtTenDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenDT.Multiline = true;
             this.txtTenDT.Name = "txtTenDT";
-            this.txtTenDT.Size = new System.Drawing.Size(347, 34);
-            this.txtTenDT.TabIndex = 26;
+            this.txtTenDT.Size = new System.Drawing.Size(347, 30);
+            this.txtTenDT.TabIndex = 1;
             // 
             // label10
             // 
@@ -306,7 +299,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(120, 52);
-            this.btnLuu.TabIndex = 29;
+            this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
@@ -322,7 +315,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(121, 52);
-            this.btnHuy.TabIndex = 30;
+            this.btnHuy.TabIndex = 12;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = false;
             this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
@@ -332,11 +325,11 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbSelectTenBM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cmbSelectTenBM.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSelectTenBM.FormattingEnabled = true;
-            this.cmbSelectTenBM.Location = new System.Drawing.Point(567, 334);
+            this.cmbSelectTenBM.Location = new System.Drawing.Point(567, 339);
             this.cmbSelectTenBM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbSelectTenBM.Name = "cmbSelectTenBM";
             this.cmbSelectTenBM.Size = new System.Drawing.Size(347, 30);
-            this.cmbSelectTenBM.TabIndex = 31;
+            this.cmbSelectTenBM.TabIndex = 7;
             // 
             // label11
             // 
@@ -351,28 +344,28 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label11.TabIndex = 32;
             this.label11.Text = "Tiến độ";
             // 
-            // textBox1
+            // txtTienDo
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Location = new System.Drawing.Point(793, 410);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 34);
-            this.textBox1.TabIndex = 33;
+            this.txtTienDo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txtTienDo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTienDo.Location = new System.Drawing.Point(791, 406);
+            this.txtTienDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtTienDo.Name = "txtTienDo";
+            this.txtTienDo.Size = new System.Drawing.Size(120, 30);
+            this.txtTienDo.TabIndex = 10;
             // 
-            // label12
+            // lbModalQLDT
             // 
-            this.label12.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.Control;
-            this.label12.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(392, 11);
-            this.label12.Name = "label12";
-            this.label12.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
-            this.label12.Size = new System.Drawing.Size(127, 51);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "Mã ĐT";
+            this.lbModalQLDT.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbModalQLDT.AutoSize = true;
+            this.lbModalQLDT.BackColor = System.Drawing.SystemColors.Control;
+            this.lbModalQLDT.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbModalQLDT.Location = new System.Drawing.Point(363, 9);
+            this.lbModalQLDT.Name = "lbModalQLDT";
+            this.lbModalQLDT.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
+            this.lbModalQLDT.Size = new System.Drawing.Size(188, 51);
+            this.lbModalQLDT.TabIndex = 34;
+            this.lbModalQLDT.Text = "Thêm đề tài";
             // 
             // modalDT
             // 
@@ -380,8 +373,8 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1031, 585);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lbModalQLDT);
+            this.Controls.Add(this.txtTienDo);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.cmbSelectTenBM);
             this.Controls.Add(this.btnHuy);
@@ -408,7 +401,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.Controls.Add(this.label1);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "modalDT";
-            this.Text = "modalDT";
+            this.Text = "Thêm đề tài";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,7 +433,7 @@ namespace QuanLyDeTai.Khoa.QLDT
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.ComboBox cmbSelectTenBM;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txtTienDo;
+        private System.Windows.Forms.Label lbModalQLDT;
     }
 }

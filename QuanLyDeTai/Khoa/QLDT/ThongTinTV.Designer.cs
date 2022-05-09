@@ -45,6 +45,8 @@ namespace QuanLyDeTai.Khoa.QLDT
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
+            this.label1.Cursor = System.Windows.Forms.Cursors.No;
+            this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(28, 43);
             this.label1.Name = "label1";
@@ -65,6 +67,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(331, 43);
             this.label2.Name = "label2";
@@ -75,6 +78,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             // txtTenDT
             // 
             this.txtTenDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTenDT.Cursor = System.Windows.Forms.Cursors.No;
             this.txtTenDT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTenDT.Location = new System.Drawing.Point(408, 42);
             this.txtTenDT.Name = "txtTenDT";
