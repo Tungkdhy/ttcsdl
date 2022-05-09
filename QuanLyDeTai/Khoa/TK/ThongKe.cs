@@ -41,5 +41,82 @@ namespace QuanLyDeTai.Khoa.TK
             chartTKPT.Titles.Add("TKPT");
             txtSLDT.Text = dt.Rows[0][3].ToString();
         }
+
+        private void cmbSelectCNTC_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                chartTKBBCN.Titles.Clear();
+                string query_tkbb = "";
+                if (cmbSelectCNTC.Text == "Tạp chí" && cmbYearTKBBKH.Text != "")
+                {
+                    query_tkbb = "exec prd_khoa_thongkeBBtheoTapChi '" + MaKhoa + "', '" + cmbYearTKBBKH.Text.Trim() + "'";
+                    DataTable dt = ConnectDB.Connected.getData(query_tkbb);
+
+                    chartTKBBCN.DataSource = dt;
+                    chartTKBBCN.Series["TKBBCNTC"].XValueMember = "Tạp chí";
+                    chartTKBBCN.Series["TKBBCNTC"].YValueMembers = "Số lượng";
+                    chartTKBBCN.Titles.Add("");
+                }
+                else if (cmbSelectCNTC.Text == "Chuyên ngành" && cmbYearTKBBKH.Text != "")
+                {
+                    query_tkbb = "exec prd_khoa_thongkeBBtheoCN '" + MaKhoa + "', '" + cmbYearTKBBKH.Text.Trim() + "'";
+                    DataTable dt = ConnectDB.Connected.getData(query_tkbb);
+                    chartTKBBCN.DataSource = dt;
+                    chartTKBBCN.Series["TKBBCNTC"].XValueMember = "Chuyên ngành";
+                    chartTKBBCN.Series["TKBBCNTC"].YValueMembers = "Số lượng";
+                    chartTKBBCN.Titles.Add("TKBBCNTC");
+                }
+                
+
+            }
+            catch
+            {
+
+            }
+            
+            
+        }
+
+        private void cmbYearTKBBKH_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                chartTKBBCN.Titles.Clear();
+                chartTKBBBM.Titles.Clear();
+                string query_tkbb = "";
+                string query_TKBBBM = "exec prd_khoa_thongkeBBtheoBoMon_nam '" + MaKhoa + "', '" + cmbYearTKBBKH.Text + "'";
+                DataTable dt2 = ConnectDB.Connected.getData(query_TKBBBM);
+                chartTKBBBM.DataSource = dt2;
+                chartTKBBBM.Series["TKBBTBM"].XValueMember = "Bộ môn";
+                chartTKBBBM.Series["TKBBTBM"].YValueMembers = "Số lượng bài báo";
+                chartTKBBBM.Titles.Add("Số lượng bài báo của các bộ môn năm '" + cmbYearTKBBKH.Text.Trim()+"'");
+                if (cmbSelectCNTC.Text == "Tạp chí" && cmbYearTKBBKH.Text != "")
+                {
+                    query_tkbb = "exec prd_khoa_thongkeBBtheoTapChi '" + MaKhoa + "', '" + cmbYearTKBBKH.Text.Trim() + "'";
+                    DataTable dt = ConnectDB.Connected.getData(query_tkbb);
+
+                    chartTKBBCN.DataSource = dt;
+                    chartTKBBCN.Series["TKBBCNTC"].XValueMember = "Tạp chí";
+                    chartTKBBCN.Series["TKBBCNTC"].YValueMembers = "Số lượng";
+                    chartTKBBCN.Titles.Add("Số lượng bài báo theo từng tạp chí của khoa năm '"+cmbYearTKBBKH.Text.Trim()+"'");
+                }
+                else if (cmbSelectCNTC.Text == "Chuyên ngành" && cmbYearTKBBKH.Text != "")
+                {
+                    query_tkbb = "exec prd_khoa_thongkeBBtheoCN '" + MaKhoa + "', '" + cmbYearTKBBKH.Text.Trim() + "'";
+                    DataTable dt = ConnectDB.Connected.getData(query_tkbb);
+                    chartTKBBCN.DataSource = dt;
+                    chartTKBBCN.Series["TKBBCNTC"].XValueMember = "Chuyên ngành";
+                    chartTKBBCN.Series["TKBBCNTC"].YValueMembers = "Số lượng";
+                    chartTKBBCN.Titles.Add("Số lượng bài báo theo từng chuyên ngành của khoa năm '" + cmbYearTKBBKH.Text.Trim() + "'");
+                }
+                
+                
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

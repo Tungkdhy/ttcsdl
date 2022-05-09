@@ -30,32 +30,40 @@ namespace QuanLyDeTai.Khoa.TK
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ThongKe));
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panelTKDT = new Bunifu.UI.WinForms.BunifuPanel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtSLDT = new System.Windows.Forms.TextBox();
             this.chartTKPT = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbSelectYear = new System.Windows.Forms.ComboBox();
             this.chartTKDTBM = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label2 = new System.Windows.Forms.Label();
             this.panelTKGV = new Bunifu.UI.WinForms.BunifuPanel();
-            this.labelTapChi = new Bunifu.UI.WinForms.BunifuLabel();
-            this.bunifuLabel1 = new Bunifu.UI.WinForms.BunifuLabel();
-            this.cmbTapChi = new System.Windows.Forms.ComboBox();
-            this.cmbChuyenNganh = new System.Windows.Forms.ComboBox();
+            this.cmbSelectCNTC = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.chartTKBBCN = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.chartTKBBBM = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.txtSLDT = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.cmbYearTKBBKH = new System.Windows.Forms.ComboBox();
             this.panelTKDT.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKPT)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartTKDTBM)).BeginInit();
             this.panelTKGV.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKBBCN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKBBBM)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTKDT
@@ -75,27 +83,49 @@ namespace QuanLyDeTai.Khoa.TK
             this.panelTKDT.Controls.Add(this.chartTKDTBM);
             this.panelTKDT.Controls.Add(this.label2);
             this.panelTKDT.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTKDT.Location = new System.Drawing.Point(0, 362);
+            this.panelTKDT.Location = new System.Drawing.Point(0, 393);
             this.panelTKDT.Name = "panelTKDT";
             this.panelTKDT.ShowBorders = true;
-            this.panelTKDT.Size = new System.Drawing.Size(1504, 412);
+            this.panelTKDT.Size = new System.Drawing.Size(1504, 405);
             this.panelTKDT.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(17, 121);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(70, 19);
+            this.label5.TabIndex = 7;
+            this.label5.Text = "Số lượng";
+            // 
+            // txtSLDT
+            // 
+            this.txtSLDT.BackColor = System.Drawing.SystemColors.Control;
+            this.txtSLDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSLDT.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.txtSLDT.Location = new System.Drawing.Point(108, 121);
+            this.txtSLDT.Name = "txtSLDT";
+            this.txtSLDT.Size = new System.Drawing.Size(100, 15);
+            this.txtSLDT.TabIndex = 6;
             // 
             // chartTKPT
             // 
             this.chartTKPT.Anchor = System.Windows.Forms.AnchorStyles.None;
-            chartArea1.Name = "ChartArea1";
-            this.chartTKPT.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartTKPT.Legends.Add(legend1);
-            this.chartTKPT.Location = new System.Drawing.Point(895, 25);
+            this.chartTKPT.BackSecondaryColor = System.Drawing.Color.White;
+            this.chartTKPT.BorderlineColor = System.Drawing.SystemColors.Control;
+            chartArea5.Name = "ChartArea1";
+            this.chartTKPT.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chartTKPT.Legends.Add(legend5);
+            this.chartTKPT.Location = new System.Drawing.Point(895, 21);
             this.chartTKPT.Name = "chartTKPT";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "TKPT";
-            this.chartTKPT.Series.Add(series1);
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series5.IsValueShownAsLabel = true;
+            series5.Legend = "Legend1";
+            series5.Name = "TKPT";
+            this.chartTKPT.Series.Add(series5);
             this.chartTKPT.Size = new System.Drawing.Size(516, 341);
             this.chartTKPT.TabIndex = 5;
             // 
@@ -144,16 +174,17 @@ namespace QuanLyDeTai.Khoa.TK
             // chartTKDTBM
             // 
             this.chartTKDTBM.Anchor = System.Windows.Forms.AnchorStyles.None;
-            chartArea2.Name = "ChartArea1";
-            this.chartTKDTBM.ChartAreas.Add(chartArea2);
-            legend2.Name = "Legend1";
-            this.chartTKDTBM.Legends.Add(legend2);
-            this.chartTKDTBM.Location = new System.Drawing.Point(261, 25);
+            this.chartTKDTBM.BorderlineColor = System.Drawing.SystemColors.Control;
+            chartArea6.Name = "ChartArea1";
+            this.chartTKDTBM.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.chartTKDTBM.Legends.Add(legend6);
+            this.chartTKDTBM.Location = new System.Drawing.Point(261, 21);
             this.chartTKDTBM.Name = "chartTKDTBM";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "DTBM";
-            this.chartTKDTBM.Series.Add(series2);
+            series6.ChartArea = "ChartArea1";
+            series6.Legend = "Legend1";
+            series6.Name = "DTBM";
+            this.chartTKDTBM.Series.Add(series6);
             this.chartTKDTBM.Size = new System.Drawing.Size(516, 341);
             this.chartTKDTBM.TabIndex = 2;
             this.chartTKDTBM.Text = "chart1";
@@ -175,82 +206,85 @@ namespace QuanLyDeTai.Khoa.TK
             this.panelTKGV.BorderColor = System.Drawing.Color.Transparent;
             this.panelTKGV.BorderRadius = 3;
             this.panelTKGV.BorderThickness = 1;
-            this.panelTKGV.Controls.Add(this.labelTapChi);
-            this.panelTKGV.Controls.Add(this.bunifuLabel1);
-            this.panelTKGV.Controls.Add(this.cmbTapChi);
-            this.panelTKGV.Controls.Add(this.cmbChuyenNganh);
+            this.panelTKGV.Controls.Add(this.cmbSelectCNTC);
+            this.panelTKGV.Controls.Add(this.label6);
+            this.panelTKGV.Controls.Add(this.chartTKBBCN);
+            this.panelTKGV.Controls.Add(this.chartTKBBBM);
             this.panelTKGV.Controls.Add(this.label4);
             this.panelTKGV.Controls.Add(this.label1);
-            this.panelTKGV.Controls.Add(this.comboBox1);
+            this.panelTKGV.Controls.Add(this.cmbYearTKBBKH);
             this.panelTKGV.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTKGV.Location = new System.Drawing.Point(0, 0);
             this.panelTKGV.Name = "panelTKGV";
             this.panelTKGV.ShowBorders = true;
-            this.panelTKGV.Size = new System.Drawing.Size(1504, 362);
+            this.panelTKGV.Size = new System.Drawing.Size(1504, 393);
             this.panelTKGV.TabIndex = 0;
             // 
-            // labelTapChi
+            // cmbSelectCNTC
             // 
-            this.labelTapChi.AllowParentOverrides = false;
-            this.labelTapChi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.labelTapChi.AutoEllipsis = false;
-            this.labelTapChi.CursorType = null;
-            this.labelTapChi.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTapChi.Location = new System.Drawing.Point(829, 20);
-            this.labelTapChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.labelTapChi.Name = "labelTapChi";
-            this.labelTapChi.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.labelTapChi.Size = new System.Drawing.Size(49, 19);
-            this.labelTapChi.TabIndex = 11;
-            this.labelTapChi.Text = "Tạp chí";
-            this.labelTapChi.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.labelTapChi.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.cmbSelectCNTC.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbSelectCNTC.FormattingEnabled = true;
+            this.cmbSelectCNTC.Items.AddRange(new object[] {
+            "Chuyên ngành",
+            "Tạp chí"});
+            this.cmbSelectCNTC.Location = new System.Drawing.Point(64, 98);
+            this.cmbSelectCNTC.Name = "cmbSelectCNTC";
+            this.cmbSelectCNTC.Size = new System.Drawing.Size(121, 24);
+            this.cmbSelectCNTC.TabIndex = 10;
+            this.cmbSelectCNTC.SelectedIndexChanged += new System.EventHandler(this.cmbSelectCNTC_SelectedIndexChanged);
             // 
-            // bunifuLabel1
+            // label6
             // 
-            this.bunifuLabel1.AllowParentOverrides = false;
-            this.bunifuLabel1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.bunifuLabel1.AutoEllipsis = false;
-            this.bunifuLabel1.Cursor = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.CursorType = System.Windows.Forms.Cursors.Default;
-            this.bunifuLabel1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel1.Location = new System.Drawing.Point(439, 20);
-            this.bunifuLabel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.bunifuLabel1.Name = "bunifuLabel1";
-            this.bunifuLabel1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel1.Size = new System.Drawing.Size(94, 19);
-            this.bunifuLabel1.TabIndex = 10;
-            this.bunifuLabel1.Text = "Chuyên ngành";
-            this.bunifuLabel1.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
-            this.bunifuLabel1.TextFormat = Bunifu.UI.WinForms.BunifuLabel.TextFormattingOptions.Default;
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(17, 103);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(43, 19);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Theo";
             // 
-            // cmbTapChi
+            // chartTKBBCN
             // 
-            this.cmbTapChi.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbTapChi.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbTapChi.FormattingEnabled = true;
-            this.cmbTapChi.Location = new System.Drawing.Point(892, 14);
-            this.cmbTapChi.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbTapChi.Name = "cmbTapChi";
-            this.cmbTapChi.Size = new System.Drawing.Size(175, 26);
-            this.cmbTapChi.TabIndex = 9;
+            this.chartTKBBCN.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chartTKBBCN.BorderlineColor = System.Drawing.SystemColors.Control;
+            chartArea7.Name = "ChartArea1";
+            this.chartTKBBCN.ChartAreas.Add(chartArea7);
+            legend7.Name = "Legend1";
+            this.chartTKBBCN.Legends.Add(legend7);
+            this.chartTKBBCN.Location = new System.Drawing.Point(261, 13);
+            this.chartTKBBCN.Name = "chartTKBBCN";
+            series7.ChartArea = "ChartArea1";
+            series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series7.Legend = "Legend1";
+            series7.Name = "TKBBCNTC";
+            this.chartTKBBCN.Series.Add(series7);
+            this.chartTKBBCN.Size = new System.Drawing.Size(516, 341);
+            this.chartTKBBCN.TabIndex = 8;
             // 
-            // cmbChuyenNganh
+            // chartTKBBBM
             // 
-            this.cmbChuyenNganh.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.cmbChuyenNganh.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbChuyenNganh.FormattingEnabled = true;
-            this.cmbChuyenNganh.Location = new System.Drawing.Point(558, 14);
-            this.cmbChuyenNganh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.cmbChuyenNganh.Name = "cmbChuyenNganh";
-            this.cmbChuyenNganh.Size = new System.Drawing.Size(168, 26);
-            this.cmbChuyenNganh.TabIndex = 8;
+            this.chartTKBBBM.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.chartTKBBBM.BorderlineColor = System.Drawing.SystemColors.Control;
+            chartArea8.Name = "ChartArea1";
+            this.chartTKBBBM.ChartAreas.Add(chartArea8);
+            legend8.Name = "Legend1";
+            this.chartTKBBBM.Legends.Add(legend8);
+            this.chartTKBBBM.Location = new System.Drawing.Point(895, 13);
+            this.chartTKBBBM.Name = "chartTKBBBM";
+            series8.ChartArea = "ChartArea1";
+            series8.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Pie;
+            series8.IsValueShownAsLabel = true;
+            series8.Legend = "Legend1";
+            series8.Name = "TKBBTBM";
+            this.chartTKBBBM.Series.Add(series8);
+            this.chartTKBBBM.Size = new System.Drawing.Size(516, 341);
+            this.chartTKBBBM.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(177, 14);
+            this.label4.Location = new System.Drawing.Point(17, 52);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 19);
             this.label4.TabIndex = 7;
@@ -265,11 +299,11 @@ namespace QuanLyDeTai.Khoa.TK
             this.label1.TabIndex = 0;
             this.label1.Text = "Bài báo khoa học";
             // 
-            // comboBox1
+            // cmbYearTKBBKH
             // 
-            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbYearTKBBKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbYearTKBBKH.FormattingEnabled = true;
+            this.cmbYearTKBBKH.Items.AddRange(new object[] {
             "2010",
             "2011",
             "2012",
@@ -291,36 +325,17 @@ namespace QuanLyDeTai.Khoa.TK
             "2028",
             "2029",
             "2030"});
-            this.comboBox1.Location = new System.Drawing.Point(222, 13);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 24);
-            this.comboBox1.TabIndex = 6;
-            // 
-            // txtSLDT
-            // 
-            this.txtSLDT.BackColor = System.Drawing.SystemColors.Control;
-            this.txtSLDT.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtSLDT.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.txtSLDT.Location = new System.Drawing.Point(108, 121);
-            this.txtSLDT.Name = "txtSLDT";
-            this.txtSLDT.Size = new System.Drawing.Size(100, 15);
-            this.txtSLDT.TabIndex = 6;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(17, 121);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 19);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "Số lượng";
+            this.cmbYearTKBBKH.Location = new System.Drawing.Point(64, 47);
+            this.cmbYearTKBBKH.Name = "cmbYearTKBBKH";
+            this.cmbYearTKBBKH.Size = new System.Drawing.Size(121, 24);
+            this.cmbYearTKBBKH.TabIndex = 6;
+            this.cmbYearTKBBKH.SelectedIndexChanged += new System.EventHandler(this.cmbYearTKBBKH_SelectedIndexChanged);
             // 
             // ThongKe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1504, 774);
+            this.ClientSize = new System.Drawing.Size(1504, 798);
             this.Controls.Add(this.panelTKDT);
             this.Controls.Add(this.panelTKGV);
             this.Name = "ThongKe";
@@ -331,6 +346,8 @@ namespace QuanLyDeTai.Khoa.TK
             ((System.ComponentModel.ISupportInitialize)(this.chartTKDTBM)).EndInit();
             this.panelTKGV.ResumeLayout(false);
             this.panelTKGV.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKBBCN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartTKBBBM)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -346,12 +363,12 @@ namespace QuanLyDeTai.Khoa.TK
         private System.Windows.Forms.DataVisualization.Charting.Chart chartTKDTBM;
         private System.Windows.Forms.DataVisualization.Charting.Chart chartTKPT;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private Bunifu.UI.WinForms.BunifuLabel labelTapChi;
-        private Bunifu.UI.WinForms.BunifuLabel bunifuLabel1;
-        private System.Windows.Forms.ComboBox cmbTapChi;
-        private System.Windows.Forms.ComboBox cmbChuyenNganh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtSLDT;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTKBBBM;
+        private System.Windows.Forms.ComboBox cmbSelectCNTC;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cmbYearTKBBKH;
+        private System.Windows.Forms.DataVisualization.Charting.Chart chartTKBBCN;
     }
 }

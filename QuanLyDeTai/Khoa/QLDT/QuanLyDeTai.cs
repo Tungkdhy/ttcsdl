@@ -299,5 +299,19 @@ namespace QuanLyDeTai.Khoa.QLDT
             xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
 
         }
+
+        private void bunifuLabel4_Click(object sender, EventArgs e)
+        {
+            getListDT();
+            panelLoc.Visible = false;
+        }
+
+        private void btnTTTV_Click(object sender, EventArgs e)
+        {
+            string madt = inforDT[0];
+            string tendt = inforDT[1];
+            Form tttv = new ThongTinTV(madt, tendt);
+            tttv.Show();
+        }
     }
 }

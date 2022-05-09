@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="bunifuLabel4.BaseStylesheet" xml:space="preserve">
+    <value>#bunifu-label { padding: 0px; font-family: 'Times New Roman'; font-size: 13.8pt; width: 100%; height: 100%; font-style: normal; font-weight: normal; text-decoration: none; color: rgb(0, 0, 0); text-align: left; }</value>
+  </data>
   <metadata name="bunifuTransition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
@@ -235,11 +238,19 @@
         sPFd7s7cPSfwq9GAwn2UP6P84tcLZmU87wPK/cabfw5dKgAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="bunifuTextBox1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnTTTV.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAOwAAAAmCAYAAADHoHfGAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAA6SURBVHhe7cExAQAAAMKg9U9tBn8gAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAOBSA4xGAAGqhddoAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6
+        JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAB3RJTUUH5gQZAg4VJILx4QAAAeVJREFU
+        WEfNVr1OAkEYJBZW2mujjSaaWGhr1EYb6X0AfQlLW30IfQAfQBO10lrttT41hIbbXY4LCeesGYjsjwu3
+        d4mTTMHO980McHfQmAZFUcx2pbxQUn6AhcEE2rme4Xj10AGO4DHqGY5XDwQkOiRL020ejZAJscMSCY+q
+        BwMKvrQQ0oPIsmy5q9QDTPKhWYXM4X2PjCXG2WC4a7ky4hq5Y5wNDNTxzk3mjLPhGK6FjLMBsWcO18CM
+        cTaUUk19H9dJZBwy7p9CSrmBlqd1UHszxg8Mnji+t2qo1DFj/OgKceRa1o/fX4/bqc6G1N6M8QMtm65l
+        ymO3Ko+CZyNOcgGi/Z5rmXJUAXjvUvYDLbdcy5SjCsB7k7IfeZquupYpRxXodTorlP1Ay0XXMuWoAvBe
+        oOxHu92edy1TjipQtFpzlP3Af7oZDA/MZcoxBQbam/LfwLA0luMLKCUohYEfjS/TgFLpAvD8pBQG2r6b
+        BpRKF4DnG6Uw0PbVNKBUugA8XyiFgbZPpgGl0gXg+UgpDLS9NQ0olS4AzxtKYaDttWmgf+H0s7zM2Q/h
+        Sfsw0PbKMogkPC9pHwbanrlMoghP2ochhFjHUmaZlCe+FbFG+8mAh+EBPrZnLPcNs2nY1x7w2qetgUbj
+        G6aPnFj6Wb4eAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="btnSuaDT.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

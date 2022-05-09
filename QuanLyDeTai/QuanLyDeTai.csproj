@@ -76,12 +76,16 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
       <HintPath>..\..\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
@@ -91,6 +95,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
@@ -114,6 +119,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +153,12 @@
     </Compile>
     <Compile Include="Khoa\QLDT\QuanLyDeTai.Designer.cs">
       <DependentUpon>QuanLyDeTai.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khoa\QLDT\ThongTinTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoa\QLDT\ThongTinTV.Designer.cs">
+      <DependentUpon>ThongTinTV.cs</DependentUpon>
     </Compile>
     <Compile Include="Khoa\QLGV\function.cs">
       <SubType>Form</SubType>
@@ -260,6 +272,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLDT\QuanLyDeTai.resx">
       <DependentUpon>QuanLyDeTai.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khoa\QLDT\ThongTinTV.resx">
+      <DependentUpon>ThongTinTV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLGV\function.resx">
       <DependentUpon>function.cs</DependentUpon>

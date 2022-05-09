@@ -115,5 +115,7 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             this.Hide();
         }
+
+       
     }
 }
