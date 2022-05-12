@@ -27,7 +27,7 @@ namespace QuanLyDeTai.Khoa
 
         public void getListGV()
         {
-            string query = "select * from GV where MAKHOA = '" + MaKhoa + "'";
+            string query = "prd_khoa_getAllStaff '"+MaKhoa+"'";
             DataTable dt = ConnectDB.Connected.getData(query);
 
             ListGV.DataSource = dt;
@@ -35,7 +35,7 @@ namespace QuanLyDeTai.Khoa
         private void btnSua_Click(object sender, EventArgs e)
         {
             state = "update";
-            Form function = new QLGV.function(inforGV, state);
+            Form function = new QLGV.function(inforGV, state, MaKhoa);
             function.ShowDialog();
             if(lbQLGV.Text == "Danh sách giáo viên"){
                 getListGV();
@@ -66,20 +66,28 @@ namespace QuanLyDeTai.Khoa
 
         private void ListGV_CellClick_1(object sender, DataGridViewCellEventArgs e)
         {
-            bunifuTransition1.ShowSync(panel1);
-            int index = e.RowIndex;
-            DataGridViewRow selectedRow = ListGV.Rows[index];
-            string MAGV = selectedRow.Cells["MAGV"].Value.ToString();
-            string TenGV = selectedRow.Cells["TenGV"].Value.ToString();
-            string NS = selectedRow.Cells["NS"].Value.ToString().Split()[0];
-            string GioiTinh = selectedRow.Cells["GioiTinh"].Value.ToString();
-            string CapBac = selectedRow.Cells["CapBac"].Value.ToString();
-            string ChucVu = selectedRow.Cells["ChucVu"].Value.ToString();
-            string DTL = selectedRow.Cells["DTL"].Value.ToString();
-            string MABM = selectedRow.Cells["MABM"].Value.ToString();
-            string[] dataGV = { MAGV, TenGV, NS, GioiTinh, CapBac, ChucVu, DTL, MABM };
-            inforGV.Clear();
-            inforGV.AddRange(dataGV);
+            try
+            {
+                bunifuTransition1.ShowSync(panel1);
+                int index = e.RowIndex;
+                DataGridViewRow selectedRow = ListGV.Rows[index];
+                string MAGV = selectedRow.Cells["Mã GV"].Value.ToString();
+                string TenGV = selectedRow.Cells["Họ tên"].Value.ToString();
+                string NS = selectedRow.Cells["Ngày sinh"].Value.ToString().Split()[0];
+                string GioiTinh = selectedRow.Cells["Giới tính"].Value.ToString();
+                string CapBac = selectedRow.Cells["Cấp bậc"].Value.ToString();
+                string ChucVu = selectedRow.Cells["Chức vụ"].Value.ToString();
+                string DTL = selectedRow.Cells["ĐTL"].Value.ToString();
+                string MABM = selectedRow.Cells["Tên bộ môn"].Value.ToString();
+                string[] dataGV = { MAGV, TenGV, NS, GioiTinh, CapBac, ChucVu, DTL, MABM };
+                inforGV.Clear();
+                inforGV.AddRange(dataGV);
+            }
+            catch
+            {
+
+            }
+            
         }
 
         private void btnThem_Click_1(object sender, EventArgs e)
@@ -89,11 +97,21 @@ namespace QuanLyDeTai.Khoa
             state = "add";
             List<string> empty = new List<string>() {next_MAGV,"","","","","","",""};
 
-            Form function = new QLGV.function(empty, state);
+            Form function = new QLGV.function(empty, state, MaKhoa);
             function.ShowDialog();
-            getListGV();
-            
-            
+
+            if (lbQLGV.Text == "Danh sách giáo viên")
+            {
+                getListGV();
+            }
+            else
+            {
+                string query = "exec prd_khoa_DSchunhiemDT '" + MaKhoa + "'";
+                DataTable dt = ConnectDB.Connected.getData(query);
+                ListGV.DataSource = dt;
+            }
+
+
         }
 
         private void btnXuatExcel_Click(object sender, EventArgs e)
@@ -116,10 +134,12 @@ namespace QuanLyDeTai.Khoa
         private void lbQLGV_Click(object sender, EventArgs e)
         {
             getListGV();
+            btnThem.Enabled = true;
         }
 
         private void btnDSCN_Click(object sender, EventArgs e)
         {
+            btnThem.Enabled = false;
             lbQLGV.Text = "Danh sách chủ nhiệm";
             btnUndo.Visible = true;
             string query = "exec prd_khoa_DSchunhiemDT '"+MaKhoa+"'";
@@ -132,6 +152,7 @@ namespace QuanLyDeTai.Khoa
             getListGV();
             btnUndo.Visible = false;
             lbQLGV.Text = "Danh sách giáo viên";
+            btnThem.Enabled = true;
         }
 
         private void txtsearchGV_TextChanged(object sender, EventArgs e)
@@ -143,7 +164,7 @@ namespace QuanLyDeTai.Khoa
             }
             else
             {
-                query = "select * from GV where MAKHOA = '" + MaKhoa + "'";
+                query = "prd_khoa_getAllStaff '" + MaKhoa + "'";
             }
             string searchGV = txtsearchGV.Text;
             try

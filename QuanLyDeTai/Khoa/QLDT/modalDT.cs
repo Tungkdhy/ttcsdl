@@ -83,26 +83,81 @@ namespace QuanLyDeTai.Khoa.QLDT
                 if (State == "update")
                 {
                     MessageBox.Show(State);
-                    string query = "update DeTaiNCKH set TenDT = N'" + txtTenDT.Text + "', " +
-                        "ChuyenNganh = N'" + txtChuyenNganh.Text + "',Cap = N'" + txtCap.Text + "'," +
-                        "SQDThanhLap = N'" + txtSQDTLap.Text + "', NgayBD = '" + txtNgayBD.Text + "', " +
-                        "NgayNT = N'" + txtNgayNT.Text + "', TrangThai='" + txtTrangThai.Text + "', " +
-                        "LoaiSP = N'" + txtLoaiSP.Text + "' where MADT = '" + txtMADT.Text + "'";
+                    string query = "updateDT  N'" + txtTenDT.Text + "', " +
+                        " N'" + txtChuyenNganh.Text + "',N'" + txtCap.Text + "'," +
+                        "N'" + txtSQDTLap.Text + "','" + txtNgayBD.Text + "', N'" + txtNgayNT.Text + "', '" + txtTrangThai.Text + "', N'" + txtLoaiSP.Text + "' ,'" + txtMADT.Text + "'";
 
                     MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Sửa"));
                     this.Hide();
                 }
                 if (State == "add")
                 {
-
-                    string query = "select MABM from BOMON where TenBM = N'"+cmbSelectTenBM.Text.Trim()+"'";
+                    string query = "select MABM from BOMON where TenBM = N'" + cmbSelectTenBM.Text.Trim() + "'";
                     DataTable dt = ConnectDB.Connected.getData(query);
+
                     string MaBM = dt.Rows[0][0].ToString().Trim();
-                    string query1 = "insert into DeTaiNCKH(MADT, TenDT, ChuyenNganh, Cap,SQDThanhLap, NgayBD, NgayNT,TrangThai,LoaiSP ,MABM) " +
+                    MessageBox.Show(MaBM);
+                    string query_them_dt = "insert into DeTaiNCKH(MADT, TenDT, ChuyenNganh, Cap,SQDThanhLap, NgayBD, NgayNT,TrangThai,LoaiSP ,MABM) " +
                         "values ('" + txtMADT.Text + "', N'" + txtTenDT.Text + "',N'" + txtChuyenNganh.Text + "'," +
                         "N'" + txtCap.Text + "', N'" + txtSQDTLap.Text + "', '" + txtNgayBD.Text + "', '" + txtNgayNT.Text + "', " +
                         "'" + txtTrangThai.Text + "', N'" + txtLoaiSP.Text + "', '" + MaBM + "')";
-                    MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Thêm"));
+                    ConnectDB.Connected.ChangeData(query, "Thêm");
+                    string insert_CN = "";
+                    string insert_TV1 = "";
+                    string insert_TV2 = "";
+                    string insert_TV3 = "";
+                    string insert_TV4 = "";
+                    string query_inserttttt = "";
+                    List<string> query_insert = new List<string>();
+                    switch (cmbSLTV.Text.Trim())
+                    {
+                        case "1":
+                            insert_CN = "proc_khoa_insertCNDT '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            query_insert.Add(insert_CN);
+                            break;
+                        case "2":
+                            insert_CN = "proc_khoa_insertCNDT '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV1 = "proc_khoa_insertTV '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            query_insert.Add(insert_CN);
+                            query_insert.Add(insert_TV1);
+                            break;
+                        case "3":
+                            insert_CN = "proc_khoa_insertCNDT '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV1 = "proc_khoa_insertTV '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV2 = "proc_khoa_insertTV '" + cmbMGV2.Text + "', '" + txtMADT.Text + "'";
+                            query_insert.Add(insert_CN);
+                            query_insert.Add(insert_TV1);
+                            query_insert.Add(insert_TV2);
+                            break;
+                        case "4":
+                            insert_CN = "proc_khoa_insertCNDT '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV1 = "proc_khoa_insertTV '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV2 = "proc_khoa_insertTV '" + cmbMGV2.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV3 = "proc_khoa_insertTV '" + cmbMGV3.Text + "', '" + txtMADT.Text + "'";
+                            query_insert.Add(insert_CN);
+                            query_insert.Add(insert_TV1);
+                            query_insert.Add(insert_TV2);
+                            query_insert.Add(insert_TV3);
+                            break;
+                        case "5":
+                            insert_CN = "proc_khoa_insertCNDT '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV1 = "proc_khoa_insertTV '" + cmbMGV1.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV2 = "proc_khoa_insertTV '" + cmbMGV2.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV3 = "proc_khoa_insertTV '" + cmbMGV3.Text + "', '" + txtMADT.Text + "'";
+                            insert_TV4 = "proc_khoa_insertTV '" + cmbMGV4.Text + "', '" + txtMADT.Text + "'";
+                            query_insert.Add(insert_CN);
+                            query_insert.Add(insert_TV1);
+                            query_insert.Add(insert_TV2);
+                            query_insert.Add(insert_TV3);
+                            query_insert.Add(insert_TV4);
+                            break;
+                    }
+                    query_insert.ForEach(delegate (string single_query)
+                    {
+                        query_inserttttt = single_query;
+                        ConnectDB.Connected.ChangeData(query,"Thêm");
+                    });
+                    
                     this.Hide();
                 }
             }
@@ -118,6 +173,19 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.Hide();
         }
 
-       
+        private void bunifuPanel2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lbModalQLDT_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void cmbSelectTenBM_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

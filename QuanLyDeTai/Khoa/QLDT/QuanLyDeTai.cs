@@ -331,7 +331,7 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             string madt = inforDT[0];
             string tendt = inforDT[1];
-            Form tttv = new ThongTinTV(madt, tendt);
+            Form tttv = new ThongTinTV(madt, tendt, MaKhoa);
             tttv.Show();
         }
     }
