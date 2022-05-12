@@ -113,8 +113,23 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             try
             {
+                inforDT.Clear();
                 int index = e.RowIndex;
                 DataGridViewRow selectedRow = ListDT.Rows[index];
+                string MADT = selectedRow.Cells["MADT"].Value.ToString();               
+                string TenDT = selectedRow.Cells["TenDT"].Value.ToString();               
+                string ChuyenNganh = selectedRow.Cells["ChuyenNganh"].Value.ToString();
+                string Cap = selectedRow.Cells["Cap"].Value.ToString();
+                string NgayBD = selectedRow.Cells["NgayBD"].Value.ToString();
+                string NgayNT = selectedRow.Cells["NgayNT"].Value.ToString();
+                string TrangThai = selectedRow.Cells["TrangThai"].Value.ToString();
+                string LoaiSP = selectedRow.Cells["LoaiSP"].Value.ToString();
+                string TenBM = selectedRow.Cells["TenBM"].Value.ToString();
+                string TienDo = selectedRow.Cells["TienDo"].Value.ToString();
+                string KetQua = selectedRow.Cells["KetQua"].Value.ToString();               
+                string[] dataGT = { MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, TenBM, TienDo, KetQua };               
+                inforDT.AddRange(dataGT);
+                MessageBox.Show(inforDT[0]);
                 if (selectedRow.Cells["TrangThai"].Value.ToString() == "Yêu cầu hủy")
                 {
                     btnYChuyDT.Visible = false;
@@ -125,21 +140,7 @@ namespace QuanLyDeTai.Khoa.QLDT
                     btnYChuyDT.Visible = true;
                     lbYChuy.Visible = true;
                 }
-                bunifuTransition1.ShowSync(footerpanel);
-                string MADT = selectedRow.Cells["MADT"].Value.ToString();
-                string TenDT = selectedRow.Cells["TenDT"].Value.ToString();
-                string ChuyenNganh = selectedRow.Cells["ChuyenNganh"].Value.ToString().Split()[0];
-                string Cap = selectedRow.Cells["Cap"].Value.ToString();
-                string SQDThanhLap = selectedRow.Cells["SQDThanhLap"].Value.ToString();
-                string NgayBD = selectedRow.Cells["NgayBD"].Value.ToString();
-                string NgayNT = selectedRow.Cells["NgayNT"].Value.ToString();
-                string TrangThai = selectedRow.Cells["TrangThai"].Value.ToString();
-                string LoaiSP = selectedRow.Cells["LoaiSP"].Value.ToString();
-                string TenBM = selectedRow.Cells["TenBM"].Value.ToString();
-                string TienDo = selectedRow.Cells["TienDo"].Value.ToString();
-                string[] dataGT = { MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, TenBM, TienDo };
-                inforDT.Clear();
-                inforDT.AddRange(dataGT);
+                bunifuTransition1.ShowSync(footerpanel); 
             }
             catch
             {
@@ -193,32 +194,32 @@ namespace QuanLyDeTai.Khoa.QLDT
             
             if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
 
             }
             else if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "'";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "'";
             }
             else if (cmbCap.Text == "" && cmbBOMON.Text != "" && cmbTrangThai.Text != "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
             }
             else if (cmbCap.Text != ""  && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
             }
             else if (cmbCap.Text != "" && cmbBOMON.Text != "" && cmbTrangThai.Text == "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
             }
             else if (cmbCap.Text != "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
             }
             else
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap,NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
             }
             DataTable dt = ConnectDB.Connected.getData(query);
             ListDT.DataSource = dt;
@@ -261,32 +262,32 @@ namespace QuanLyDeTai.Khoa.QLDT
 
             if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
 
             }
             else if (cmbCap.Text == "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "'";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and  DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "'";
             }
             else if (cmbCap.Text == "" && cmbBOMON.Text != "" && cmbTrangThai.Text != "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
             }
             else if (cmbCap.Text != "" && cmbBOMON.Text == "" && cmbTrangThai.Text == "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "' and  DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
             }
             else if (cmbCap.Text != "" && cmbBOMON.Text != "" && cmbTrangThai.Text == "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "'and BOMON.TenBM = N'" + cmbBOMON.Text + "')";
             }
             else if (cmbCap.Text != "" && cmbBOMON.Text == "" && cmbTrangThai.Text != "")
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and (DeTaiNCKH.Cap = N'" + cmbCap.Text + "' and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "')";
             }
             else
             {
-                query = "select MADT, TenDT, ChuyenNganh, Cap, SQDThanhLap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
+                query = "select MADT, TenDT, ChuyenNganh, Cap, NgayBD, NgayNT, TrangThai, LoaiSP, BOMON.TenBM, TienDo, KetQua from DeTaiNCKH, BOMON where (DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "') and DeTaiNCKH.TrangThai = N'" + cmbTrangThai.Text.Trim() + "' and (BOMON.TenBM = N'" + cmbBOMON.Text + "' and DeTaiNCKH.Cap = N'" + cmbCap.Text + "')";
             }
             try
             {
@@ -334,5 +335,6 @@ namespace QuanLyDeTai.Khoa.QLDT
             Form tttv = new ThongTinTV(madt, tendt, MaKhoa);
             tttv.Show();
         }
+        
     }
 }

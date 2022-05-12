@@ -31,14 +31,14 @@ namespace QuanLyDeTai.Khoa.QLDT
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(modalDT));
             this.lbModalQLDT = new System.Windows.Forms.Label();
-            this.bunifuPanel1 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panelThemDTTittle = new Bunifu.UI.WinForms.BunifuPanel();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.cmbSLTV = new System.Windows.Forms.ComboBox();
             this.label14 = new System.Windows.Forms.Label();
             this.cmbMCN = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txtCN = new System.Windows.Forms.TextBox();
+            this.txttenCN = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.cmbMGV1 = new System.Windows.Forms.ComboBox();
@@ -61,12 +61,12 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.button1 = new System.Windows.Forms.Button();
             this.txtTenGV4 = new System.Windows.Forms.TextBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.bunifuPanel3 = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panelThemTV = new Bunifu.UI.WinForms.BunifuPanel();
             this.txtChuyenNganh = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.cmbSelectTenBM = new System.Windows.Forms.ComboBox();
-            this.txtSQDTLap = new System.Windows.Forms.TextBox();
+            this.txtKetQua = new System.Windows.Forms.TextBox();
             this.txtTrangThai = new System.Windows.Forms.TextBox();
             this.txtTienDo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -87,10 +87,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label9 = new System.Windows.Forms.Label();
             this.txtMADT = new System.Windows.Forms.TextBox();
             this.btnLuu = new System.Windows.Forms.Button();
-            this.bunifuPanel2 = new Bunifu.UI.WinForms.BunifuPanel();
-            this.bunifuPanel1.SuspendLayout();
-            this.bunifuPanel3.SuspendLayout();
-            this.bunifuPanel2.SuspendLayout();
+            this.panelThemDT = new Bunifu.UI.WinForms.BunifuPanel();
+            this.panelThemDTTittle.SuspendLayout();
+            this.panelThemTV.SuspendLayout();
+            this.panelThemDT.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbModalQLDT
@@ -99,29 +99,28 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.lbModalQLDT.AutoSize = true;
             this.lbModalQLDT.BackColor = System.Drawing.SystemColors.Control;
             this.lbModalQLDT.Font = new System.Drawing.Font("Times New Roman", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbModalQLDT.Location = new System.Drawing.Point(799, 0);
+            this.lbModalQLDT.Location = new System.Drawing.Point(734, 0);
             this.lbModalQLDT.Name = "lbModalQLDT";
             this.lbModalQLDT.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.lbModalQLDT.Size = new System.Drawing.Size(188, 51);
             this.lbModalQLDT.TabIndex = 34;
             this.lbModalQLDT.Text = "Thêm đề tài";
-            this.lbModalQLDT.Click += new System.EventHandler(this.lbModalQLDT_Click);
             // 
-            // bunifuPanel1
+            // panelThemDTTittle
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
-            this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel1.BorderRadius = 3;
-            this.bunifuPanel1.BorderThickness = 1;
-            this.bunifuPanel1.Controls.Add(this.lbModalQLDT);
-            this.bunifuPanel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.bunifuPanel1.Location = new System.Drawing.Point(0, 0);
-            this.bunifuPanel1.Name = "bunifuPanel1";
-            this.bunifuPanel1.ShowBorders = true;
-            this.bunifuPanel1.Size = new System.Drawing.Size(1587, 65);
-            this.bunifuPanel1.TabIndex = 38;
+            this.panelThemDTTittle.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panelThemDTTittle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThemDTTittle.BackgroundImage")));
+            this.panelThemDTTittle.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThemDTTittle.BorderColor = System.Drawing.Color.Transparent;
+            this.panelThemDTTittle.BorderRadius = 3;
+            this.panelThemDTTittle.BorderThickness = 1;
+            this.panelThemDTTittle.Controls.Add(this.lbModalQLDT);
+            this.panelThemDTTittle.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelThemDTTittle.Location = new System.Drawing.Point(0, 0);
+            this.panelThemDTTittle.Name = "panelThemDTTittle";
+            this.panelThemDTTittle.ShowBorders = true;
+            this.panelThemDTTittle.Size = new System.Drawing.Size(1587, 65);
+            this.panelThemDTTittle.TabIndex = 38;
             // 
             // label12
             // 
@@ -153,11 +152,18 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbSLTV.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cmbSLTV.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSLTV.FormattingEnabled = true;
+            this.cmbSLTV.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.cmbSLTV.Location = new System.Drawing.Point(210, 23);
             this.cmbSLTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbSLTV.Name = "cmbSLTV";
             this.cmbSLTV.Size = new System.Drawing.Size(50, 30);
             this.cmbSLTV.TabIndex = 33;
+            this.cmbSLTV.SelectedIndexChanged += new System.EventHandler(this.cmbSLTV_SelectedIndexChanged);
             // 
             // label14
             // 
@@ -180,8 +186,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbMCN.Location = new System.Drawing.Point(154, 113);
             this.cmbMCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMCN.Name = "cmbMCN";
-            this.cmbMCN.Size = new System.Drawing.Size(83, 30);
+            this.cmbMCN.Size = new System.Drawing.Size(125, 30);
             this.cmbMCN.TabIndex = 36;
+            this.cmbMCN.SelectedIndexChanged += new System.EventHandler(this.cmbMCN_SelectedIndexChanged);
             // 
             // label15
             // 
@@ -189,22 +196,23 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label15.AutoSize = true;
             this.label15.BackColor = System.Drawing.SystemColors.Control;
             this.label15.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(253, 113);
+            this.label15.Location = new System.Drawing.Point(326, 110);
             this.label15.Name = "label15";
             this.label15.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label15.Size = new System.Drawing.Size(82, 34);
             this.label15.TabIndex = 37;
             this.label15.Text = "Tên CN";
             // 
-            // txtCN
+            // txttenCN
             // 
-            this.txtCN.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtCN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCN.Location = new System.Drawing.Point(345, 113);
-            this.txtCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtCN.Name = "txtCN";
-            this.txtCN.Size = new System.Drawing.Size(196, 30);
-            this.txtCN.TabIndex = 33;
+            this.txttenCN.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txttenCN.Enabled = false;
+            this.txttenCN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttenCN.Location = new System.Drawing.Point(414, 110);
+            this.txttenCN.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txttenCN.Name = "txttenCN";
+            this.txttenCN.Size = new System.Drawing.Size(196, 30);
+            this.txttenCN.TabIndex = 33;
             // 
             // label16
             // 
@@ -240,8 +248,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbMGV1.Location = new System.Drawing.Point(153, 209);
             this.cmbMGV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMGV1.Name = "cmbMGV1";
-            this.cmbMGV1.Size = new System.Drawing.Size(83, 30);
+            this.cmbMGV1.Size = new System.Drawing.Size(126, 30);
             this.cmbMGV1.TabIndex = 43;
+            this.cmbMGV1.SelectedIndexChanged += new System.EventHandler(this.cmbMGV1_SelectedIndexChanged);
             // 
             // label20
             // 
@@ -249,7 +258,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.SystemColors.Control;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(252, 209);
+            this.label20.Location = new System.Drawing.Point(316, 209);
             this.label20.Name = "label20";
             this.label20.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label20.Size = new System.Drawing.Size(92, 34);
@@ -259,8 +268,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             // txtTenGV1
             // 
             this.txtTenGV1.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTenGV1.Enabled = false;
             this.txtTenGV1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenGV1.Location = new System.Drawing.Point(344, 209);
+            this.txtTenGV1.Location = new System.Drawing.Point(414, 206);
             this.txtTenGV1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV1.Name = "txtTenGV1";
             this.txtTenGV1.Size = new System.Drawing.Size(196, 30);
@@ -300,8 +310,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbMGV2.Location = new System.Drawing.Point(156, 305);
             this.cmbMGV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMGV2.Name = "cmbMGV2";
-            this.cmbMGV2.Size = new System.Drawing.Size(83, 30);
+            this.cmbMGV2.Size = new System.Drawing.Size(123, 30);
             this.cmbMGV2.TabIndex = 50;
+            this.cmbMGV2.SelectedIndexChanged += new System.EventHandler(this.cmbMGV2_SelectedIndexChanged);
             // 
             // label24
             // 
@@ -309,7 +320,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label24.AutoSize = true;
             this.label24.BackColor = System.Drawing.SystemColors.Control;
             this.label24.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(255, 305);
+            this.label24.Location = new System.Drawing.Point(316, 301);
             this.label24.Name = "label24";
             this.label24.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label24.Size = new System.Drawing.Size(92, 34);
@@ -319,8 +330,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             // txtTenGV2
             // 
             this.txtTenGV2.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTenGV2.Enabled = false;
             this.txtTenGV2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenGV2.Location = new System.Drawing.Point(347, 305);
+            this.txtTenGV2.Location = new System.Drawing.Point(414, 305);
             this.txtTenGV2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV2.Name = "txtTenGV2";
             this.txtTenGV2.Size = new System.Drawing.Size(196, 30);
@@ -360,8 +372,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbMGV3.Location = new System.Drawing.Point(158, 399);
             this.cmbMGV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMGV3.Name = "cmbMGV3";
-            this.cmbMGV3.Size = new System.Drawing.Size(83, 30);
+            this.cmbMGV3.Size = new System.Drawing.Size(121, 30);
             this.cmbMGV3.TabIndex = 57;
+            this.cmbMGV3.SelectedIndexChanged += new System.EventHandler(this.cmbMGV3_SelectedIndexChanged);
             // 
             // label28
             // 
@@ -369,7 +382,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label28.AutoSize = true;
             this.label28.BackColor = System.Drawing.SystemColors.Control;
             this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(257, 399);
+            this.label28.Location = new System.Drawing.Point(316, 392);
             this.label28.Name = "label28";
             this.label28.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label28.Size = new System.Drawing.Size(92, 34);
@@ -379,8 +392,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             // txtTenGV3
             // 
             this.txtTenGV3.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTenGV3.Enabled = false;
             this.txtTenGV3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenGV3.Location = new System.Drawing.Point(349, 399);
+            this.txtTenGV3.Location = new System.Drawing.Point(414, 396);
             this.txtTenGV3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV3.Name = "txtTenGV3";
             this.txtTenGV3.Size = new System.Drawing.Size(196, 30);
@@ -420,8 +434,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbMGV4.Location = new System.Drawing.Point(160, 494);
             this.cmbMGV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbMGV4.Name = "cmbMGV4";
-            this.cmbMGV4.Size = new System.Drawing.Size(83, 30);
+            this.cmbMGV4.Size = new System.Drawing.Size(119, 30);
             this.cmbMGV4.TabIndex = 64;
+            this.cmbMGV4.SelectedIndexChanged += new System.EventHandler(this.cmbMGV4_SelectedIndexChanged);
             // 
             // label32
             // 
@@ -429,7 +444,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label32.AutoSize = true;
             this.label32.BackColor = System.Drawing.SystemColors.Control;
             this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(259, 494);
+            this.label32.Location = new System.Drawing.Point(316, 494);
             this.label32.Name = "label32";
             this.label32.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label32.Size = new System.Drawing.Size(92, 34);
@@ -443,7 +458,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(-440, 622);
+            this.button1.Location = new System.Drawing.Point(-388, 622);
             this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(121, 52);
@@ -455,8 +470,9 @@ namespace QuanLyDeTai.Khoa.QLDT
             // txtTenGV4
             // 
             this.txtTenGV4.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtTenGV4.Enabled = false;
             this.txtTenGV4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTenGV4.Location = new System.Drawing.Point(351, 494);
+            this.txtTenGV4.Location = new System.Drawing.Point(414, 494);
             this.txtTenGV4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTenGV4.Name = "txtTenGV4";
             this.txtTenGV4.Size = new System.Drawing.Size(196, 30);
@@ -475,49 +491,49 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label31.TabIndex = 66;
             this.label31.Text = "Mã GV4";
             // 
-            // bunifuPanel3
+            // panelThemTV
             // 
-            this.bunifuPanel3.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel3.BackgroundImage")));
-            this.bunifuPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel3.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel3.BorderRadius = 3;
-            this.bunifuPanel3.BorderThickness = 1;
-            this.bunifuPanel3.Controls.Add(this.label31);
-            this.bunifuPanel3.Controls.Add(this.txtTenGV4);
-            this.bunifuPanel3.Controls.Add(this.button1);
-            this.bunifuPanel3.Controls.Add(this.label32);
-            this.bunifuPanel3.Controls.Add(this.cmbMGV4);
-            this.bunifuPanel3.Controls.Add(this.label33);
-            this.bunifuPanel3.Controls.Add(this.label27);
-            this.bunifuPanel3.Controls.Add(this.txtTenGV3);
-            this.bunifuPanel3.Controls.Add(this.label28);
-            this.bunifuPanel3.Controls.Add(this.cmbMGV3);
-            this.bunifuPanel3.Controls.Add(this.label29);
-            this.bunifuPanel3.Controls.Add(this.label23);
-            this.bunifuPanel3.Controls.Add(this.txtTenGV2);
-            this.bunifuPanel3.Controls.Add(this.label24);
-            this.bunifuPanel3.Controls.Add(this.cmbMGV2);
-            this.bunifuPanel3.Controls.Add(this.label25);
-            this.bunifuPanel3.Controls.Add(this.label19);
-            this.bunifuPanel3.Controls.Add(this.txtTenGV1);
-            this.bunifuPanel3.Controls.Add(this.label20);
-            this.bunifuPanel3.Controls.Add(this.cmbMGV1);
-            this.bunifuPanel3.Controls.Add(this.label21);
-            this.bunifuPanel3.Controls.Add(this.label16);
-            this.bunifuPanel3.Controls.Add(this.txtCN);
-            this.bunifuPanel3.Controls.Add(this.label15);
-            this.bunifuPanel3.Controls.Add(this.cmbMCN);
-            this.bunifuPanel3.Controls.Add(this.label14);
-            this.bunifuPanel3.Controls.Add(this.cmbSLTV);
-            this.bunifuPanel3.Controls.Add(this.label13);
-            this.bunifuPanel3.Controls.Add(this.label12);
-            this.bunifuPanel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.bunifuPanel3.Location = new System.Drawing.Point(925, 65);
-            this.bunifuPanel3.Name = "bunifuPanel3";
-            this.bunifuPanel3.ShowBorders = true;
-            this.bunifuPanel3.Size = new System.Drawing.Size(662, 661);
-            this.bunifuPanel3.TabIndex = 39;
+            this.panelThemTV.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panelThemTV.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThemTV.BackgroundImage")));
+            this.panelThemTV.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThemTV.BorderColor = System.Drawing.Color.Transparent;
+            this.panelThemTV.BorderRadius = 3;
+            this.panelThemTV.BorderThickness = 1;
+            this.panelThemTV.Controls.Add(this.label31);
+            this.panelThemTV.Controls.Add(this.txtTenGV4);
+            this.panelThemTV.Controls.Add(this.button1);
+            this.panelThemTV.Controls.Add(this.label32);
+            this.panelThemTV.Controls.Add(this.cmbMGV4);
+            this.panelThemTV.Controls.Add(this.label33);
+            this.panelThemTV.Controls.Add(this.label27);
+            this.panelThemTV.Controls.Add(this.txtTenGV3);
+            this.panelThemTV.Controls.Add(this.label28);
+            this.panelThemTV.Controls.Add(this.cmbMGV3);
+            this.panelThemTV.Controls.Add(this.label29);
+            this.panelThemTV.Controls.Add(this.label23);
+            this.panelThemTV.Controls.Add(this.txtTenGV2);
+            this.panelThemTV.Controls.Add(this.label24);
+            this.panelThemTV.Controls.Add(this.cmbMGV2);
+            this.panelThemTV.Controls.Add(this.label25);
+            this.panelThemTV.Controls.Add(this.label19);
+            this.panelThemTV.Controls.Add(this.txtTenGV1);
+            this.panelThemTV.Controls.Add(this.label20);
+            this.panelThemTV.Controls.Add(this.cmbMGV1);
+            this.panelThemTV.Controls.Add(this.label21);
+            this.panelThemTV.Controls.Add(this.label16);
+            this.panelThemTV.Controls.Add(this.txttenCN);
+            this.panelThemTV.Controls.Add(this.label15);
+            this.panelThemTV.Controls.Add(this.cmbMCN);
+            this.panelThemTV.Controls.Add(this.label14);
+            this.panelThemTV.Controls.Add(this.cmbSLTV);
+            this.panelThemTV.Controls.Add(this.label13);
+            this.panelThemTV.Controls.Add(this.label12);
+            this.panelThemTV.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panelThemTV.Location = new System.Drawing.Point(820, 65);
+            this.panelThemTV.Name = "panelThemTV";
+            this.panelThemTV.ShowBorders = true;
+            this.panelThemTV.Size = new System.Drawing.Size(767, 661);
+            this.panelThemTV.TabIndex = 39;
             // 
             // txtChuyenNganh
             // 
@@ -536,7 +552,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Control;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 265);
+            this.label4.Location = new System.Drawing.Point(14, 220);
             this.label4.Name = "label4";
             this.label4.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label4.Size = new System.Drawing.Size(83, 34);
@@ -549,7 +565,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Control;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 203);
+            this.label3.Location = new System.Drawing.Point(451, 220);
             this.label3.Name = "label3";
             this.label3.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label3.Size = new System.Drawing.Size(99, 34);
@@ -561,38 +577,37 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.cmbSelectTenBM.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.cmbSelectTenBM.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbSelectTenBM.FormattingEnabled = true;
-            this.cmbSelectTenBM.Location = new System.Drawing.Point(164, 326);
+            this.cmbSelectTenBM.Location = new System.Drawing.Point(164, 383);
             this.cmbSelectTenBM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbSelectTenBM.Name = "cmbSelectTenBM";
             this.cmbSelectTenBM.Size = new System.Drawing.Size(274, 30);
             this.cmbSelectTenBM.TabIndex = 7;
-            this.cmbSelectTenBM.SelectedIndexChanged += new System.EventHandler(this.cmbSelectTenBM_SelectedIndexChanged);
             // 
-            // txtSQDTLap
+            // txtKetQua
             // 
-            this.txtSQDTLap.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtSQDTLap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSQDTLap.Location = new System.Drawing.Point(572, 269);
-            this.txtSQDTLap.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtSQDTLap.Name = "txtSQDTLap";
-            this.txtSQDTLap.Size = new System.Drawing.Size(230, 30);
-            this.txtSQDTLap.TabIndex = 9;
+            this.txtKetQua.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.txtKetQua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtKetQua.Location = new System.Drawing.Point(572, 294);
+            this.txtKetQua.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtKetQua.Name = "txtKetQua";
+            this.txtKetQua.Size = new System.Drawing.Size(230, 30);
+            this.txtKetQua.TabIndex = 9;
             // 
             // txtTrangThai
             // 
             this.txtTrangThai.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtTrangThai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTrangThai.Location = new System.Drawing.Point(164, 209);
+            this.txtTrangThai.Location = new System.Drawing.Point(572, 224);
             this.txtTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTrangThai.Name = "txtTrangThai";
-            this.txtTrangThai.Size = new System.Drawing.Size(153, 30);
+            this.txtTrangThai.Size = new System.Drawing.Size(230, 30);
             this.txtTrangThai.TabIndex = 8;
             // 
             // txtTienDo
             // 
             this.txtTienDo.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtTienDo.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtTienDo.Location = new System.Drawing.Point(573, 200);
+            this.txtTienDo.Location = new System.Drawing.Point(164, 294);
             this.txtTienDo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTienDo.Name = "txtTienDo";
             this.txtTienDo.Size = new System.Drawing.Size(229, 30);
@@ -604,7 +619,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Control;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(452, 265);
+            this.label5.Location = new System.Drawing.Point(463, 290);
             this.label5.Name = "label5";
             this.label5.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label5.Size = new System.Drawing.Size(81, 34);
@@ -615,7 +630,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             // 
             this.txtLoaiSP.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtLoaiSP.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLoaiSP.Location = new System.Drawing.Point(164, 269);
+            this.txtLoaiSP.Location = new System.Drawing.Point(164, 224);
             this.txtLoaiSP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLoaiSP.Name = "txtLoaiSP";
             this.txtLoaiSP.Size = new System.Drawing.Size(274, 30);
@@ -653,7 +668,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.SystemColors.Control;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(451, 140);
+            this.label2.Location = new System.Drawing.Point(452, 143);
             this.label2.Name = "label2";
             this.label2.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label2.Size = new System.Drawing.Size(92, 34);
@@ -664,7 +679,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             // 
             this.txtNgayBD.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtNgayBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayBD.Location = new System.Drawing.Point(164, 140);
+            this.txtNgayBD.Location = new System.Drawing.Point(164, 151);
             this.txtNgayBD.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgayBD.Name = "txtNgayBD";
             this.txtNgayBD.Size = new System.Drawing.Size(153, 30);
@@ -674,7 +689,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             // 
             this.txtNgayNT.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.txtNgayNT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNgayNT.Location = new System.Drawing.Point(572, 140);
+            this.txtNgayNT.Location = new System.Drawing.Point(572, 144);
             this.txtNgayNT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNgayNT.Name = "txtNgayNT";
             this.txtNgayNT.Size = new System.Drawing.Size(230, 30);
@@ -686,7 +701,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.SystemColors.Control;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(451, 196);
+            this.label11.Location = new System.Drawing.Point(14, 290);
             this.label11.Name = "label11";
             this.label11.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label11.Size = new System.Drawing.Size(80, 34);
@@ -712,7 +727,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.Control;
             this.label6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(11, 143);
+            this.label6.Location = new System.Drawing.Point(11, 147);
             this.label6.Name = "label6";
             this.label6.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label6.Size = new System.Drawing.Size(93, 34);
@@ -732,11 +747,11 @@ namespace QuanLyDeTai.Khoa.QLDT
             // txtTenBM
             // 
             this.txtTenBM.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.txtTenBM.Location = new System.Drawing.Point(164, 330);
+            this.txtTenBM.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTenBM.Location = new System.Drawing.Point(164, 383);
             this.txtTenBM.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtTenBM.Multiline = true;
             this.txtTenBM.Name = "txtTenBM";
-            this.txtTenBM.Size = new System.Drawing.Size(274, 34);
+            this.txtTenBM.Size = new System.Drawing.Size(274, 30);
             this.txtTenBM.TabIndex = 28;
             // 
             // label10
@@ -745,7 +760,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.Control;
             this.label10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(14, 322);
+            this.label10.Location = new System.Drawing.Point(14, 379);
             this.label10.Name = "label10";
             this.label10.Padding = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.label10.Size = new System.Drawing.Size(113, 34);
@@ -759,7 +774,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnHuy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHuy.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnHuy.Location = new System.Drawing.Point(572, 572);
+            this.btnHuy.Location = new System.Drawing.Point(520, 572);
             this.btnHuy.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(121, 52);
@@ -808,7 +823,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnLuu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.ForeColor = System.Drawing.Color.White;
-            this.btnLuu.Location = new System.Drawing.Point(744, 572);
+            this.btnLuu.Location = new System.Drawing.Point(692, 572);
             this.btnLuu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(120, 52);
@@ -817,45 +832,45 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnLuu.UseVisualStyleBackColor = false;
             this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
-            // bunifuPanel2
+            // panelThemDT
             // 
-            this.bunifuPanel2.BackgroundColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel2.BackgroundImage")));
-            this.bunifuPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuPanel2.BorderColor = System.Drawing.Color.Transparent;
-            this.bunifuPanel2.BorderRadius = 3;
-            this.bunifuPanel2.BorderThickness = 1;
-            this.bunifuPanel2.Controls.Add(this.btnLuu);
-            this.bunifuPanel2.Controls.Add(this.txtMADT);
-            this.bunifuPanel2.Controls.Add(this.label9);
-            this.bunifuPanel2.Controls.Add(this.txtTenDT);
-            this.bunifuPanel2.Controls.Add(this.btnHuy);
-            this.bunifuPanel2.Controls.Add(this.label10);
-            this.bunifuPanel2.Controls.Add(this.txtTenBM);
-            this.bunifuPanel2.Controls.Add(this.txtCap);
-            this.bunifuPanel2.Controls.Add(this.label6);
-            this.bunifuPanel2.Controls.Add(this.label7);
-            this.bunifuPanel2.Controls.Add(this.label11);
-            this.bunifuPanel2.Controls.Add(this.txtNgayNT);
-            this.bunifuPanel2.Controls.Add(this.txtNgayBD);
-            this.bunifuPanel2.Controls.Add(this.label2);
-            this.bunifuPanel2.Controls.Add(this.label8);
-            this.bunifuPanel2.Controls.Add(this.label1);
-            this.bunifuPanel2.Controls.Add(this.txtLoaiSP);
-            this.bunifuPanel2.Controls.Add(this.label5);
-            this.bunifuPanel2.Controls.Add(this.txtTienDo);
-            this.bunifuPanel2.Controls.Add(this.txtTrangThai);
-            this.bunifuPanel2.Controls.Add(this.txtSQDTLap);
-            this.bunifuPanel2.Controls.Add(this.cmbSelectTenBM);
-            this.bunifuPanel2.Controls.Add(this.label3);
-            this.bunifuPanel2.Controls.Add(this.label4);
-            this.bunifuPanel2.Controls.Add(this.txtChuyenNganh);
-            this.bunifuPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.bunifuPanel2.Location = new System.Drawing.Point(0, 65);
-            this.bunifuPanel2.Name = "bunifuPanel2";
-            this.bunifuPanel2.ShowBorders = true;
-            this.bunifuPanel2.Size = new System.Drawing.Size(925, 661);
-            this.bunifuPanel2.TabIndex = 40;
+            this.panelThemDT.BackgroundColor = System.Drawing.Color.Transparent;
+            this.panelThemDT.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelThemDT.BackgroundImage")));
+            this.panelThemDT.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelThemDT.BorderColor = System.Drawing.Color.Transparent;
+            this.panelThemDT.BorderRadius = 3;
+            this.panelThemDT.BorderThickness = 1;
+            this.panelThemDT.Controls.Add(this.btnLuu);
+            this.panelThemDT.Controls.Add(this.txtMADT);
+            this.panelThemDT.Controls.Add(this.label9);
+            this.panelThemDT.Controls.Add(this.txtTenDT);
+            this.panelThemDT.Controls.Add(this.btnHuy);
+            this.panelThemDT.Controls.Add(this.label10);
+            this.panelThemDT.Controls.Add(this.txtTenBM);
+            this.panelThemDT.Controls.Add(this.txtCap);
+            this.panelThemDT.Controls.Add(this.label6);
+            this.panelThemDT.Controls.Add(this.label7);
+            this.panelThemDT.Controls.Add(this.label11);
+            this.panelThemDT.Controls.Add(this.txtNgayNT);
+            this.panelThemDT.Controls.Add(this.txtNgayBD);
+            this.panelThemDT.Controls.Add(this.label2);
+            this.panelThemDT.Controls.Add(this.label8);
+            this.panelThemDT.Controls.Add(this.label1);
+            this.panelThemDT.Controls.Add(this.txtLoaiSP);
+            this.panelThemDT.Controls.Add(this.label5);
+            this.panelThemDT.Controls.Add(this.txtTienDo);
+            this.panelThemDT.Controls.Add(this.txtTrangThai);
+            this.panelThemDT.Controls.Add(this.txtKetQua);
+            this.panelThemDT.Controls.Add(this.cmbSelectTenBM);
+            this.panelThemDT.Controls.Add(this.label3);
+            this.panelThemDT.Controls.Add(this.label4);
+            this.panelThemDT.Controls.Add(this.txtChuyenNganh);
+            this.panelThemDT.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelThemDT.Location = new System.Drawing.Point(0, 65);
+            this.panelThemDT.Name = "panelThemDT";
+            this.panelThemDT.ShowBorders = true;
+            this.panelThemDT.Size = new System.Drawing.Size(820, 661);
+            this.panelThemDT.TabIndex = 40;
             // 
             // modalDT
             // 
@@ -863,32 +878,32 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1587, 726);
-            this.Controls.Add(this.bunifuPanel2);
-            this.Controls.Add(this.bunifuPanel3);
-            this.Controls.Add(this.bunifuPanel1);
+            this.Controls.Add(this.panelThemDT);
+            this.Controls.Add(this.panelThemTV);
+            this.Controls.Add(this.panelThemDTTittle);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "modalDT";
             this.Text = "Thêm đề tài";
-            this.bunifuPanel1.ResumeLayout(false);
-            this.bunifuPanel1.PerformLayout();
-            this.bunifuPanel3.ResumeLayout(false);
-            this.bunifuPanel3.PerformLayout();
-            this.bunifuPanel2.ResumeLayout(false);
-            this.bunifuPanel2.PerformLayout();
+            this.panelThemDTTittle.ResumeLayout(false);
+            this.panelThemDTTittle.PerformLayout();
+            this.panelThemTV.ResumeLayout(false);
+            this.panelThemTV.PerformLayout();
+            this.panelThemDT.ResumeLayout(false);
+            this.panelThemDT.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Label lbModalQLDT;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel1;
+        private Bunifu.UI.WinForms.BunifuPanel panelThemDTTittle;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox cmbSLTV;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.ComboBox cmbMCN;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txtCN;
+        private System.Windows.Forms.TextBox txttenCN;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.ComboBox cmbMGV1;
@@ -911,12 +926,12 @@ namespace QuanLyDeTai.Khoa.QLDT
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox txtTenGV4;
         private System.Windows.Forms.Label label31;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel3;
+        private Bunifu.UI.WinForms.BunifuPanel panelThemTV;
         private System.Windows.Forms.TextBox txtChuyenNganh;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox cmbSelectTenBM;
-        private System.Windows.Forms.TextBox txtSQDTLap;
+        private System.Windows.Forms.TextBox txtKetQua;
         private System.Windows.Forms.TextBox txtTrangThai;
         private System.Windows.Forms.TextBox txtTienDo;
         private System.Windows.Forms.Label label5;
@@ -937,6 +952,6 @@ namespace QuanLyDeTai.Khoa.QLDT
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtMADT;
         private System.Windows.Forms.Button btnLuu;
-        private Bunifu.UI.WinForms.BunifuPanel bunifuPanel2;
+        private Bunifu.UI.WinForms.BunifuPanel panelThemDT;
     }
 }

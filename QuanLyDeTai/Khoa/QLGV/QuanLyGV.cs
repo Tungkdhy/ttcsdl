@@ -133,8 +133,16 @@ namespace QuanLyDeTai.Khoa
 
         private void lbQLGV_Click(object sender, EventArgs e)
         {
-            getListGV();
-            btnThem.Enabled = true;
+            if (lbQLGV.Text.Trim() == "Danh sách giáo viên")
+            {
+                getListGV();
+                btnThem.Enabled = true;
+            }
+            else
+            {
+
+            }
+                       
         }
 
         private void btnDSCN_Click(object sender, EventArgs e)

@@ -61,7 +61,7 @@ namespace QuanLyDeTai.Khoa.QLGV
             }
             else if (state == "add")
             {
-                string query = "select distinct(BOMON.TenBM) from DeTaiNCKH, BOMON where DeTaiNCKH.MABM  = BOMON.MABM and BOMON.MAKHOA = '" + MaKhoa + "'";
+                string query = "select distinct(BOMON.TenBM) from BOMON where BOMON.MAKHOA = '" + MaKhoa + "'";
                 DataTable dt = ConnectDB.Connected.getData(query);
                 foreach (DataRow dr in dt.Rows)
                 {
