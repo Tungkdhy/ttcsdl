@@ -96,14 +96,15 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuLabel4.AllowParentOverrides = false;
             this.bunifuLabel4.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.bunifuLabel4.AutoEllipsis = false;
-            this.bunifuLabel4.CursorType = null;
+            this.bunifuLabel4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuLabel4.CursorType = System.Windows.Forms.Cursors.Hand;
             this.bunifuTransition1.SetDecoration(this.bunifuLabel4, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.bunifuLabel4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuLabel4.Location = new System.Drawing.Point(12, 24);
+            this.bunifuLabel4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuLabel4.Location = new System.Drawing.Point(12, 19);
             this.bunifuLabel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.bunifuLabel4.Name = "bunifuLabel4";
             this.bunifuLabel4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.bunifuLabel4.Size = new System.Drawing.Size(153, 26);
+            this.bunifuLabel4.Size = new System.Drawing.Size(181, 31);
             this.bunifuLabel4.TabIndex = 7;
             this.bunifuLabel4.Text = "Danh sách đề tài";
             this.bunifuLabel4.TextAlignment = System.Drawing.ContentAlignment.TopLeft;
@@ -247,7 +248,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnThem.IdleIconLeftImage = null;
             this.btnThem.IdleIconRightImage = null;
             this.btnThem.IndicateFocus = false;
-            this.btnThem.Location = new System.Drawing.Point(1462, 11);
+            this.btnThem.Location = new System.Drawing.Point(1456, 11);
             this.btnThem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnThem.Name = "btnThem";
             this.btnThem.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
@@ -398,7 +399,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             // 
             // footerpanel
             // 
-            this.footerpanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.footerpanel.BackColor = System.Drawing.Color.DodgerBlue;
             this.footerpanel.Controls.Add(this.label1);
             this.footerpanel.Controls.Add(this.btnTTTV);
             this.footerpanel.Controls.Add(this.lbYChuy);
@@ -407,10 +408,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.footerpanel.Controls.Add(this.btnYChuyDT);
             this.bunifuTransition1.SetDecoration(this.footerpanel, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.footerpanel.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.footerpanel.Location = new System.Drawing.Point(0, 680);
+            this.footerpanel.Location = new System.Drawing.Point(0, 694);
             this.footerpanel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.footerpanel.Name = "footerpanel";
-            this.footerpanel.Size = new System.Drawing.Size(1821, 106);
+            this.footerpanel.Size = new System.Drawing.Size(1821, 92);
             this.footerpanel.TabIndex = 1;
             this.footerpanel.Visible = false;
             // 
@@ -421,7 +422,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTransition1.SetDecoration(this.label1, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.label1.Location = new System.Drawing.Point(848, 59);
+            this.label1.Location = new System.Drawing.Point(848, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(97, 22);
             this.label1.TabIndex = 11;
@@ -435,10 +436,10 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnTTTV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnTTTV.Image = ((System.Drawing.Image)(resources.GetObject("btnTTTV.Image")));
             this.btnTTTV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTTTV.Location = new System.Drawing.Point(874, -1);
+            this.btnTTTV.Location = new System.Drawing.Point(874, 2);
             this.btnTTTV.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnTTTV.Name = "btnTTTV";
-            this.btnTTTV.Size = new System.Drawing.Size(55, 62);
+            this.btnTTTV.Size = new System.Drawing.Size(55, 52);
             this.btnTTTV.TabIndex = 10;
             this.btnTTTV.UseVisualStyleBackColor = true;
             this.btnTTTV.Click += new System.EventHandler(this.btnTTTV_Click);
@@ -450,7 +451,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTransition1.SetDecoration(this.lbYChuy, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.lbYChuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbYChuy.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.lbYChuy.Location = new System.Drawing.Point(988, 59);
+            this.lbYChuy.Location = new System.Drawing.Point(988, 52);
             this.lbYChuy.Name = "lbYChuy";
             this.lbYChuy.Size = new System.Drawing.Size(106, 22);
             this.lbYChuy.TabIndex = 9;
@@ -463,7 +464,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTransition1.SetDecoration(this.label2, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(737, 60);
+            this.label2.Location = new System.Drawing.Point(737, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 22);
             this.label2.TabIndex = 8;
@@ -480,7 +481,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnSuaDT.Location = new System.Drawing.Point(736, 2);
             this.btnSuaDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSuaDT.Name = "btnSuaDT";
-            this.btnSuaDT.Size = new System.Drawing.Size(51, 56);
+            this.btnSuaDT.Size = new System.Drawing.Size(51, 49);
             this.btnSuaDT.TabIndex = 7;
             this.btnSuaDT.UseVisualStyleBackColor = true;
             this.btnSuaDT.Click += new System.EventHandler(this.btnSuaDT_Click);
@@ -493,7 +494,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.btnYChuyDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnYChuyDT.Image = ((System.Drawing.Image)(resources.GetObject("btnYChuyDT.Image")));
             this.btnYChuyDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnYChuyDT.Location = new System.Drawing.Point(1016, 9);
+            this.btnYChuyDT.Location = new System.Drawing.Point(1016, 2);
             this.btnYChuyDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnYChuyDT.Name = "btnYChuyDT";
             this.btnYChuyDT.Size = new System.Drawing.Size(56, 43);
@@ -561,7 +562,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.ListDT.RowHeadersWidth = 51;
             this.ListDT.RowTemplate.Height = 40;
             this.ListDT.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.ListDT.Size = new System.Drawing.Size(1821, 676);
+            this.ListDT.Size = new System.Drawing.Size(1821, 690);
             this.ListDT.TabIndex = 0;
             this.ListDT.Theme = Bunifu.UI.WinForms.BunifuDataGridView.PresetThemes.Light;
             this.ListDT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ListDT_CellClick);
@@ -794,7 +795,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTransition1.SetDecoration(this.cmbTrangThai, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.cmbTrangThai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbTrangThai.FormattingEnabled = true;
-            this.cmbTrangThai.Location = new System.Drawing.Point(769, 40);
+            this.cmbTrangThai.Location = new System.Drawing.Point(769, 41);
             this.cmbTrangThai.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbTrangThai.Name = "cmbTrangThai";
             this.cmbTrangThai.Size = new System.Drawing.Size(176, 28);
@@ -841,7 +842,7 @@ namespace QuanLyDeTai.Khoa.QLDT
             this.bunifuTransition1.SetDecoration(this.cmbBOMON, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.cmbBOMON.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbBOMON.FormattingEnabled = true;
-            this.cmbBOMON.Location = new System.Drawing.Point(421, 40);
+            this.cmbBOMON.Location = new System.Drawing.Point(418, 41);
             this.cmbBOMON.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbBOMON.Name = "cmbBOMON";
             this.cmbBOMON.Size = new System.Drawing.Size(175, 28);

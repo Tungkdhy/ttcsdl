@@ -96,7 +96,6 @@ namespace QuanLyDeTai.Khoa
             string next_MAGV = ConnectDB.Connected.getData(query_get_next_mGV).Rows[0][0].ToString();
             state = "add";
             List<string> empty = new List<string>() {next_MAGV,"","","","","","",""};
-
             Form function = new QLGV.function(empty, state, MaKhoa);
             function.ShowDialog();
 
@@ -110,8 +109,6 @@ namespace QuanLyDeTai.Khoa
                 DataTable dt = ConnectDB.Connected.getData(query);
                 ListGV.DataSource = dt;
             }
-
-
         }
 
         private void btnXuatExcel_Click(object sender, EventArgs e)

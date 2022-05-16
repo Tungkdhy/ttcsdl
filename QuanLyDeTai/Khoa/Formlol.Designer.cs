@@ -30,7 +30,7 @@ namespace QuanLyDeTai.Khoa
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation1 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
+            Bunifu.UI.WinForms.BunifuAnimatorNS.Animation animation3 = new Bunifu.UI.WinForms.BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Khoa));
             this.bunifuTransition1 = new Bunifu.UI.WinForms.BunifuTransition(this.components);
             this.btnMenu = new System.Windows.Forms.PictureBox();
@@ -65,22 +65,22 @@ namespace QuanLyDeTai.Khoa
             // 
             this.bunifuTransition1.AnimationType = Bunifu.UI.WinForms.BunifuAnimatorNS.AnimationType.Transparent;
             this.bunifuTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 1F;
-            this.bunifuTransition1.DefaultAnimation = animation1;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 1F;
+            this.bunifuTransition1.DefaultAnimation = animation3;
             // 
             // btnMenu
             // 
@@ -113,7 +113,7 @@ namespace QuanLyDeTai.Khoa
             this.btnQLBBKH.FlatAppearance.BorderSize = 0;
             this.btnQLBBKH.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnQLBBKH.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLBBKH.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLBBKH.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLBBKH.ForeColor = System.Drawing.Color.White;
             this.btnQLBBKH.Image = ((System.Drawing.Image)(resources.GetObject("btnQLBBKH.Image")));
             this.btnQLBBKH.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -123,7 +123,7 @@ namespace QuanLyDeTai.Khoa
             this.btnQLBBKH.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnQLBBKH.Size = new System.Drawing.Size(293, 62);
             this.btnQLBBKH.TabIndex = 6;
-            this.btnQLBBKH.Text = "       Scientific artical management";
+            this.btnQLBBKH.Text = "     Quản lý bài báo KH";
             this.btnQLBBKH.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnQLBBKH.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQLBBKH.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@ namespace QuanLyDeTai.Khoa
             this.btnDMK.FlatAppearance.BorderSize = 0;
             this.btnDMK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnDMK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDMK.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDMK.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDMK.ForeColor = System.Drawing.Color.White;
             this.btnDMK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDMK.Location = new System.Drawing.Point(0, 62);
@@ -171,7 +171,7 @@ namespace QuanLyDeTai.Khoa
             this.btnDX.FlatAppearance.BorderSize = 0;
             this.btnDX.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnDX.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnDX.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDX.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDX.ForeColor = System.Drawing.Color.White;
             this.btnDX.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDX.Location = new System.Drawing.Point(0, 0);
@@ -192,7 +192,7 @@ namespace QuanLyDeTai.Khoa
             this.btnSetting.FlatAppearance.BorderSize = 0;
             this.btnSetting.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnSetting.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSetting.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSetting.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSetting.ForeColor = System.Drawing.Color.White;
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -202,7 +202,7 @@ namespace QuanLyDeTai.Khoa
             this.btnSetting.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnSetting.Size = new System.Drawing.Size(293, 62);
             this.btnSetting.TabIndex = 23;
-            this.btnSetting.Text = "       Setting";
+            this.btnSetting.Text = "     Setting";
             this.btnSetting.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSetting.UseVisualStyleBackColor = true;
@@ -292,7 +292,7 @@ namespace QuanLyDeTai.Khoa
             this.btnTK.FlatAppearance.BorderSize = 0;
             this.btnTK.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnTK.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTK.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTK.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTK.ForeColor = System.Drawing.Color.White;
             this.btnTK.Image = ((System.Drawing.Image)(resources.GetObject("btnTK.Image")));
             this.btnTK.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -302,7 +302,7 @@ namespace QuanLyDeTai.Khoa
             this.btnTK.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnTK.Size = new System.Drawing.Size(293, 62);
             this.btnTK.TabIndex = 5;
-            this.btnTK.Text = "       Thống kê";
+            this.btnTK.Text = "     Thống kê";
             this.btnTK.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTK.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTK.UseVisualStyleBackColor = true;
@@ -315,7 +315,7 @@ namespace QuanLyDeTai.Khoa
             this.btnQLGV.FlatAppearance.BorderSize = 0;
             this.btnQLGV.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnQLGV.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLGV.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLGV.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLGV.ForeColor = System.Drawing.Color.White;
             this.btnQLGV.Image = ((System.Drawing.Image)(resources.GetObject("btnQLGV.Image")));
             this.btnQLGV.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -324,7 +324,7 @@ namespace QuanLyDeTai.Khoa
             this.btnQLGV.Name = "btnQLGV";
             this.btnQLGV.Size = new System.Drawing.Size(293, 62);
             this.btnQLGV.TabIndex = 3;
-            this.btnQLGV.Text = "      Quản lý giáo viên";
+            this.btnQLGV.Text = "    Quản lý giáo viên";
             this.btnQLGV.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQLGV.UseVisualStyleBackColor = true;
             this.btnQLGV.Click += new System.EventHandler(this.btnQLGV_Click_1);
@@ -336,7 +336,7 @@ namespace QuanLyDeTai.Khoa
             this.btnQLDT.FlatAppearance.BorderSize = 0;
             this.btnQLDT.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
             this.btnQLDT.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnQLDT.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQLDT.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQLDT.ForeColor = System.Drawing.Color.White;
             this.btnQLDT.Image = ((System.Drawing.Image)(resources.GetObject("btnQLDT.Image")));
             this.btnQLDT.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -346,14 +346,14 @@ namespace QuanLyDeTai.Khoa
             this.btnQLDT.Padding = new System.Windows.Forms.Padding(13, 0, 0, 0);
             this.btnQLDT.Size = new System.Drawing.Size(293, 62);
             this.btnQLDT.TabIndex = 1;
-            this.btnQLDT.Text = "       Quản lý đề tài";
+            this.btnQLDT.Text = "     Quản lý đề tài";
             this.btnQLDT.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnQLDT.UseVisualStyleBackColor = true;
             this.btnQLDT.Click += new System.EventHandler(this.btnQLDT_Click_1);
             // 
             // bunifuPanel1
             // 
-            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.Transparent;
+            this.bunifuPanel1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.bunifuPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuPanel1.BackgroundImage")));
             this.bunifuPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuPanel1.BorderColor = System.Drawing.Color.Transparent;
@@ -373,11 +373,13 @@ namespace QuanLyDeTai.Khoa
             // 
             this.lbTenKhoa.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbTenKhoa.AutoSize = true;
+            this.lbTenKhoa.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(122)))), ((int)(((byte)(204)))));
             this.bunifuTransition1.SetDecoration(this.lbTenKhoa, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
-            this.lbTenKhoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenKhoa.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTenKhoa.ForeColor = System.Drawing.Color.White;
             this.lbTenKhoa.Location = new System.Drawing.Point(502, 9);
             this.lbTenKhoa.Name = "lbTenKhoa";
-            this.lbTenKhoa.Size = new System.Drawing.Size(229, 22);
+            this.lbTenKhoa.Size = new System.Drawing.Size(282, 27);
             this.lbTenKhoa.TabIndex = 2;
             this.lbTenKhoa.Text = "Khoa Công Nghệ Thông Tin";
             // 

@@ -78,11 +78,11 @@ namespace QuanLyDeTai.Khoa
             {
                 MenuVertical.Visible = false;
                 MenuVertical.Width = 250;
-                btnQLGV.Text = "       Quản lý giáo viên";
-                btnSetting.Text = "       Cài đặt";
-                btnQLDT.Text = "       Quản lý đề tài đề tài";
-                btnQLBBKH.Text = "       Scientific artical management";
-                btnTK.Text = "       Thống kê";
+                btnQLGV.Text = "     Quản lý giáo viên";
+                btnSetting.Text = "     Cài đặt";
+                btnQLDT.Text = "     Quản lý đề tài đề tài";
+                btnQLBBKH.Text = "     Quản lý bài báo KH";
+                btnTK.Text = "     Thống kê";
                 bunifuTransition1.ShowSync(MenuVertical);
             }
         }
@@ -136,7 +136,7 @@ namespace QuanLyDeTai.Khoa
         {
             string query = "prd_khoa_getTenkhoa '" + MaKhoa + "'";
             DataTable dt = ConnectDB.Connected.getData(query);
-            lbTenKhoa.Text = "Khoa " + dt.Rows[0][0].ToString();
+            lbTenKhoa.Text = "KHOA " + dt.Rows[0][0].ToString().ToUpper();
         }
     }
 }

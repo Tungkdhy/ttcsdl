@@ -61,7 +61,7 @@ namespace QuanLyDeTai.Khoa
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.panel1.BackColor = System.Drawing.Color.DodgerBlue;
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnSua);
@@ -325,7 +325,7 @@ namespace QuanLyDeTai.Khoa
             // btnDSCN
             // 
             this.btnDSCN.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnDSCN.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnDSCN.BackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuTransition1.SetDecoration(this.btnDSCN, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnDSCN.FlatAppearance.BorderSize = 0;
             this.btnDSCN.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -462,7 +462,7 @@ namespace QuanLyDeTai.Khoa
             // btnThem
             // 
             this.btnThem.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.btnThem.BackColor = System.Drawing.Color.LimeGreen;
+            this.btnThem.BackColor = System.Drawing.Color.DodgerBlue;
             this.bunifuTransition1.SetDecoration(this.btnThem, Bunifu.UI.WinForms.BunifuTransition.DecorationType.None);
             this.btnThem.FlatAppearance.BorderSize = 0;
             this.btnThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
