@@ -61,7 +61,7 @@ namespace QuanLyDeTai.User.ListResearch
                 DataGridViewRow row = new DataGridViewRow();
                 row = bunifuDataGridView1.Rows[e.RowIndex];
                 maDT = Convert.ToString(row.Cells["MADT"].Value);
-                update.Text = Convert.ToString(row.Cells["TrangThai"].Value);
+                update.Text = Convert.ToString(row.Cells["TienDo"].Value);
                 update.Enabled = true;
                 btnUpdate.Enabled = true;
             }
@@ -77,7 +77,7 @@ namespace QuanLyDeTai.User.ListResearch
             DataGridViewRow row = new DataGridViewRow();
             row = bunifuDataGridView1.Rows[e.RowIndex];
             maDT = Convert.ToString(row.Cells["MADT"].Value);
-            update.Text = Convert.ToString(row.Cells["TrangThai"].Value);
+            update.Text = Convert.ToString(row.Cells["TienDo"].Value);
             update.Enabled = true;
             btnUpdate.Enabled = true;
         }

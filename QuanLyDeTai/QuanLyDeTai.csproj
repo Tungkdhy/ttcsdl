@@ -70,11 +70,20 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTextbox">
       <HintPath>..\..\..\..\Desktop\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuTextbox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToolTip">
+      <HintPath>..\..\..\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuToolTip.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
       <HintPath>..\..\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.Charts.WinForms, Version=1.0.1.0, Culture=neutral, PublicKeyToken=4cb9ae78886bbe24, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.Charts.WinForms.1.0.1\lib\net40\Guna.Charts.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.2.1, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.1\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
@@ -157,23 +166,59 @@
     <Compile Include="Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="PKHCN\BBKH\BBKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\BBKH\BBKH.Designer.cs">
+      <DependentUpon>BBKH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\BBKH\modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\BBKH\modal.Designer.cs">
+      <DependentUpon>modal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\HDNT\HDNT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\HDNT\HDNT.Designer.cs">
+      <DependentUpon>HDNT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\HDNT\ListDT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\HDNT\ListDT.Designer.cs">
+      <DependentUpon>ListDT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\HDNT\modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\HDNT\modal.Designer.cs">
+      <DependentUpon>modal.cs</DependentUpon>
+    </Compile>
     <Compile Include="PKHCN\PKHCN.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PKHCN\PKHCN.Designer.cs">
       <DependentUpon>PKHCN.cs</DependentUpon>
     </Compile>
-    <Compile Include="PKHCN\QLDT\QLDT.cs">
+    <Compile Include="PKHCN\QLCN\modal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PKHCN\QLDT\QLDT.Designer.cs">
-      <DependentUpon>QLDT.cs</DependentUpon>
+    <Compile Include="PKHCN\QLCN\modal.Designer.cs">
+      <DependentUpon>modal.cs</DependentUpon>
     </Compile>
-    <Compile Include="PKHCN\QLK\QLK.cs">
+    <Compile Include="PKHCN\QLCN\QLCN.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PKHCN\QLK\QLK.Designer.cs">
-      <DependentUpon>QLK.cs</DependentUpon>
+    <Compile Include="PKHCN\QLCN\QLCN.Designer.cs">
+      <DependentUpon>QLCN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\QuanLyDT\modal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\QuanLyDT\modal.Designer.cs">
+      <DependentUpon>modal.cs</DependentUpon>
     </Compile>
     <Compile Include="PKHCN\QLTK\QLTK.cs">
       <SubType>Form</SubType>
@@ -186,6 +231,18 @@
     </Compile>
     <Compile Include="PKHCN\QLTK\ThemTk.Designer.cs">
       <DependentUpon>ThemTk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\QuanLyDT\QLDT1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\QuanLyDT\QLDT1.Designer.cs">
+      <DependentUpon>QLDT1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PKHCN\TK\TK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PKHCN\TK\TK.Designer.cs">
+      <DependentUpon>TK.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -252,20 +309,44 @@
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\BBKH\BBKH.resx">
+      <DependentUpon>BBKH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\BBKH\modal.resx">
+      <DependentUpon>modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\HDNT\HDNT.resx">
+      <DependentUpon>HDNT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\HDNT\ListDT.resx">
+      <DependentUpon>ListDT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\HDNT\modal.resx">
+      <DependentUpon>modal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PKHCN\PKHCN.resx">
       <DependentUpon>PKHCN.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PKHCN\QLDT\QLDT.resx">
-      <DependentUpon>QLDT.cs</DependentUpon>
+    <EmbeddedResource Include="PKHCN\QLCN\modal.resx">
+      <DependentUpon>modal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PKHCN\QLK\QLK.resx">
-      <DependentUpon>QLK.cs</DependentUpon>
+    <EmbeddedResource Include="PKHCN\QLCN\QLCN.resx">
+      <DependentUpon>QLCN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PKHCN\QLTK\QLTK.resx">
       <DependentUpon>QLTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PKHCN\QLTK\ThemTk.resx">
       <DependentUpon>ThemTk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\QuanLyDT\modal.resx">
+      <DependentUpon>modal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\QuanLyDT\QLDT1.resx">
+      <DependentUpon>QLDT1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PKHCN\TK\TK.resx">
+      <DependentUpon>TK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -336,6 +417,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-icon-black-silhouette-isolated-on-white-vector-20390378.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -44,103 +44,36 @@ namespace QuanLyDeTai.PKHCN.QLTK
                 query = "exec getTKGV";
                 listTK.DataSource = ConnectDB.Connected.getData(query);
             }
+            
         }
 
-        private void TKP_Click(object sender, EventArgs e)
-        {
-            state = "Phong";
-            string query = "exec getTKP";
-            DataTable dt =   ConnectDB.Connected.getData(query);
-            listTK.DataSource = dt;
-            fillter.Enabled = true;
-           
-        }
         public void Enable()
         {
             ID.Enabled = false;
             Password.Enabled = false;
             username.Enabled = false;
-            Ma.Enabled = false;
             addTK.Enabled = false;
             edit.Enabled = false;
             cancel.Enabled = false;
             delete.Enabled = false;
         }
-        private void TKK_Click(object sender, EventArgs e)
+    
+        public bool checkUser()
         {
-            state = "Khoa";
-            string query = "exec getTKK";
+            string query = "exec getAllUserName";
             DataTable dt = ConnectDB.Connected.getData(query);
-            listTK.DataSource = dt;
-            fillter.Enabled=true;
-            ID.Text = "";
-            Ma.Text = "";
-            Password.Text = "";
-            username.Text = "";
-            Enable();
-        }
-
-        private void TKBM_Click(object sender, EventArgs e)
-        {
-            state = "Bo mon";
-            string query = "exec getTKBM";
-            DataTable dt = ConnectDB.Connected.getData(query);
-            listTK.DataSource = dt;
-            fillter.Enabled = true;
-            ID.Text = "";
-            Ma.Text = "";
-            Password.Text = "";
-            username.Text = "";
-            Enable();
-        }
-
-        private void TKGV_Click(object sender, EventArgs e)
-        {
-            state = "Giao vien";
-            string query = "exec getTKGV";
-            DataTable dt = ConnectDB.Connected.getData(query);
-            listTK.DataSource = dt;
-            fillter.Enabled=true;
-            ID.Text = "";
-            Ma.Text = "";
-            Password.Text = "";
-            username.Text = "";
-            Enable();
-        }
-
-      
-        private void fillter_Click(object sender, EventArgs e)
-        {
-            string query = "";
-            if(state == "Khoa")
+            foreach (DataRow dr in dt.Rows)
             {
-                query = "exec filter_TKK";
-                listTK.DataSource = ConnectDB.Connected.getData(query);
-                fillter.Enabled=false;
+               
+               if(username.Text == dr[0].ToString().Trim())
+                {
+                    return false;
+                }
             }
-            if(state =="Bo mon")
-            {
-                query = "exec filter_TKBM";
-                listTK.DataSource = ConnectDB.Connected.getData(query);
-                fillter.Enabled = false;
-            }
-            if (state == "Phong")
-            {
-                query = "exec filter_TKP";
-                listTK.DataSource = ConnectDB.Connected.getData(query);
-                fillter.Enabled = false;
-            }
-            if(state=="Giao vien")
-            {
-                query = "exec filter_TKGV";
-                listTK.DataSource = ConnectDB.Connected.getData(query);
-                fillter.Enabled = false;
-            }
+            return true;
         }
-
-        private void Cell_click(object sender, DataGridViewCellEventArgs e)
+        private void CellClick(object sender, DataGridViewCellEventArgs e)
         {
-           
             int index = e.RowIndex;
             DataGridViewRow selectedRow = listTK.Rows[index];
             string MA = selectedRow.Cells[1].Value.ToString().Trim();
@@ -156,10 +89,11 @@ namespace QuanLyDeTai.PKHCN.QLTK
             Password.Enabled = true;
             username.Enabled = true;
             cancel.Enabled = true;
-            
-            if(password=="" && UserName == ""){
+
+            if (password == "" && UserName == "")
+            {
                 addTK.Enabled = true;
-                edit.Enabled =false;
+                edit.Enabled = false;
                 delete.Enabled = false;
             }
             else
@@ -168,38 +102,13 @@ namespace QuanLyDeTai.PKHCN.QLTK
                 delete.Enabled = true;
                 addTK.Enabled = false;
             }
-            
+
         }
 
-        private void delete_Click(object sender, EventArgs e)
-        {
-            string query = "exec delete_TK '" + username.Text + "'";
-            MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Xóa"));
-            getListTK();
-            ID.Text = "";
-            Ma.Text = "";
-            Password.Text = "";
-            username.Text = "";
-            Enable();
-        }
-        public bool checkUser()
-        {
-            string query = "exec getAllUserName";
-            DataTable dt = ConnectDB.Connected.getData(query);
-            foreach (DataRow dr in dt.Rows)
-            {
-               
-               if(username.Text == dr[0].ToString().Trim())
-                {
-                    return false;
-                }
-            }
-            return true;
-        }
-        private void addTK_Click(object sender, EventArgs e)
+        private void addTK_Click_1(object sender, EventArgs e)
         {
             string query = "";
-            if (checkUser()==true)
+            if (checkUser() == true)
             {
                 if (Password.Text == "")
                 {
@@ -207,7 +116,7 @@ namespace QuanLyDeTai.PKHCN.QLTK
                 }
                 else
                 {
-                    query = "exec addUser '" + username.Text + "','" + Password.Text + "','" + ID.Text + "'";
+                    query = "exec addUser '" + username.Text + "','" + Password.Text + "','" + ID.Text + "',''";
                     MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Thêm"));
                     getListTK();
                     ID.Text = "";
@@ -221,11 +130,18 @@ namespace QuanLyDeTai.PKHCN.QLTK
             {
                 MessageBox.Show("Tên đăng nhập đã tồn tại");
             }
+        }
+
+        private void edit_Click_1(object sender, EventArgs e)
+        {
 
         }
 
-        private void cancel_Click(object sender, EventArgs e)
+        private void delete_Click_1(object sender, EventArgs e)
         {
+            string query = "exec delete_TK '" + username.Text + "'";
+            MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Xóa"));
+            getListTK();
             ID.Text = "";
             Ma.Text = "";
             Password.Text = "";
@@ -233,11 +149,153 @@ namespace QuanLyDeTai.PKHCN.QLTK
             Enable();
         }
 
-        private void edit_Click(object sender, EventArgs e)
+        private void cancel_Click_1(object sender, EventArgs e)
         {
-            string query = "exec addUser '"+username.Text+"','"+Password.Text+"','"+ID.Text+"'";
-            MessageBox.Show(ConnectDB.Connected.ChangeData(query, "Cập nhập"));
-            getListTK();
+
+        }
+
+        private void fillter_Click_1(object sender, EventArgs e)
+        {
+            string query = "";
+            if (state == "Khoa")
+            {
+                query = "exec filter_TKK";
+                listTK.DataSource = ConnectDB.Connected.getData(query);
+                fillter.Enabled = false;
+            }
+            if (state == "Bo mon")
+            {
+                query = "exec filter_TKBM";
+                listTK.DataSource = ConnectDB.Connected.getData(query);
+                fillter.Enabled = false;
+            }
+            if (state == "Phong")
+            {
+                query = "exec filter_TKP";
+                listTK.DataSource = ConnectDB.Connected.getData(query);
+                fillter.Enabled = false;
+            }
+            if (state == "Giao vien")
+            {
+                query = "exec filter_TKGV";
+                listTK.DataSource = ConnectDB.Connected.getData(query);
+                fillter.Enabled = false;
+            }
+        }
+
+        private void TKGV_Click_1(object sender, EventArgs e)
+        {
+            state = "Giao vien";
+            string query = "exec getTKGV";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            listTK.DataSource = dt;
+            fillter.Enabled = true;
+            ID.Text = "";
+            Ma.Text = "";
+            Password.Text = "";
+            username.Text = "";
+            ID.Enabled = true;
+            Password.Enabled = true;
+            username.Enabled = true;
+            Ma.Enabled = true;
+            addTK.Enabled = true;
+
+        }
+
+        private void TKBM_Click_1(object sender, EventArgs e)
+        {
+            state = "Bo mon";
+            string query = "exec getTKBM";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            listTK.DataSource = dt;
+            fillter.Enabled = true;
+            ID.Text = "";
+            Ma.Text = "";
+            Password.Text = "";
+            username.Text = "";
+            ID.Enabled = true;
+            Password.Enabled = true;
+            username.Enabled = true;
+            Ma.Enabled = true;
+            addTK.Enabled = true;
+        }
+
+      
+
+        private void TKK_Click_1(object sender, EventArgs e)
+        {
+            state = "Khoa";
+            string query = "exec getTKK";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            listTK.DataSource = dt;
+            fillter.Enabled = true;
+            ID.Text = "";
+            Ma.Text = "";
+            Password.Text = "";
+            username.Text = "";
+            ID.Enabled = true;
+            Password.Enabled = true;
+            username.Enabled = true;
+            Ma.Enabled = true;
+            addTK.Enabled = true;
+        }
+
+        private void TKP_Click_1(object sender, EventArgs e)
+        {
+            state = "Phong";
+            string query = "exec getTKP";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            listTK.DataSource = dt;
+            fillter.Enabled = true;
+        }
+
+        private void guna2GradientButton1_MouseHover(object sender, EventArgs e)
+        {
+            panel3.Visible = true;
+        }
+
+        private void panel6_MouseHover(object sender, EventArgs e)
+        {
+            panel3.Visible = false;
+        }
+
+        private void select_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Ma.Items.Clear();
+            string query = "";
+            Ma.Enabled = true;
+            if (select.Text == "PKHCN")
+            {
+   
+                Ma.Enabled=false;
+            }
+            if(select.Text == "Khoa")
+            {
+                query = "pkhcn_getAllMaKhoa";
+                DataTable dt = ConnectDB.Connected.getData(query);
+                foreach(DataRow dr in dt.Rows)
+                {
+                    Ma.Items.Add(dr[0].ToString());
+                }
+            }
+            if(select.Text=="Bộ môn")
+            {
+                query = "pkhcn_getAllDepartment";
+                DataTable dt = ConnectDB.Connected.getData(query);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    Ma.Items.Add(dr[0].ToString());
+                }
+            }
+            if(select.Text=="Giáo viên")
+            {
+                query = "pkhcn_getAllMGV";
+                DataTable dt = ConnectDB.Connected.getData(query);
+                foreach (DataRow dr in dt.Rows)
+                {
+                    Ma.Items.Add(dr[0].ToString());
+                }
+            }
         }
     }
 }

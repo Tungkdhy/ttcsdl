@@ -12,7 +12,7 @@ namespace QuanLyDeTai.PKHCN
 {
     public partial class PKHCN : Form
     {
-        public PKHCN(string MP)
+        public PKHCN()
         {
             InitializeComponent();
             customiDegsin();
@@ -52,7 +52,7 @@ namespace QuanLyDeTai.PKHCN
                 btnKhoa.Text = "";
                 btnSetting.Text = "";
                 btnQdt.Text = "";
-                bunifuTransition1.ShowSync(MenuVertical);
+                
             }
             else
             {
@@ -63,7 +63,7 @@ namespace QuanLyDeTai.PKHCN
                 btnKhoa.Text = "      Danh sách khoa";
                 btnSetting.Text = "                 Cài đặt";
                 btnQdt.Text = "       Danh sách đề tài";
-                bunifuTransition1.ShowSync(MenuVertical);
+          
             }
         }
         private Form activeForm = null;
@@ -84,17 +84,12 @@ namespace QuanLyDeTai.PKHCN
         }
         private void btnQdt_Click(object sender, EventArgs e)
         {
-            openChilForm(new QLTK.QLTK());
+            openChilForm(new QuanLyDT.QLDT1() );
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
             showSubMenu(SubMenu);
-        }
-
-        private void btnTk_Click(object sender, EventArgs e)
-        {
-            
         }
 
         private void MenuVertical_Paint(object sender, PaintEventArgs e)
@@ -117,6 +112,26 @@ namespace QuanLyDeTai.PKHCN
             this.Hide();
             Form login = new Login.Login();
             login.Show();
+        }
+
+        private void btnHd_Click(object sender, EventArgs e)
+        {
+            openChilForm(new HDNT.HDNT());
+        }
+
+        private void btnKhoa_Click(object sender, EventArgs e)
+        {
+           openChilForm(new QLCN.QLCN());
+        }
+
+        private void btnBB_Click(object sender, EventArgs e)
+        {
+            openChilForm(new BBKH.BBKH());
+        }
+
+        private void btnTk_Click(object sender, EventArgs e)
+        {
+            openChilForm(new TK.TK());
         }
     }
 }

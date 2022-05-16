@@ -23,9 +23,19 @@ namespace QuanLyDeTai.User.AddResearch
        
         private void DK_Click(object sender, EventArgs e)
         {
-            string query = "exec addDTNCGV '"+MDT.Text+"', '"+Ten.Text+"', '"+CN.Text+"', '"+cap.Text+"', '"+SQTL.Text+"', '"+NBD.Text+"','"+NGT.Text+"','"+SP.Text+ "','" +MP.Text+ "','" +BM.Text+"' ";
-            string actions = "Thêm";
-            MessageBox.Show(ConnectDB.Connected.ChangeData(query, actions));
+      
+            string query = "checkGVTGDT '" + maGV + "'";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            if (dt.Rows.Count > 0)
+            {
+                MessageBox.Show("Đăng ký không thành công.Vì bạn đang tham gia đề tài");
+            }
+            else
+            {
+                //string query = "exec addDTNCGV '" + MDT.Text + "', '" + Ten.Text + "', '" + CN.Text + "', '" + cap.Text + "', '" + SQTL.Text + "', '" + NBD.Text + "','" + NGT.Text + "','" + SP.Text + "','" + MP.Text + "','" + BM.Text + "' ";
+                //string actions = "Thêm";
+                //MessageBox.Show(ConnectDB.Connected.ChangeData(query, actions));
+            }
 
         }
 

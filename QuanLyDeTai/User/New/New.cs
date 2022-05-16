@@ -49,22 +49,7 @@ namespace QuanLyDeTai.User.New
             return maxWidth;
         }
 
-        private void list_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void New_Load(object sender, EventArgs e)
-        {
-            string size = comboBox1.Size.Height.ToString();
-            Console.Write(comboBox1.Size.Height);
-            
-        }
+     
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

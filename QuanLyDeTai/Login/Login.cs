@@ -16,6 +16,8 @@ namespace QuanLyDeTai.Login
 
     {
         private static string connectionString = ConfigurationManager.ConnectionStrings["Connect"].ConnectionString;
+        private string MaGV;
+        private string Quyen;
         public Login()
         {
             InitializeComponent();
@@ -83,55 +85,50 @@ namespace QuanLyDeTai.Login
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(connectionString);
             string userName = UserName.Text;
             string password = Password.Text;
-            conn.Open();
-            string query = "select * from DANGNHAP where UserName = '" + userName + "' and Passwords = '" + password + "'";
-            SqlDataAdapter da = new SqlDataAdapter(query, conn);
-            try
+            string query = "NDDangNhap '" + userName + "','" + password + "'";
+            DataTable dt = ConnectDB.Connected.getData(query);
+            if (dt.Rows.Count > 0)
             {
-                DataTable dt = new DataTable();
-                da.Fill(dt);
-                if (dt.Rows.Count > 0)
+                MaGV = dt.Rows[0][0].ToString();
+                Quyen = dt.Rows[0][1].ToString();
+                if (Quyen == "Giáo viên")
                 {
-                    string MaKhoa = dt.Rows[0][3].ToString().Trim();
-                    string MaBM = dt.Rows[0][4].ToString().Trim();
-                    string MP = dt.Rows[0][5].ToString().Trim();
-                    string maGV = dt.Rows[0][6].ToString().Trim();
-
-                    if (maGV != "")
-                    {
-                        Form Gv = new User.User(maGV);
-                        MessageBox.Show("Đăng nhập thành công");
-                        Gv.Show();
-                        this.Hide();
-                    }
-                    if (MP!="")
-                    {
-                        Form PKHCN = new PKHCN.PKHCN(MP);
-                        MessageBox.Show("Đăng nhập thành công");
-                        PKHCN.Show();
-                        this.Hide();
-                    }
-                    if (MaKhoa != "")
-                    {
-                        Form KHoa = new Khoa.Khoa(MaKhoa);
-                        MessageBox.Show("Đăng nhập thành công");
-                        KHoa.Show();
-                        this.Hide();
-                    }
+                    Form User = new User.User(MaGV);
+                    MessageBox.Show("Đăng nhập thành công");
+                    this.Hide();
+                    User.Show();
                 }
-                else
+                if (Quyen == "Admin")
                 {
-                    MessageBox.Show("dang nhap that bai");
+                    Form admin = new PKHCN.PKHCN();
+                    MessageBox.Show("Đăng nhập thành công");
+                    this.Hide();
+                    admin.Show();
                 }
+                if(Quyen=="Bộ môn")
+                {
+                    string query1 = "getMABM '"+MaGV+"'";
+                    DataTable dt1 = ConnectDB.Connected.getData(query1);
+                    string MABM = dt1.Rows[0][0].ToString();
 
 
+                }
+                if (Quyen == "Khoa")
+                {
+                    string query1 = "getMAKhOA '" + MaGV + "'";
+                    DataTable dt1 = ConnectDB.Connected.getData(query1);
+                    string MAKHOA = dt1.Rows[0][0].ToString();
+                    Form khoa = new Khoa.Khoa(MAKHOA);
+                    MessageBox.Show("Đăng nhập thành công");
+                    this.Hide();
+                    khoa.Show();
+                }
             }
-            catch
+            else
             {
-                MessageBox.Show("dang nhap that bai");
+                MessageBox.Show("Tài khoản mật khẩu không chính xác");
             }
         }
 
@@ -143,6 +140,19 @@ namespace QuanLyDeTai.Login
         private void btnExit_Click(object sender, EventArgs e)
         {
             this.Hide();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                Console.WriteLine("ok");
+            }
+        }
+
+        private void container_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

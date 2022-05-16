@@ -377,7 +377,6 @@
             this.Controls.Add(this.comboBox1);
             this.Name = "New";
             this.Text = "New";
-            this.Load += new System.EventHandler(this.New_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bunifuDataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
