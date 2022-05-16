@@ -49,6 +49,9 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuDataGridView">
       <HintPath>..\..\..\..\Desktop\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuDataGridView.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDatePicker">
+      <HintPath>..\bunifu\Bunifu.UI.WinForms.BunifuDatePicker.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
       <HintPath>..\..\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
     </Reference>
@@ -73,21 +76,29 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuTransition">
       <HintPath>..\..\New folder (2)\BunifuCrack\Bunifu.UI.WinForms.BunifuTransition.dll</HintPath>
     </Reference>
+    <Reference Include="DevExpress.Data.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v19.2.Core, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v19.2, Version=19.2.5.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net472\FontAwesome.Sharp.dll</HintPath>
     </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.ConfigurationManager, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Configuration.ConfigurationManager.6.0.0\lib\net461\System.Configuration.ConfigurationManager.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Net" />
+    <Reference Include="System.Runtime.Remoting" />
     <Reference Include="System.Security" />
     <Reference Include="System.Security.AccessControl, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Security.AccessControl.6.0.0\lib\net461\System.Security.AccessControl.dll</HintPath>
@@ -111,6 +122,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationClient" />
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
@@ -127,6 +139,12 @@
     <Compile Include="Khoa\Formlol.Designer.cs">
       <DependentUpon>Formlol.cs</DependentUpon>
     </Compile>
+    <Compile Include="Khoa\QLBBKH\QLBBKhoaHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoa\QLBBKH\QLBBKhoaHoc.Designer.cs">
+      <DependentUpon>QLBBKhoaHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khoa\QLDT\modalDT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +157,12 @@
     <Compile Include="Khoa\QLDT\QuanLyDeTai.Designer.cs">
       <DependentUpon>QuanLyDeTai.cs</DependentUpon>
     </Compile>
+    <Compile Include="Khoa\QLDT\ThongTinTV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoa\QLDT\ThongTinTV.Designer.cs">
+      <DependentUpon>ThongTinTV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khoa\QLGV\function.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -150,6 +174,12 @@
     </Compile>
     <Compile Include="Khoa\QLGV\QuanLyGV.Designer.cs">
       <DependentUpon>QuanLyGV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Khoa\TK\ThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Khoa\TK\ThongKe.Designer.cs">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Login\Login.cs">
       <SubType>Form</SubType>
@@ -237,17 +267,26 @@
     <EmbeddedResource Include="Khoa\Formlol.resx">
       <DependentUpon>Formlol.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Khoa\QLBBKH\QLBBKhoaHoc.resx">
+      <DependentUpon>QLBBKhoaHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLDT\modalDT.resx">
       <DependentUpon>modalDT.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLDT\QuanLyDeTai.resx">
       <DependentUpon>QuanLyDeTai.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Khoa\QLDT\ThongTinTV.resx">
+      <DependentUpon>ThongTinTV.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLGV\function.resx">
       <DependentUpon>function.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khoa\QLGV\QuanLyGV.resx">
       <DependentUpon>QuanLyGV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Khoa\TK\ThongKe.resx">
+      <DependentUpon>ThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -336,6 +375,35 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user-icon-black-silhouette-isolated-on-white-vector-20390378.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
